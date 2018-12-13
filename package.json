@@ -33,7 +33,8 @@
 	"scripts": {
 		"dev": "next",
 		"build": "next build",
-		"start": "next start"
+		"start": "next start",
+		"export": "npm run build && next export"
 	},
 	"author": "Niall Barber",
 	"license": "ISC"

@@ -40,7 +40,7 @@ const Index = (props) => {
 						'Vue',
 						'PHP',
 						'WordPress',
-						'Liquid',
+						'Shopify / Liquid',
 						'Photoshop',
 						'Illustrator'
 					]}
