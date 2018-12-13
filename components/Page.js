@@ -44,6 +44,10 @@ injectGlobal`
 		text-decoration: none;
 		color: ${theme.offWhite};
 	}
+	.grid {
+		display: flex;
+		margin-top: 3rem;
+	}
 `;
 
 export default class Page extends Component {

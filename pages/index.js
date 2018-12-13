@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import Typed from 'react-typed';
 
 const Header = styled.h1`
 	position: relative;
 	display: inline;
-	font-size: 12vw;
+	font-size: 17rem;
 	&:before {
 		content: '';
 		position: absolute;
@@ -16,10 +17,38 @@ const Header = styled.h1`
 	}
 `;
 
+const TypedWrapper = styled.div`
+	text-align: center;
+	span {
+		font-size: 2vw;
+		background: ${(props) => props.theme.green};
+		color: ${(props) => props.theme.black};
+		padding: 1rem .5rem;
+	}
+`;
+
 const Index = (props) => {
 	return (
 		<div>
-			<Header>Hey...</Header>
+			<Header>Niall Barber</Header>
+			<TypedWrapper>
+				<Typed
+					strings={[
+						'HTML / CSS',
+						'JavaScript',
+						'React',
+						'Vue',
+						'PHP',
+						'WordPress',
+						'Liquid',
+						'Photoshop',
+						'Illustrator'
+					]}
+					typeSpeed={40}
+					backSpeed={50}
+					loop
+				/>
+			</TypedWrapper>
 		</div>
 	);
 };
