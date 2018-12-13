@@ -3,14 +3,16 @@ import styled from 'styled-components';
 const Header = styled.h1`
 	position: relative;
 	display: inline;
+	font-size: 12vw;
 	&:before {
 		content: '';
 		position: absolute;
 		background: ${(props) => props.theme.orange};
 		left: 0;
-		bottom: 0;
+		bottom: 1rem;
 		right: 0;
-		height: 2px;
+		height: 5px;
+		z-index: -1;
 	}
 `;
 

@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const NavBar = styled.div`
 	position: fixed;
-	top: 2rem;
-	right: 2rem;
+	top: 2.5rem;
+	right: 3rem;
 `;
 
 const ColouredLink = styled.a`
