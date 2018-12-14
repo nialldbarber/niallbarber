@@ -9,7 +9,7 @@ const theme = {
 	green: '#6cc',
 	orange: '#f89b0e',
 	pink: '#f95584',
-	maxWidth: '1000px',
+	maxWidth: '1100px',
 	bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)'
 };
 
