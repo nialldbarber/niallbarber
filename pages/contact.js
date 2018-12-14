@@ -1,31 +1,6 @@
 import styled from 'styled-components';
 import ContentInfo from '../components/styles/Content';
-
-const Header = styled.h1`
-	position: relative;
-	display: inline;
-	font-size: 6rem;
-	@media (min-width: 768px) {
-		font-size: 11rem;
-	}
-	@media (min-width: 992px) {
-		font-size: 17rem;
-	}
-	&:before {
-		content: '';
-		position: absolute;
-		background: ${(props) => props.theme.green};
-		left: 0;
-		bottom: 1rem;
-		right: 0;
-		height: 5px;
-		z-index: -1;
-		@media (max-width: 767px) {
-			bottom: 0;
-			height: 3px;
-		}
-	}
-`;
+import PageHeader from '../components/styles/PageHeader';
 
 const ContactMe = styled.div`
 	margin-top: 7rem;
@@ -65,7 +40,7 @@ const ContactMe = styled.div`
 const Contact = () => {
 	return (
 		<div>
-			<Header>Contact</Header>
+			<PageHeader className="contact">Contact</PageHeader>
 			<ContentInfo>
 				<p>If you want to make or collaborate on a project send me a message!</p>
 			</ContentInfo>

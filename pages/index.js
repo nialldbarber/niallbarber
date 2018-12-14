@@ -1,31 +1,6 @@
 import styled from 'styled-components';
 import Typed from 'react-typed';
-
-const Header = styled.h1`
-	position: relative;
-	display: inline;
-	font-size: 6rem;
-	@media (min-width: 768px) {
-		font-size: 11rem;
-	}
-	@media (min-width: 992px) {
-		font-size: 17rem;
-	}
-	&:before {
-		content: '';
-		position: absolute;
-		background: ${(props) => props.theme.green};
-		left: 0;
-		bottom: 1rem;
-		right: 0;
-		height: 5px;
-		z-index: -1;
-		@media (max-width: 767px) {
-			bottom: 0;
-			height: 3px;
-		}
-	}
-`;
+import PageHeader from '../components/styles/PageHeader';
 
 const TypedWrapper = styled.div`
 	text-align: center;
@@ -43,7 +18,7 @@ const TypedWrapper = styled.div`
 const Index = (props) => {
 	return (
 		<div>
-			<Header>Niall Barber</Header>
+			<PageHeader className="index">Niall Barber</PageHeader>
 			<TypedWrapper>
 				<Typed
 					strings={[
