@@ -11,7 +11,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tmax-width: 540px;\n\tmargin-left: auto;\n\tp {\n\t\tfont-size: 2rem;\n\t\t&:first-child {\n\t\t\tmargin-top: 0;\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tmax-width: 540px;\n\tmargin-left: auto;\n\tp {\n\t\tfont-size: 2rem;\n\t\t&:first-child {\n\t\t\tmargin-top: 0;\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -5547,7 +5547,7 @@ var About = function About(props) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
@@ -5572,5 +5572,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=about.js.map

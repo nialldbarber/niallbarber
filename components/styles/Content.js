@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const ContentInfo = styled.div`
+	position: relative;
 	max-width: 540px;
 	margin-left: auto;
 	p {

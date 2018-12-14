@@ -17,7 +17,7 @@ const ProjectCard = styled.div`
 	}
 	h3 {
 		margin-bottom: 0;
-		transition: .25s cubic-bezier(.895, .03, .685, .22);
+		transition: ${(props) => props.theme.transition};
 	}
 	&:hover {
 		h3 {

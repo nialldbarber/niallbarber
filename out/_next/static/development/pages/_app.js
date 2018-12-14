@@ -187,7 +187,7 @@ var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Nav.js";
 
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tpadding: 1rem 2rem;\n\tmargin: 0 1rem;\n\ttext-decoration: none;\n\tz-index: 1;\n\toverflow: hidden;\n\tcursor: pointer;\n\ttransition: .25s cubic-bezier(.895, .03, .685, .22);\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\ttop: 0;\n\t\tleft: 0;\n\t\twidth: 0;\n\t\theight: 100%;\n\t\tz-index: -1;\n\t\ttransition: .4s cubic-bezier(.77, 0, .175, 1);\n\t\ttransform: translateX(-101%);\n\t}\n\t&:hover {\n\t\t&:before {\n\t\t\tleft: 100%;\n\t\t\twidth: 100%;\n\t\t}\n\t\t&.home__nav,\n\t\t&.about__nav,\n\t\t&.projects__nav,\n\t\t&.contact__nav {\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n\t&.home__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tpadding: 1rem 2rem;\n\tmargin: 0 1rem;\n\ttext-decoration: none;\n\tz-index: 1;\n\toverflow: hidden;\n\tcursor: pointer;\n\ttransition: ", ";\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\ttop: 0;\n\t\tleft: 0;\n\t\twidth: 0;\n\t\theight: 100%;\n\t\tz-index: -1;\n\t\ttransition: ", ";\n\t\ttransform: translateX(-101%);\n\t}\n\t&:hover {\n\t\t&:before {\n\t\t\tleft: 100%;\n\t\t\twidth: 100%;\n\t\t}\n\t\t&.home__nav,\n\t\t&.about__nav,\n\t\t&.projects__nav,\n\t\t&.contact__nav {\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n\t&.home__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -212,6 +212,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var NavBar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
 var ColouredLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a(_templateObject2(), function (props) {
+  return props.theme.transition;
+}, function (props) {
+  return props.theme.transition;
+}, function (props) {
   return props.theme.black;
 }, function (props) {
   return props.theme.green;
@@ -307,7 +311,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Meta */ "./components/Meta.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Social__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Social */ "./components/Social.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Page.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -364,6 +369,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var theme = {
   black: '#1e272d',
   offWhite: '#EDEDED',
@@ -371,15 +377,16 @@ var theme = {
   orange: '#f89b0e',
   pink: '#f95584',
   maxWidth: '1100px',
-  bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)'
+  bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
+  transition: '.25s cubic-bezier(.895, .03, .685, .22)'
 };
-var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject(), function (props) {
+var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject(), function (props) {
   return props.theme.offWhite;
 });
-var Inner = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject2(), function (props) {
+var Inner = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject2(), function (props) {
   return props.theme.maxWidth;
 });
-Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["injectGlobal"])(_templateObject3(), theme.offWhite, theme.offWhite);
+Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["injectGlobal"])(_templateObject3(), theme.offWhite, theme.offWhite);
 
 var Page =
 /*#__PURE__*/
@@ -395,38 +402,44 @@ function (_Component) {
   _createClass(Page, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_3__["ThemeProvider"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_4__["ThemeProvider"], {
         theme: theme,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 57
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 59
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 60
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 61
         },
         __self: this
-      }, this.props.children)));
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Social__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
+      })));
     }
   }]);
 
@@ -434,6 +447,126 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
+
+/***/ }),
+
+/***/ "./components/Social.js":
+/*!******************************!*\
+  !*** ./components/Social.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Social.js";
+
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n\tmax-width: 25px;\n\twidth: 100%;\n\theight: 100%;\n\tmargin: 1rem;\n\ttransition: ", ";\n\tcursor: pointer;\n\t&:hover {\n\t\topacity: .6;\n\t}\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n\tmargin: 0 auto;\n\ttext-align: center;\n\tposition: fixed;\n\tbottom: 0;\n\tright: 5rem;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+var Icon = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject2(), function (props) {
+  return props.theme.transition;
+});
+
+var Social = function Social() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "https://github.com/nialldbarber",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
+    src: "../static/github.svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "https://www.instagram.com/nialldbarber/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
+    src: "../static/instagram.svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "https://www.linkedin.com/in/niall-barber/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
+    src: "../static/linkedin.svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Social);
 
 /***/ }),
 

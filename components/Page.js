@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Meta from './Meta';
+import Social from './Social';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 const theme = {
@@ -10,7 +11,8 @@ const theme = {
 	orange: '#f89b0e',
 	pink: '#f95584',
 	maxWidth: '1100px',
-	bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)'
+	bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
+	transition: '.25s cubic-bezier(.895, .03, .685, .22)'
 };
 
 const StyledPage = styled.div`color: ${(props) => props.theme.offWhite};`;
@@ -59,6 +61,7 @@ export default class Page extends Component {
 					<Meta />
 					<Header />
 					<Inner>{this.props.children}</Inner>
+					<Social />
 				</StyledPage>
 			</ThemeProvider>
 		);

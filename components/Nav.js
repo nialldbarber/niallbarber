@@ -15,7 +15,7 @@ const ColouredLink = styled.a`
 	z-index: 1;
 	overflow: hidden;
 	cursor: pointer;
-	transition: .25s cubic-bezier(.895, .03, .685, .22);
+	transition: ${(props) => props.theme.transition};
 	&:before {
 		content: '';
 		position: absolute;
@@ -24,7 +24,7 @@ const ColouredLink = styled.a`
 		width: 0;
 		height: 100%;
 		z-index: -1;
-		transition: .4s cubic-bezier(.77, 0, .175, 1);
+		transition: ${(props) => props.theme.transition};
 		transform: translateX(-101%);
 	}
 	&:hover {
