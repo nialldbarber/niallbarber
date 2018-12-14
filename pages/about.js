@@ -1,39 +1,7 @@
 import styled from 'styled-components';
 import ContentInfo from '../components/styles/Content';
 import PageHeader from '../components/styles/PageHeader';
-
-const PlatformSpan = styled.span`
-	position: relative;
-	&:before {
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: -.1rem;
-		right: 0;
-		height: 1px;
-		z-index: -1;
-	}
-	&.reactSpan {
-		&:before {
-			background: ${(props) => props.theme.green};
-		}
-	}
-	&.vueSpan {
-		&:before {
-			background: ${(props) => props.theme.orange};
-		}
-	}
-	&.wordpressSpan {
-		&:before {
-			background: ${(props) => props.theme.pink};
-		}
-	}
-	&.shopifySpan {
-		&:before {
-			background: ${(props) => props.theme.green};
-		}
-	}
-`;
+import PlatformSpan from '../components/styles/PlatformSpan';
 
 const About = (props) => {
 	return (
