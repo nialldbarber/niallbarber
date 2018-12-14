@@ -4,9 +4,11 @@ import styled from 'styled-components';
 const IconContainer = styled.div`
 	margin: 0 auto;
 	text-align: center;
-	position: fixed;
 	bottom: 0;
 	right: 2rem;
+	@media (min-width: 510px) {
+		position: fixed;
+	}
 	@media (min-width: 768px) {
 		right: 5rem;
 	}

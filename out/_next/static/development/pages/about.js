@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/contact.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/about.js"],{
 
 /***/ "./components/styles/Content.js":
 /*!**************************************!*\
@@ -61,6 +61,52 @@ var PageHeader = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h1(_t
   return props.theme.pink;
 });
 /* harmony default export */ __webpack_exports__["default"] = (PageHeader);
+
+/***/ }),
+
+/***/ "./components/styles/PlatformSpan.js":
+/*!*******************************************!*\
+  !*** ./components/styles/PlatformSpan.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\ttransition: ", ";\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: -.1rem;\n\t\tright: 0;\n\t\theight: 1px;\n\t\tz-index: -1;\n\t}\n\t&.reactSpan {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&:hover {\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n\t&.vueSpan {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&:hover {\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n\t&.wordpressSpan {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&:hover {\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n\t&.shopifySpan {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&:hover {\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+var PlatformSpan = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].span(_templateObject(), function (props) {
+  return props.theme.transition;
+}, function (props) {
+  return props.theme.green;
+}, function (props) {
+  return props.theme.green;
+}, function (props) {
+  return props.theme.orange;
+}, function (props) {
+  return props.theme.orange;
+}, function (props) {
+  return props.theme.pink;
+}, function (props) {
+  return props.theme.pink;
+}, function (props) {
+  return props.theme.green;
+}, function (props) {
+  return props.theme.green;
+});
+/* harmony default export */ __webpack_exports__["default"] = (PlatformSpan);
 
 /***/ }),
 
@@ -5492,10 +5538,10 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./pages/contact.js":
-/*!**************************!*\
-  !*** ./pages/contact.js ***!
-  \**************************/
+/***/ "./pages/about.js":
+/*!************************!*\
+  !*** ./pages/about.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5506,73 +5552,78 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_styles_Content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/styles/Content */ "./components/styles/Content.js");
 /* harmony import */ var _components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/styles/PageHeader */ "./components/styles/PageHeader.js");
-var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/pages/contact.js";
-
-
-function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tmargin-top: 8rem;\n\tp {\n\t\tfont-size: 2.7rem;\n\t\tpadding: 1rem 2rem;\n\t\tposition: relative;\n\t\tdisplay: inline;\n\t\tz-index: 1;\n\t\toverflow: hidden;\n\t\tcursor: pointer;\n\t\tcolor: ", ";\n\t\t@media (max-width: 767px) {\n\t\t\tfont-size: 2rem;\n\t\t}\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\ttop: 0;\n\t\t\tleft: 0;\n\t\t\twidth: 100%;\n\t\t\theight: 100%;\n\t\t\tz-index: -1;\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+/* harmony import */ var _components_styles_PlatformSpan__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/styles/PlatformSpan */ "./components/styles/PlatformSpan.js");
+var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/pages/about.js";
 
 
 
 
-var ContactMe = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), function (props) {
-  return props.theme.black;
-}, function (props) {
-  return props.theme.green;
-});
 
-var Contact = function Contact() {
+
+var About = function About(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "contact",
+    className: "about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 9
     },
     __self: this
-  }, "Contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, "If you want to make or collaborate on a project send me a message!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ContactMe, {
-    className: "contact-me",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 11
     },
     __self: this
-  }, "nialldbarber@gmail.com")));
+  }, "Hi, I'm a front end developer. I make slick, fast websites using technologies like", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PlatformSpan__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "reactSpan",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "React"), ",", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PlatformSpan__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "vueSpan",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "Vue"), " and also CMS like", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PlatformSpan__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "wordpressSpan",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "WordPress"), " and", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PlatformSpan__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "shopifySpan",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "Shopify")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Let's make something cool together!")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Contact);
+/* harmony default export */ __webpack_exports__["default"] = (About);
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -5589,21 +5640,21 @@ var Contact = function Contact() {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/contact")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/about")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 6:
-/*!********************************!*\
-  !*** multi ./pages/contact.js ***!
-  \********************************/
+/***/ 4:
+/*!******************************!*\
+  !*** multi ./pages/about.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/contact', function() {
-module.exports = __webpack_require__(/*! ./pages/contact.js */"./pages/contact.js");
+__NEXT_REGISTER_PAGE('/about', function() {
+module.exports = __webpack_require__(/*! ./pages/about.js */"./pages/about.js");
 
 return { page: module.exports.default }});
 
@@ -5620,5 +5671,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=contact.js.map
+},[[4,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=about.js.map

@@ -39,14 +39,17 @@ injectGlobal`
 		box-sizing: inherit;
 	}
 	body {
-		padding: 0;
 		margin: 0;
+		padding: 0 0 5rem 0;
 		font-size: 1.7rem;
 		line-height: 2;
 		-webkit-font-smoothing: antialiased;
 		font-family: 'Questrial', sans-serif;
 		background-color: #1e272d;
 		color: ${theme.offWhite};
+		@media (max-width: 509px) {
+			padding: 0;
+		}
 	}
 	a {
 		text-decoration: none;
