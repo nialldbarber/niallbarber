@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import Nav from './Nav';
@@ -15,6 +15,18 @@ Router.onRouteChangeError = () => {
 	NProgress.done();
 };
 
+const colourChange = keyframes`
+    0% {
+		background-color: #6cc;
+	}
+    50% {
+		background-color: #fff;
+	}
+    100% {
+		background-color: #6cc;
+	}
+`;
+
 const Logo = styled.div`
 	position: fixed;
 	top: 1rem;
@@ -23,6 +35,11 @@ const Logo = styled.div`
 	a {
 		font-size: 2.3rem;
 		text-transform: uppercase;
+		border-radius: 3px;
+		padding: 0.7rem;
+		color: #1e272d;
+		animation: ${colourChange} 15s infinite;
+		box-shadow: ${(props) => props.theme.bs};
 	}
 `;
 

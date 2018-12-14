@@ -22,8 +22,18 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Header.js";
 
 
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 1rem;\n\tleft: 3rem;\n\tpadding: 1rem 2rem;\n\ta {\n\t\tfont-size: 2.3rem;\n\t\ttext-transform: uppercase;\n\t\tborder-radius: 3px;\n\t\tpadding: 0.7rem;\n\t\tcolor: #1e272d;\n\t\tanimation: ", " 15s infinite;\n\t\tbox-shadow: ", ";\n\t}\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 1rem;\n\tleft: 3rem;\n\tpadding: 1rem 2rem;\n\ta {\n\t\tfont-size: 2.3rem;\n\t\ttext-transform: uppercase;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n    0% {\n\t\tbackground-color: #6cc;\n\t}\n    50% {\n\t\tbackground-color: #fff;\n\t}\n    100% {\n\t\tbackground-color: #6cc;\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -52,45 +62,48 @@ next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeError = function
   nprogress__WEBPACK_IMPORTED_MODULE_3___default.a.done();
 };
 
-var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+var colourChange = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["keyframes"])(_templateObject());
+var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), colourChange, function (props) {
+  return props.theme.bs;
+});
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 52
     },
     __self: this
   }, "NB"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 55
     },
     __self: this
   })));
