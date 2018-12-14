@@ -27,14 +27,50 @@ const Header = styled.h1`
 	}
 `;
 
+const PlatformSpan = styled.span`
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -.1rem;
+		right: 0;
+		height: 1px;
+		z-index: -1;
+	}
+	&.reactSpan {
+		&:before {
+			background: ${(props) => props.theme.green};
+		}
+	}
+	&.vueSpan {
+		&:before {
+			background: ${(props) => props.theme.orange};
+		}
+	}
+	&.wordpressSpan {
+		&:before {
+			background: ${(props) => props.theme.pink};
+		}
+	}
+	&.shopifySpan {
+		&:before {
+			background: ${(props) => props.theme.green};
+		}
+	}
+`;
+
 const About = (props) => {
 	return (
 		<div>
 			<Header>About</Header>
 			<ContentInfo>
 				<p>
-					Hi, I'm a front end developer. I make slick, fast websites using technologies like React, Vue and
-					also CMS like WordPress and Shopify
+					Hi, I'm a front end developer. I make slick, fast websites using technologies like{' '}
+					<PlatformSpan className="reactSpan">React</PlatformSpan>,{' '}
+					<PlatformSpan className="vueSpan">Vue</PlatformSpan> and also CMS like{' '}
+					<PlatformSpan className="wordpressSpan">WordPress</PlatformSpan> and{' '}
+					<PlatformSpan className="shopifySpan">Shopify</PlatformSpan>
 				</p>
 				<p>Let's make something cool together!</p>
 			</ContentInfo>
