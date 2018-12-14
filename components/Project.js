@@ -2,10 +2,17 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 const ProjectCard = styled.div`
-	width: 33.33333%;
+	width: 100%;
+	@media (min-width: 510px) {
+		width: 50%;
+	}
+	@media (min-width: 992px) {
+		width: 33.33333%;
+	}
 	img {
 		width: 100%;
 		height: auto;
+		box-shadow: ${(props) => props.theme.bs};
 	}
 	h3 {
 		margin-bottom: 0;

@@ -4,7 +4,13 @@ import ContentInfo from '../components/styles/Content';
 const Header = styled.h1`
 	position: relative;
 	display: inline;
-	font-size: 17rem;
+	font-size: 6rem;
+	@media (min-width: 768px) {
+		font-size: 11rem;
+	}
+	@media (min-width: 992px) {
+		font-size: 17rem;
+	}
 	&:before {
 		content: '';
 		position: absolute;
@@ -14,6 +20,10 @@ const Header = styled.h1`
 		right: 0;
 		height: 5px;
 		z-index: -1;
+		@media (max-width: 767px) {
+			bottom: 0;
+			height: 3px;
+		}
 	}
 `;
 
