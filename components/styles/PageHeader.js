@@ -3,7 +3,10 @@ import styled from 'styled-components';
 const PageHeader = styled.h1`
 	position: relative;
 	display: inline;
-	font-size: 6rem;
+	font-size: 8rem;
+	@media (max-width: 509px) {
+		font-size: 6rem;
+	}
 	@media (min-width: 768px) {
 		font-size: 11rem;
 	}

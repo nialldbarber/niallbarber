@@ -3,7 +3,7 @@ import ContentInfo from '../components/styles/Content';
 import PageHeader from '../components/styles/PageHeader';
 
 const ContactMe = styled.div`
-	margin-top: 7rem;
+	margin-top: 8rem;
 	p {
 		font-size: 2.7rem;
 		padding: 1rem 2rem;
@@ -12,26 +12,18 @@ const ContactMe = styled.div`
 		z-index: 1;
 		overflow: hidden;
 		cursor: pointer;
-		transition: .25s cubic-bezier(.895, .03, .685, .22);
+		color: ${(props) => props.theme.black};
+		@media (max-width: 767px) {
+			font-size: 2rem;
+		}
 		&:before {
 			content: '';
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 0;
+			width: 100%;
 			height: 100%;
 			z-index: -1;
-			transition: .4s cubic-bezier(.77, 0, .175, 1);
-			transform: translateX(-101%);
-		}
-		&:hover {
-			&:before {
-				left: 100%;
-				width: 100%;
-			}
-			color: ${(props) => props.theme.black};
-		}
-		&:before {
 			background: ${(props) => props.theme.green};
 		}
 	}

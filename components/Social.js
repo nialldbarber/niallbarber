@@ -6,7 +6,10 @@ const IconContainer = styled.div`
 	text-align: center;
 	position: fixed;
 	bottom: 0;
-	right: 5rem;
+	right: 2rem;
+	@media (min-width: 768px) {
+		right: 5rem;
+	}
 `;
 
 const Icon = styled.img`

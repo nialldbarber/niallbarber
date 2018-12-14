@@ -32,6 +32,9 @@ const Logo = styled.div`
 	top: 1rem;
 	left: 3rem;
 	padding: 1rem 2rem;
+	@media (max-width: 767px) {
+		padding: 1rem 2rem 1rem 0;
+	}
 	a {
 		font-size: 2.3rem;
 		text-transform: uppercase;

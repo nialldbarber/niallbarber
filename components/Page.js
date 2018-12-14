@@ -19,9 +19,14 @@ const StyledPage = styled.div`color: ${(props) => props.theme.offWhite};`;
 
 const Inner = styled.div`
 	max-width: ${(props) => props.theme.maxWidth};
-
 	margin: 6rem auto 0;
-	padding: 2rem 4rem;
+	padding: 4rem 3rem;
+	@media (min-width: 768px) {
+		padding: 7rem 4rem;
+	}
+	@media (min-width: 992px) {
+		padding: 2rem 4rem;
+	}
 `;
 
 injectGlobal`
