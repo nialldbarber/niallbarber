@@ -141,7 +141,7 @@ var Meta = function Meta() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
     rel: "shortcut icon",
-    href: "/static/favicon.png",
+    href: "/static/icon.png",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -339,7 +339,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tmax-width: ", ";\n\tmargin: 6rem auto 0;\n\tpadding: 2rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmax-width: ", ";\n\n\tmargin: 6rem auto 0;\n\tpadding: 2rem 4rem;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -370,7 +370,7 @@ var theme = {
   green: '#6cc',
   orange: '#f89b0e',
   pink: '#f95584',
-  maxWidth: '1000px',
+  maxWidth: '1100px',
   bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)'
 };
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject(), function (props) {
@@ -399,31 +399,31 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 57
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 59
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 60
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 61
         },
         __self: this
       }, this.props.children)));
