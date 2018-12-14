@@ -5472,6 +5472,16 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/pages/about.js";
 
 
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: -.1rem;\n\t\tright: 0;\n\t\theight: 1px;\n\t\tz-index: -1;\n\t}\n\t&.reactSpan {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.vueSpan {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.wordpressSpan {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.shopifySpan {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tdisplay: inline;\n\tfont-size: 6rem;\n\t@media (min-width: 768px) {\n\t\tfont-size: 11rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tfont-size: 17rem;\n\t}\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tbackground: ", ";\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t@media (max-width: 767px) {\n\t\t\tbottom: 0;\n\t\t\theight: 3px;\n\t\t}\n\t}\n"]);
 
@@ -5489,36 +5499,73 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var Header = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1(_templateObject(), function (props) {
   return props.theme.orange;
 });
+var PlatformSpan = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span(_templateObject2(), function (props) {
+  return props.theme.green;
+}, function (props) {
+  return props.theme.orange;
+}, function (props) {
+  return props.theme.pink;
+}, function (props) {
+  return props.theme.green;
+});
 
 var About = function About(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 66
     },
     __self: this
   }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 67
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 68
     },
     __self: this
-  }, "Hi, I'm a front end developer. I make slick, fast websites using technologies like React, Vue and also CMS like WordPress and Shopify"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "Hi, I'm a front end developer. I make slick, fast websites using technologies like", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PlatformSpan, {
+    className: "reactSpan",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 70
+    },
+    __self: this
+  }, "React"), ",", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PlatformSpan, {
+    className: "vueSpan",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }, "Vue"), " and also CMS like", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PlatformSpan, {
+    className: "wordpressSpan",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, "WordPress"), " and", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PlatformSpan, {
+    className: "shopifySpan",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, "Shopify")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
     },
     __self: this
   }, "Let's make something cool together!")));
