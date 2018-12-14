@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 
@@ -25,19 +26,25 @@ const ProjectCard = styled.div`
 	}
 `;
 
-const Project = () => {
-	return (
-		<div className="grid">
-			<ProjectCard>
-				<Link href="https://array-methods.herokuapp.com/">
-					<a>
-						<h3>Array Methods</h3>
-						<img src="../static/array-methods.png" />
-					</a>
-				</Link>
-			</ProjectCard>
-		</div>
-	);
-};
+export default class Project extends Component {
+	state = {
+		title: 'Array Methods',
+		image: '../static/array-methods.png',
+		link: 'https://array-methods.herokuapp.com/'
+	};
 
-export default Project;
+	render() {
+		return (
+			<div className="grid">
+				<ProjectCard>
+					<Link href={this.state.link}>
+						<a>
+							<h3>{this.state.title}</h3>
+							<img src={this.state.image} />
+						</a>
+					</Link>
+				</ProjectCard>
+			</div>
+		);
+	}
+}
