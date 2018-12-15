@@ -9,9 +9,9 @@ const About = (props) => {
 			<PageHeader className="about">About</PageHeader>
 			<ContentInfo>
 				<p>
-					Hi, I'm a front end developer. I make slick, fast websites using technologies like{' '}
+					Hi, I'm a front end developer. I make slick, fast websites using frameworks like{' '}
 					<PlatformSpan className="reactSpan">React</PlatformSpan>,{' '}
-					<PlatformSpan className="vueSpan">Vue</PlatformSpan> and also CMS like{' '}
+					<PlatformSpan className="vueSpan">Vue</PlatformSpan> and also CMSs like{' '}
 					<PlatformSpan className="wordpressSpan">WordPress</PlatformSpan> and{' '}
 					<PlatformSpan className="shopifySpan">Shopify</PlatformSpan>
 				</p>

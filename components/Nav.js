@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Link from 'next/link';
 import styled from 'styled-components';
+import Link from './Link';
 import HamburgerMenu from 'react-hamburger-menu';
 import ColouredLink from './styles/ColouredLink';
 
@@ -28,16 +28,16 @@ export default class Nav extends Component {
 		return (
 			<NavBar>
 				<div className="nav">
-					<Link href="/">
+					<Link activeClassName="active" href="/">
 						<ColouredLink className="home__nav">Home</ColouredLink>
 					</Link>
-					<Link href="/about">
+					<Link activeClassName="active" href="/about">
 						<ColouredLink className="about__nav">About</ColouredLink>
 					</Link>
-					<Link href="/projects">
+					<Link activeClassName="active" href="/projects">
 						<ColouredLink className="projects__nav">Projects</ColouredLink>
 					</Link>
-					<Link href="/contact">
+					<Link activeClassName="active" href="/contact">
 						<ColouredLink className="contact__nav">Contact</ColouredLink>
 					</Link>
 				</div>

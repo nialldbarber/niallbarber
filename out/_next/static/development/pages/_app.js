@@ -113,6 +113,61 @@ var Header = function Header() {
 
 /***/ }),
 
+/***/ "./components/Link.js":
+/*!****************************!*\
+  !*** ./components/Link.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Link.js";
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+
+
+
+var ActiveLink = function ActiveLink(_ref) {
+  var router = _ref.router,
+      children = _ref.children,
+      props = _objectWithoutProperties(_ref, ["router", "children"]);
+
+  var child = react__WEBPACK_IMPORTED_MODULE_2__["Children"].only(children);
+  var className = child.props.className || null;
+
+  if (router.pathname === props.href && props.activeClassName) {
+    className = "".concat(className !== null ? className : '', " ").concat(props.activeClassName).trim();
+  }
+
+  delete props.activeClassName;
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, _extends({}, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(child, {
+    className: className
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_0__["withRouter"])(ActiveLink));
+
+/***/ }),
+
 /***/ "./components/Meta.js":
 /*!****************************!*\
   !*** ./components/Meta.js ***!
@@ -202,9 +257,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Nav; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Link */ "./components/Link.js");
 /* harmony import */ var react_hamburger_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-hamburger-menu */ "./node_modules/react-hamburger-menu/dist/HamburgerMenu.js");
 /* harmony import */ var react_hamburger_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_hamburger_menu__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/ColouredLink */ "./components/styles/ColouredLink.js");
@@ -255,8 +309,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var NavBar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
-var HamburgerMenuContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+var NavBar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var HamburgerMenuContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 
 var Nav =
 /*#__PURE__*/
@@ -285,7 +339,8 @@ function (_Component) {
           lineNumber: 30
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        activeClassName: "active",
         href: "/",
         __source: {
           fileName: _jsxFileName,
@@ -299,7 +354,8 @@ function (_Component) {
           lineNumber: 32
         },
         __self: this
-      }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        activeClassName: "active",
         href: "/about",
         __source: {
           fileName: _jsxFileName,
@@ -313,7 +369,8 @@ function (_Component) {
           lineNumber: 35
         },
         __self: this
-      }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        activeClassName: "active",
         href: "/projects",
         __source: {
           fileName: _jsxFileName,
@@ -327,7 +384,8 @@ function (_Component) {
           lineNumber: 38
         },
         __self: this
-      }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        activeClassName: "active",
         href: "/contact",
         __source: {
           fileName: _jsxFileName,
@@ -636,7 +694,7 @@ var Social = function Social() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tpadding: 1rem 2rem;\n\tmargin: 0 1rem;\n\ttext-decoration: none;\n\tz-index: 1;\n\toverflow: hidden;\n\tcursor: pointer;\n\ttransition: ", ";\n\t@media (max-width: 509px) {\n\t\tpadding: 1rem 0;\n\t\tfont-size: 1.5rem;\n\t}\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\ttop: 0;\n\t\tleft: 0;\n\t\twidth: 0;\n\t\theight: 100%;\n\t\tz-index: -1;\n\t\ttransition: ", ";\n\t\ttransform: translateX(-101%);\n\t}\n\t&:hover {\n\t\t&:before {\n\t\t\t@media (min-width: 768px) {\n\t\t\t\tleft: 100%;\n\t\t\t\twidth: 100%;\n\t\t\t}\n\t\t}\n\t\t&.home__nav,\n\t\t&.about__nav,\n\t\t&.projects__nav,\n\t\t&.contact__nav {\n\t\t\t@media (min-width: 768px) {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t}\n\t&.home__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tpadding: 1rem 2rem;\n\tmargin: 0 1rem;\n\ttext-decoration: none;\n\tz-index: 1;\n\toverflow: hidden;\n\tcursor: pointer;\n\ttransition: ", ";\n\t@media (max-width: 509px) {\n\t\tpadding: 1rem 0;\n\t\tfont-size: 1.5rem;\n\t}\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\ttop: 0;\n\t\tleft: 0;\n\t\twidth: 0;\n\t\theight: 100%;\n\t\tz-index: -1;\n\t\ttransition: ", ";\n\t\ttransform: translateX(-101%);\n\t}\n\t&:hover {\n\t\t&:before {\n\t\t\t@media (min-width: 768px) {\n\t\t\t\tleft: 100%;\n\t\t\t\twidth: 100%;\n\t\t\t}\n\t\t}\n\t\t&.home__nav,\n\t\t&.about__nav,\n\t\t&.projects__nav,\n\t\t&.contact__nav {\n\t\t\t@media (min-width: 768px) {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t}\n\t&.home__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&.active {\n\t\t\tbackground: ", ";\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n\t&.about__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&.active {\n\t\t\tbackground: ", ";\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n\t&.projects__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&.active {\n\t\t\tbackground: ", ";\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n\t&.contact__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&.active {\n\t\t\tbackground: ", ";\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -657,11 +715,27 @@ var ColouredLink = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].a(_
 }, function (props) {
   return props.theme.green;
 }, function (props) {
+  return props.theme.green;
+}, function (props) {
+  return props.theme.black;
+}, function (props) {
   return props.theme.orange;
+}, function (props) {
+  return props.theme.orange;
+}, function (props) {
+  return props.theme.black;
 }, function (props) {
   return props.theme.pink;
 }, function (props) {
+  return props.theme.pink;
+}, function (props) {
+  return props.theme.black;
+}, function (props) {
   return props.theme.green;
+}, function (props) {
+  return props.theme.green;
+}, function (props) {
+  return props.theme.black;
 });
 /* harmony default export */ __webpack_exports__["default"] = (ColouredLink);
 

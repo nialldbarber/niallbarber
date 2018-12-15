@@ -34,7 +34,10 @@ const Contact = () => {
 		<div>
 			<PageHeader className="contact">Contact</PageHeader>
 			<ContentInfo>
-				<p>If you want to make or collaborate on a project send me a message!</p>
+				<p>
+					If you need a bespoke website built, or even want to make/collaborate on a project then send me a
+					message!
+				</p>
 			</ContentInfo>
 			<ContactMe className="contact-me">
 				<p>nialldbarber@gmail.com</p>
