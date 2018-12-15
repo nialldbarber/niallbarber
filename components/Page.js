@@ -21,6 +21,7 @@ const Inner = styled.div`
 	max-width: ${(props) => props.theme.maxWidth};
 	margin: 6rem auto 0;
 	padding: 4rem 3rem;
+	min-height: calc(100vh - 13rem);
 	@media (min-width: 768px) {
 		padding: 7rem 4rem;
 	}

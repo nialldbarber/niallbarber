@@ -399,7 +399,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tmax-width: ", ";\n\tmargin: 6rem auto 0;\n\tpadding: 4rem 3rem;\n\t@media (min-width: 768px) {\n\t\tpadding: 7rem 4rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tpadding: 2rem 4rem;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmax-width: ", ";\n\tmargin: 6rem auto 0;\n\tpadding: 4rem 3rem;\n\tmin-height: calc(100vh - 13rem);\n\t@media (min-width: 768px) {\n\t\tpadding: 7rem 4rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tpadding: 2rem 4rem;\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -461,37 +461,37 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 68
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 69
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 70
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 71
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 72
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Social__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 73
         },
         __self: this
       })));
