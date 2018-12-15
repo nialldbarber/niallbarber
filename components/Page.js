@@ -40,6 +40,7 @@ injectGlobal`
 		box-sizing: inherit;
 	}
 	body {
+		position: relative;
 		margin: 0;
 		padding: 0 0 5rem 0;
 		font-size: 1.7rem;
@@ -51,6 +52,19 @@ injectGlobal`
 		@media (max-width: 509px) {
 			padding: 0;
 		}
+		&:before {
+			content: '';
+			position: absolute;
+			background: url('../static/background.svg');
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			opacity: 0.15;
+			z-index: -1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 	a {
 		text-decoration: none;
@@ -58,7 +72,7 @@ injectGlobal`
 	}
 	.grid {
 		display: flex;
-		margin-top: 3rem;
+		margin-top: 6rem;
 	}
 `;
 
