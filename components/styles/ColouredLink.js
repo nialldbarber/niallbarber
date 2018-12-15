@@ -45,8 +45,10 @@ const ColouredLink = styled.a`
 			background: ${(props) => props.theme.green};
 		}
 		&.active {
-			background: ${(props) => props.theme.green};
-			color: ${(props) => props.theme.black};
+			@media (min-width: 768px) {
+				background: ${(props) => props.theme.green};
+				color: ${(props) => props.theme.black};
+			}
 		}
 	}
 	&.about__nav {
@@ -54,8 +56,10 @@ const ColouredLink = styled.a`
 			background: ${(props) => props.theme.orange};
 		}
 		&.active {
-			background: ${(props) => props.theme.orange};
-			color: ${(props) => props.theme.black};
+			@media (min-width: 768px) {
+				background: ${(props) => props.theme.orange};
+				color: ${(props) => props.theme.black};
+			}
 		}
 	}
 	&.projects__nav {
@@ -63,8 +67,10 @@ const ColouredLink = styled.a`
 			background: ${(props) => props.theme.pink};
 		}
 		&.active {
-			background: ${(props) => props.theme.pink};
-			color: ${(props) => props.theme.black};
+			@media (min-width: 768px) {
+				background: ${(props) => props.theme.pink};
+				color: ${(props) => props.theme.black};
+			}
 		}
 	}
 	&.contact__nav {
@@ -72,8 +78,10 @@ const ColouredLink = styled.a`
 			background: ${(props) => props.theme.green};
 		}
 		&.active {
-			background: ${(props) => props.theme.green};
-			color: ${(props) => props.theme.black};
+			@media (min-width: 768px) {
+				background: ${(props) => props.theme.green};
+				color: ${(props) => props.theme.black};
+			}
 		}
 	}
 `;
