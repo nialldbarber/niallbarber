@@ -41,7 +41,7 @@ const Logo = styled.div`
 		border-radius: 3px;
 		padding: 0.7rem;
 		color: #1e272d;
-		animation: ${colourChange} 15s infinite;
+		animation: ${colourChange} 10s infinite;
 		box-shadow: ${(props) => props.theme.bs};
 	}
 `;
