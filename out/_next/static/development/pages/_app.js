@@ -581,7 +581,7 @@ var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Social.js";
 
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tmax-width: 25px;\n\twidth: 100%;\n\theight: 100%;\n\tmargin: 1rem;\n\ttransition: ", ";\n\tcursor: pointer;\n\t&:hover {\n\t\topacity: .6;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\twidth: 25px;\n\theight: 100%;\n\tmargin: 1rem;\n\ttransition: ", ";\n\tcursor: pointer;\n\t&:hover {\n\t\topacity: .6;\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -613,67 +613,70 @@ var Social = function Social() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 30
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "https://github.com/nialldbarber",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
     src: "../static/github.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "https://www.instagram.com/nialldbarber/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 36
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
     src: "../static/instagram.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "https://www.linkedin.com/in/niall-barber/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
     src: "../static/linkedin.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 43
     },
     __self: this
   }))));

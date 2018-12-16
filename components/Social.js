@@ -15,8 +15,7 @@ const IconContainer = styled.div`
 `;
 
 const Icon = styled.img`
-	max-width: 25px;
-	width: 100%;
+	width: 25px;
 	height: 100%;
 	margin: 1rem;
 	transition: ${(props) => props.theme.transition};
