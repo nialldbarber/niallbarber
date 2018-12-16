@@ -70,6 +70,17 @@ injectGlobal`
 		text-decoration: none;
 		color: ${theme.offWhite};
 	}
+	.bar {
+		@media (max-width: 509px) {
+			width: 100vw;
+			height: 8.6rem;
+			position: fixed;
+			top: 0;
+			background: ${theme.black};
+			z-index: 999;
+			box-shadow: ${theme.bs};
+		}
+	}
 	.grid {
 		display: flex;
 		margin-top: 6rem;

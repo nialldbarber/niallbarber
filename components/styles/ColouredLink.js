@@ -9,9 +9,13 @@ const ColouredLink = styled.a`
 	overflow: hidden;
 	cursor: pointer;
 	transition: ${(props) => props.theme.transition};
-	@media (max-width: 509px) {
+	@media (max-width: 320px) {
 		padding: 1rem 0;
 		font-size: 1.5rem;
+	}
+	@media (min-width: 321px) and (max-width: 509px) {
+		padding: 1rem 0;
+		font-size: 1.8rem;
 	}
 	&:before {
 		content: '';
@@ -41,6 +45,9 @@ const ColouredLink = styled.a`
 		}
 	}
 	&.home__nav {
+		@media (max-width: 509px) {
+			display: none;
+		}
 		&:before {
 			background: ${(props) => props.theme.green};
 		}

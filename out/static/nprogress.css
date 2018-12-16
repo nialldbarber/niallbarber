@@ -36,6 +36,13 @@
 	right: 15px;
 }
 
+@media (max-width: 509px) {
+	#nprogress .spinner {
+		right: 6px;
+		top: 3.3rem;
+	}
+}
+
 #nprogress .spinner-icon {
 	width: 18px;
 	height: 18px;
