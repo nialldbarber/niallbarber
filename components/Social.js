@@ -30,17 +30,17 @@ const Social = () => {
 	return (
 		<IconContainer>
 			<Link href="https://github.com/nialldbarber">
-				<a>
+				<a target="_blank">
 					<Icon src="../static/github.svg" />
 				</a>
 			</Link>
 			<Link href="https://www.instagram.com/nialldbarber/">
-				<a>
+				<a target="_blank">
 					<Icon src="../static/instagram.svg" />
 				</a>
 			</Link>
 			<Link href="https://www.linkedin.com/in/niall-barber/">
-				<a>
+				<a target="_blank">
 					<Icon src="../static/linkedin.svg" />
 				</a>
 			</Link>
