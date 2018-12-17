@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Project.js";
+var _jsxFileName = "/Volumes/LaCie/htdocs/niallbarber/components/Project.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -14694,7 +14694,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_styles_Content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/styles/Content */ "./components/styles/Content.js");
 /* harmony import */ var _components_Project__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Project */ "./components/Project.js");
 /* harmony import */ var _components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/styles/PageHeader */ "./components/styles/PageHeader.js");
-var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/pages/projects.js";
+var _jsxFileName = "/Volumes/LaCie/htdocs/niallbarber/pages/projects.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 

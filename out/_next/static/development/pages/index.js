@@ -10569,7 +10569,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_typed__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-typed */ "./node_modules/react-typed/dist/react-typed.js");
 /* harmony import */ var react_typed__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_typed__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/styles/PageHeader */ "./components/styles/PageHeader.js");
-var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/pages/index.js";
+var _jsxFileName = "/Volumes/LaCie/htdocs/niallbarber/pages/index.js";
 
 
 function _templateObject2() {
@@ -10606,7 +10606,7 @@ var TypedWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div
   return props.theme.bs;
 });
 
-var Index = function Index(props) {
+var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,

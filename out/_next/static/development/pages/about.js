@@ -5553,7 +5553,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_styles_Content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/styles/Content */ "./components/styles/Content.js");
 /* harmony import */ var _components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/styles/PageHeader */ "./components/styles/PageHeader.js");
 /* harmony import */ var _components_styles_PlatformSpan__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/styles/PlatformSpan */ "./components/styles/PlatformSpan.js");
-var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/pages/about.js";
+var _jsxFileName = "/Volumes/LaCie/htdocs/niallbarber/pages/about.js";
 
 
 
