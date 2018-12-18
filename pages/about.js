@@ -3,7 +3,7 @@ import ContentInfo from '../components/styles/Content';
 import PageHeader from '../components/styles/PageHeader';
 import PlatformSpan from '../components/styles/PlatformSpan';
 
-const About = (props) => {
+const About = () => {
 	return (
 		<div>
 			<PageHeader className="about">About</PageHeader>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import ContentInfo from '../components/styles/Content';
 import Project from '../components/Project';
 import PageHeader from '../components/styles/PageHeader';

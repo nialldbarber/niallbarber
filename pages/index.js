@@ -45,7 +45,7 @@ const TypedWrapper = styled.div`
 	}
 `;
 
-const Index = (props) => {
+const Index = () => {
 	return (
 		<div>
 			<PageHeader className="index">Niall Barber</PageHeader>
