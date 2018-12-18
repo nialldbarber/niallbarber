@@ -20,7 +20,7 @@ const colourChange = keyframes`
 		background-color: #6cc;
 	}
     50% {
-		background-color: #fff;
+		background-color: #EDEDED;
 	}
     100% {
 		background-color: #6cc;

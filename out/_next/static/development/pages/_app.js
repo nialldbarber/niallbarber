@@ -33,7 +33,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    0% {\n\t\tbackground-color: #6cc;\n\t}\n    50% {\n\t\tbackground-color: #fff;\n\t}\n    100% {\n\t\tbackground-color: #6cc;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n    0% {\n\t\tbackground-color: #6cc;\n\t}\n    50% {\n\t\tbackground-color: #EDEDED;\n\t}\n    100% {\n\t\tbackground-color: #6cc;\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -209,7 +209,7 @@ var Meta = function Meta() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     name: "description",
-    content: "Front End Developer making the web an awesome place.",
+    content: "Front End Developer making the internets an awesome place.",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -447,7 +447,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\t@import url('https://fonts.googleapis.com/css?family=Questrial');\n\thtml {\n\t\tbox-sizing: border-box;\n\t\tfont-size: 10px;\n\t}\n\t*, *:before, *:after {\n\t\tbox-sizing: inherit;\n\t}\n\tbody {\n\t\tposition: relative;\n\t\tmargin: 0;\n\t\tpadding: 0 0 5rem 0;\n\t\tfont-size: 1.7rem;\n\t\tline-height: 2;\n\t\t-webkit-font-smoothing: antialiased;\n\t\tfont-family: 'Questrial', sans-serif;\n\t\tbackground-color: #1e272d;\n\t\tcolor: ", ";\n\t\t@media (max-width: 509px) {\n\t\t\tpadding: 0;\n\t\t}\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tbackground: url('../static/background.svg');\n\t\t\tbackground-size: cover;\n\t\t\theight: 100%;\n\t\t\twidth: 100%;\n\t\t\topacity: 0.15;\n\t\t\tz-index: -1;\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\ttransform: translate(-50%, -50%);\n\t\t}\n\t}\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: ", ";\n\t}\n\t.bar {\n\t\t@media (max-width: 509px) {\n\t\t\twidth: 100vw;\n\t\t\theight: 8.6rem;\n\t\t\tposition: fixed;\n\t\t\ttop: 0;\n\t\t\tbackground: ", ";\n\t\t\tz-index: 999;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n\t.grid {\n\t\tdisplay: flex;\n\t\tmargin-top: 6rem;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\t@import url('https://fonts.googleapis.com/css?family=Questrial');\n\thtml {\n\t\tbox-sizing: border-box;\n\t\tfont-size: 10px;\n\t}\n\t*, *:before, *:after {\n\t\tbox-sizing: inherit;\n\t}\n\tbody {\n\t\tposition: relative;\n\t\tmargin: 0;\n\t\tpadding: 0 0 5rem 0;\n\t\tfont-size: 1.7rem;\n\t\tline-height: 2;\n\t\t-webkit-font-smoothing: antialiased;\n\t\tfont-family: 'Questrial', sans-serif;\n\t\tbackground-color: ", ";\n\t\tcolor: ", ";\n\t\t@media (max-width: 509px) {\n\t\t\tpadding: 0;\n\t\t}\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tbackground: url('../static/background.svg');\n\t\t\tbackground-size: cover;\n\t\t\theight: 100%;\n\t\t\twidth: 100%;\n\t\t\topacity: 0.15;\n\t\t\tz-index: -1;\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\ttransform: translate(-50%, -50%);\n\t\t}\n\t}\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: ", ";\n\t}\n\t.bar {\n\t\t@media (max-width: 509px) {\n\t\t\twidth: 100vw;\n\t\t\theight: 8.6rem;\n\t\t\tposition: fixed;\n\t\t\ttop: 0;\n\t\t\tbackground: ", ";\n\t\t\tz-index: 999;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n\t.grid {\n\t\tdisplay: flex;\n\t\tmargin-top: 6rem;\n\t}\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -499,7 +499,9 @@ var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject2(), function (props) {
   return props.theme.maxWidth;
 });
-Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["injectGlobal"])(_templateObject3(), theme.offWhite, theme.offWhite, theme.black, theme.bs);
+Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["injectGlobal"])(_templateObject3(), function (props) {
+  return props.theme.black;
+}, theme.offWhite, theme.offWhite, theme.black, theme.bs);
 
 var Page =
 /*#__PURE__*/
