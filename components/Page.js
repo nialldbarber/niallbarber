@@ -47,7 +47,7 @@ injectGlobal`
 		line-height: 2;
 		-webkit-font-smoothing: antialiased;
 		font-family: 'Questrial', sans-serif;
-		background-color: ${(props) => props.theme.black};
+		background: ${theme.black};
 		color: ${theme.offWhite};
 		@media (max-width: 509px) {
 			padding: 0;
