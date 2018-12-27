@@ -84,6 +84,9 @@ injectGlobal`
 	.grid {
 		display: flex;
 		margin-top: 6rem;
+		@media (max-width: 629px) {
+			flex-wrap: wrap;
+		}
 	}
 `;
 

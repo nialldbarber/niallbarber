@@ -36,7 +36,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\twidth: 100%;\n\tposition: relative;\n\t@media (min-width: 510px) {\n\t\twidth: 50%;\n\t}\n\t@media (min-width: 992px) {\n\t\twidth: 33.33333%;\n\t}\n\timg {\n\t\twidth: 100%;\n\t\theight: auto;\n\t\tbox-shadow: ", ";\n\t}\n\th3 {\n\t\tmargin-bottom: 0;\n\t\ttransition: ", ";\n\t}\n\t.typeOf {\n\t\tposition: absolute;\n\t\twidth: 50px;\n\t\tleft: 0.6rem;\n\t\tbox-shadow: none;\n\t\tbottom: 2.4rem;\n\t}\n\t&:hover {\n\t\th3 {\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\twidth: 100%;\n\tposition: relative;\n\tmargin: 1rem;\n\t@media (min-width: 630px) {\n\t\twidth: 50%;\n\t}\n\t@media (min-width: 992px) {\n\t\twidth: 33.33333%;\n\t}\n\timg {\n\t\twidth: 100%;\n\t\theight: auto;\n\t\tbox-shadow: ", ";\n\t}\n\th3 {\n\t\tmargin-bottom: 0;\n\t\ttransition: ", ";\n\t}\n\t.typeOf {\n\t\tposition: absolute;\n\t\twidth: 50px;\n\t\tleft: 0.6rem;\n\t\tbox-shadow: none;\n\t\tbottom: 2.4rem;\n\t}\n\t&:hover {\n\t\th3 {\n\t\t\tcolor: ", ";\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -72,14 +72,7 @@ function (_Component) {
   _createClass(Project, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "grid",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectCard, {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectCard, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 41
@@ -119,7 +112,7 @@ function (_Component) {
           lineNumber: 46
         },
         __self: this
-      })))));
+      }))));
     }
   }]);
 
@@ -14739,10 +14732,22 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Projects)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
-      title: 'Array Methods',
-      image: '../static/array-methods.png',
-      link: 'https://array-methods.herokuapp.com/',
-      typeOf: '../static/react.svg'
+      data: {
+        projects: [{
+          project1: {
+            title: 'Andy Hale BMX Flatlander',
+            image: '../static/moo-hayul.jpg',
+            link: 'https://andyhalebmx.netlify.com/',
+            typeOf: '../static/react.svg'
+          },
+          project2: {
+            title: 'Array Methods',
+            image: '../static/array-methods.png',
+            link: 'https://array-methods.herokuapp.com/',
+            typeOf: '../static/react.svg'
+          }
+        }]
+      }
     });
 
     return _this;
@@ -14754,45 +14759,62 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
         className: "projects",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 31
         },
         __self: this
       }, "Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 32
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 33
         },
         __self: this
       }, "Check out some of my projects!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 34
         },
         __self: this
-      }, "Some will be professional jobs, but most are just me mucking about with new technologies")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        title: this.state.title,
-        image: this.state.image,
-        link: this.state.link,
-        typeOf: this.state.typeOf,
+      }, "Some will be professional jobs, but most are just me mucking about with new technologies")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "grid",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 36
         },
         __self: this
-      }));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        title: this.state.data.projects[0].project1.title,
+        image: this.state.data.projects[0].project1.image,
+        link: this.state.data.projects[0].project1.link,
+        typeOf: this.state.data.projects[0].project1.typeOf,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        title: this.state.data.projects[0].project2.title,
+        image: this.state.data.projects[0].project2.image,
+        link: this.state.data.projects[0].project2.link,
+        typeOf: this.state.data.projects[0].project2.typeOf,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      })));
     }
   }]);
 

@@ -5,10 +5,24 @@ import PageHeader from '../components/styles/PageHeader';
 
 export default class Projects extends Component {
 	state = {
-		title: 'Array Methods',
-		image: '../static/array-methods.png',
-		link: 'https://array-methods.herokuapp.com/',
-		typeOf: '../static/react.svg'
+		data: {
+			projects: [
+				{
+					project1: {
+						title: 'Andy Hale BMX Flatlander',
+						image: '../static/moo-hayul.jpg',
+						link: 'https://andyhalebmx.netlify.com/',
+						typeOf: '../static/react.svg'
+					},
+					project2: {
+						title: 'Array Methods',
+						image: '../static/array-methods.png',
+						link: 'https://array-methods.herokuapp.com/',
+						typeOf: '../static/react.svg'
+					}
+				}
+			]
+		}
 	};
 
 	render() {
@@ -19,12 +33,20 @@ export default class Projects extends Component {
 					<p>Check out some of my projects!</p>
 					<p>Some will be professional jobs, but most are just me mucking about with new technologies</p>
 				</ContentInfo>
-				<Project
-					title={this.state.title}
-					image={this.state.image}
-					link={this.state.link}
-					typeOf={this.state.typeOf}
-				/>
+				<div className="grid">
+					<Project
+						title={this.state.data.projects[0].project1.title}
+						image={this.state.data.projects[0].project1.image}
+						link={this.state.data.projects[0].project1.link}
+						typeOf={this.state.data.projects[0].project1.typeOf}
+					/>
+					<Project
+						title={this.state.data.projects[0].project2.title}
+						image={this.state.data.projects[0].project2.image}
+						link={this.state.data.projects[0].project2.link}
+						typeOf={this.state.data.projects[0].project2.typeOf}
+					/>
+				</div>
 			</div>
 		);
 	}

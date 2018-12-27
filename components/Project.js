@@ -5,7 +5,8 @@ import Link from 'next/link';
 const ProjectCard = styled.div`
 	width: 100%;
 	position: relative;
-	@media (min-width: 510px) {
+	margin: 1rem;
+	@media (min-width: 630px) {
 		width: 50%;
 	}
 	@media (min-width: 992px) {
@@ -37,17 +38,15 @@ const ProjectCard = styled.div`
 export default class Project extends Component {
 	render() {
 		return (
-			<div className="grid">
-				<ProjectCard>
-					<Link href={this.props.link}>
-						<a>
-							<h3>{this.props.title}</h3>
-							<img src={this.props.image} />
-							<img className="typeOf" src={this.props.typeOf} />
-						</a>
-					</Link>
-				</ProjectCard>
-			</div>
+			<ProjectCard>
+				<Link href={this.props.link}>
+					<a>
+						<h3>{this.props.title}</h3>
+						<img src={this.props.image} />
+						<img className="typeOf" src={this.props.typeOf} />
+					</a>
+				</Link>
+			</ProjectCard>
 		);
 	}
 }
