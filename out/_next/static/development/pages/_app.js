@@ -23,7 +23,7 @@ var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Header.js";
 
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 1rem;\n\tleft: 3rem;\n\tpadding: 1rem 2rem;\n\t@media (max-width: 767px) {\n\t\tpadding: 1rem 2rem 1rem 0;\n\t}\n\ta {\n\t\tfont-size: 2.3rem;\n\t\ttext-transform: uppercase;\n\t\tborder-radius: 3px;\n\t\tpadding: 0.7rem;\n\t\tcolor: #1e272d;\n\t\tanimation: ", " 10s infinite;\n\t\tbox-shadow: ", ";\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 1rem;\n\tleft: 3rem;\n\tpadding: 1rem 2rem;\n\tz-index: 999;\n\t@media (max-width: 767px) {\n\t\tpadding: 1rem 2rem 1rem 0;\n\t}\n\ta {\n\t\tfont-size: 2.3rem;\n\t\ttext-transform: uppercase;\n\t\tborder-radius: 3px;\n\t\tpadding: 0.7rem;\n\t\tcolor: #1e272d;\n\t\tanimation: ", " 10s infinite;\n\t\tbox-shadow: ", ";\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -71,39 +71,39 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 56
     },
     __self: this
   }, "NB"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: this
   })));
@@ -293,7 +293,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 2.5rem;\n\tright: 3rem;\n\t@media (max-width: 509px) {\n\t\tright: 2rem;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 2.5rem;\n\tright: 3rem;\n\tz-index: 999;\n\t@media (max-width: 509px) {\n\t\tright: 2rem;\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -329,14 +329,14 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavBar, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -344,14 +344,14 @@ function (_Component) {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 32
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
         className: "home__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 33
         },
         __self: this
       }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -359,14 +359,14 @@ function (_Component) {
         href: "/about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 35
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
         className: "about__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 36
         },
         __self: this
       }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -374,14 +374,14 @@ function (_Component) {
         href: "/projects",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 38
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
         className: "projects__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 39
         },
         __self: this
       }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -389,14 +389,14 @@ function (_Component) {
         href: "/contact",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 41
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
         className: "contact__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 42
         },
         __self: this
       }, "Contact"))));
@@ -632,6 +632,7 @@ var Social = function Social() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
     src: "../static/github.svg",
+    alt: "Github",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
@@ -653,6 +654,7 @@ var Social = function Social() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
     src: "../static/instagram.svg",
+    alt: "Instagram",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38
@@ -674,6 +676,7 @@ var Social = function Social() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
     src: "../static/linkedin.svg",
+    alt: "LinkedIn",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43

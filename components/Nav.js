@@ -8,6 +8,7 @@ const NavBar = styled.div`
 	position: fixed;
 	top: 2.5rem;
 	right: 3rem;
+	z-index: 999;
 	@media (max-width: 509px) {
 		right: 2rem;
 	}

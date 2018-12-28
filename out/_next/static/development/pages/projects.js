@@ -86,6 +86,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        target: "_blank",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 47
@@ -99,6 +100,7 @@ function (_Component) {
         __self: this
       }, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: this.props.image,
+        alt: this.props.title,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 49
@@ -14774,39 +14776,39 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 37
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
         className: "projects",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 38
         },
         __self: this
       }, "Projects"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 40
         },
         __self: this
       }, "Check out some of my projects!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 41
         },
         __self: this
       }, "Some will be professional jobs, but most are just me mucking about with new technologies")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "grid",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 43
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -14816,7 +14818,7 @@ function (_Component) {
         typeOf: this.state.data.projects[0].project1.typeOf,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 44
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -14827,7 +14829,7 @@ function (_Component) {
         typeOf2: this.state.data.projects[0].project2.typeOf2,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 50
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -14837,7 +14839,7 @@ function (_Component) {
         typeOf: this.state.data.projects[0].project3.typeOf,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 57
         },
         __self: this
       })));
@@ -14870,7 +14872,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/
@@ -14895,5 +14897,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=projects.js.map

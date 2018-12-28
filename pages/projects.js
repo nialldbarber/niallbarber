@@ -14,7 +14,6 @@ export default class Projects extends Component {
 						link: 'https://andyhalebmx.netlify.com/',
 						typeOf: '../static/react.svg'
 					},
-
 					project2: {
 						title: 'Umm One More Time Please',
 						image: '../static/niallbarber-blog.png',
