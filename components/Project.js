@@ -7,10 +7,10 @@ const ProjectCard = styled.div`
 	position: relative;
 	margin: 1rem;
 	@media (min-width: 630px) {
-		width: 50%;
+		width: calc(50% - 2rem);
 	}
 	@media (min-width: 992px) {
-		width: 33.33333%;
+		width: calc(33.33333% - 2rem);
 	}
 	img {
 		width: 100%;
@@ -27,6 +27,10 @@ const ProjectCard = styled.div`
 		left: 0.6rem;
 		box-shadow: none;
 		bottom: 2.4rem;
+		&.typeOf2 {
+			left: 6rem;
+			bottom: 2.3rem;
+		}
 	}
 	&:hover {
 		h3 {
@@ -44,6 +48,7 @@ export default class Project extends Component {
 						<h3>{this.props.title}</h3>
 						<img src={this.props.image} />
 						<img className="typeOf" src={this.props.typeOf} />
+						<img className="typeOf typeOf2" src={this.props.typeOf2} />
 					</a>
 				</Link>
 			</ProjectCard>

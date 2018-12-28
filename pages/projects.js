@@ -14,7 +14,15 @@ export default class Projects extends Component {
 						link: 'https://andyhalebmx.netlify.com/',
 						typeOf: '../static/react.svg'
 					},
+
 					project2: {
+						title: 'Umm One More Time Please',
+						image: '../static/niallbarber-blog.png',
+						link: 'https://ummonemoretimeplease.netlify.com/',
+						typeOf: '../static/react.svg',
+						typeOf2: '../static/graphql.svg'
+					},
+					project3: {
 						title: 'Array Methods',
 						image: '../static/array-methods.png',
 						link: 'https://array-methods.herokuapp.com/',
@@ -45,6 +53,13 @@ export default class Projects extends Component {
 						image={this.state.data.projects[0].project2.image}
 						link={this.state.data.projects[0].project2.link}
 						typeOf={this.state.data.projects[0].project2.typeOf}
+						typeOf2={this.state.data.projects[0].project2.typeOf2}
+					/>
+					<Project
+						title={this.state.data.projects[0].project3.title}
+						image={this.state.data.projects[0].project3.image}
+						link={this.state.data.projects[0].project3.link}
+						typeOf={this.state.data.projects[0].project3.typeOf}
 					/>
 				</div>
 			</div>
