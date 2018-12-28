@@ -4,6 +4,10 @@
 	"description": "My personal site",
 	"main": "index.js",
 	"dependencies": {
+		"axios": "^0.16.2",
+		"express": "^4.16.2",
+		"lodash": "^4.17.4",
+		"next-routes": "^1.1.0",
 		"apollo-boost": "^0.1.16",
 		"apollo-client": "^2.4.2",
 		"babel-core": "^7.0.0-bridge.0",
