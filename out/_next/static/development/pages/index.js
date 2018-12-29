@@ -10572,8 +10572,28 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/pages/index.js";
 
 
-function _templateObject2() {
+function _templateObject4() {
   var data = _taggedTemplateLiteral(["\n\ttext-align: center;\n\tspan {\n\t\tfont-size: 3rem;\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\tpadding: 1rem .5rem;\n\t\tbox-shadow: ", ";\n\t\t@media (max-width: 767px) {\n\t\t\tfont-size: 2rem;\n\t\t}\n\t}\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tfont-size: 2.5rem;\n\tline-height: 0;\n\tmargin: 0;\n\tpadding-bottom: 5rem;\n\t@media (min-width: 768px) {\n\t\tfont-size: 4rem;\n\t\tmargin-top: -1rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tfont-size: 4rem;\n\t\tmargin-top: -5rem;\n\t}\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t@media (max-width: 767px) {\n\t\t\tbottom: 0;\n\t\t\theight: 3px;\n\t\t}\n\t}\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n\twidth: 130px;\n\tdisplay: flex;\n\talign-self: center;\n\tmargin: 0 auto;\n\tpadding-bottom: 3rem;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -10583,7 +10603,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tfont-size: 2.5rem;\n\tline-height: 0;\n\tmargin: 0;\n\tpadding-bottom: 10rem;\n\t@media (min-width: 768px) {\n\t\tfont-size: 4rem;\n\t\tmargin-top: -1rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tfont-size: 4rem;\n\t\tmargin-top: -5rem;\n\t}\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t@media (max-width: 767px) {\n\t\t\tbottom: 0;\n\t\t\theight: 3px;\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["text-align: center;"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -10597,8 +10617,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var SubHeader = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2(_templateObject());
-var TypedWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), function (props) {
+var HomepageSplash = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+var Logo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img(_templateObject2());
+var SubHeader = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2(_templateObject3());
+var TypedWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4(), function (props) {
   return props.theme.green;
 }, function (props) {
   return props.theme.black;
@@ -10607,29 +10629,37 @@ var TypedWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div
 });
 
 var Index = function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomepageSplash, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "index",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 61
     },
     __self: this
   }, "Niall Barber"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 62
     },
     __self: this
-  }, "Front End Developer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TypedWrapper, {
+  }, "Front End Developer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
+    src: "../static/nb-logo.svg",
+    alt: "Niall Barber",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 63
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TypedWrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_typed__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -10639,7 +10669,7 @@ var Index = function Index() {
     loop: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 65
     },
     __self: this
   })));
@@ -10668,7 +10698,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -10693,5 +10723,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[6,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map

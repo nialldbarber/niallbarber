@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import ContentInfo from '../components/styles/Content';
 import Project from '../components/Project';
 import PageHeader from '../components/styles/PageHeader';
+
+const ExternalLink = styled.a`
+	color: ${(props) => props.theme.pink};
+	transition: ${(props) => props.theme.transition};
+	&:hover {
+		opacity: .6;
+	}
+`;
 
 export default class Projects extends Component {
 	state = {
@@ -37,8 +46,17 @@ export default class Projects extends Component {
 			<div>
 				<PageHeader className="projects">Projects</PageHeader>
 				<ContentInfo>
-					<p>Check out some of my projects!</p>
-					<p>Some will be professional jobs, but most are just me mucking about with new technologies</p>
+					<p>
+						Check out some of my projects! Some are professional work, but most are projects new
+						technologies
+					</p>
+					<p>
+						I also run a blog/tutorial in which I try to unravel difficult coding concepts for beginners.
+						You can check that out{' '}
+						<ExternalLink href="https://ummonemoretimeplease.netlify.com/" target="_blank">
+							here
+						</ExternalLink>
+					</p>
 				</ContentInfo>
 				<div className="grid">
 					<Project

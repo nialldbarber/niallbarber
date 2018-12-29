@@ -12,11 +12,11 @@ const About = () => {
 					Hi, I'm a front end developer. I make slick, fast websites using frameworks like{' '}
 					<PlatformSpan className="reactSpan">React</PlatformSpan>,{' '}
 					<PlatformSpan className="vueSpan">Vue</PlatformSpan> and also CMSs like{' '}
-					<PlatformSpan className="wordpressSpan">WordPress, </PlatformSpan>{' '}
+					<PlatformSpan className="wordpressSpan">WordPress</PlatformSpan>, {' '}
 					<PlatformSpan className="shopifySpan">Shopify</PlatformSpan> and even dabble in{' '}
 					<PlatformSpan className="wordpressSpan">GraphQL</PlatformSpan> CMSs 🚀
 				</p>
-				<p>Let's make something cool together!</p>
+				<p>Take your pick and let's make something cool together!</p>
 			</ContentInfo>
 		</div>
 	);

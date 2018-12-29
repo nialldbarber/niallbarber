@@ -2,12 +2,22 @@ import styled from 'styled-components';
 import Typed from 'react-typed';
 import PageHeader from '../components/styles/PageHeader';
 
+const HomepageSplash = styled.div`text-align: center;`;
+
+const Logo = styled.img`
+	width: 130px;
+	display: flex;
+	align-self: center;
+	margin: 0 auto;
+	padding-bottom: 3rem;
+`;
+
 const SubHeader = styled.h2`
 	position: relative;
 	font-size: 2.5rem;
 	line-height: 0;
 	margin: 0;
-	padding-bottom: 10rem;
+	padding-bottom: 5rem;
 	@media (min-width: 768px) {
 		font-size: 4rem;
 		margin-top: -1rem;
@@ -47,9 +57,10 @@ const TypedWrapper = styled.div`
 
 const Index = () => {
 	return (
-		<div>
+		<HomepageSplash>
 			<PageHeader className="index">Niall Barber</PageHeader>
 			<SubHeader>Front End Developer</SubHeader>
+			<Logo src="../static/nb-logo.svg" alt="Niall Barber" />
 			<TypedWrapper>
 				<Typed
 					strings={[
@@ -68,7 +79,7 @@ const Index = () => {
 					loop
 				/>
 			</TypedWrapper>
-		</div>
+		</HomepageSplash>
 	);
 };
 
