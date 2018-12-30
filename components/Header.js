@@ -15,35 +15,26 @@ Router.onRouteChangeError = () => {
 	NProgress.done();
 };
 
-const colourChange = keyframes`
-    0% {
-		background-color: #6cc;
-	}
-    50% {
-		background-color: #EDEDED;
-	}
-    100% {
-		background-color: #6cc;
-	}
-`;
-
 const Logo = styled.div`
 	position: fixed;
 	top: 1rem;
 	left: 3rem;
-	padding: 1rem 2rem;
+	padding: 0 2rem;
 	z-index: 999;
 	@media (max-width: 767px) {
 		padding: 1rem 2rem 1rem 0;
 	}
-	a {
-		font-size: 2.3rem;
-		text-transform: uppercase;
-		border-radius: 3px;
-		padding: 0.7rem;
-		color: #1e272d;
-		animation: ${colourChange} 10s infinite;
-		box-shadow: ${(props) => props.theme.bs};
+`;
+
+const LogoHeader = styled.img`
+	width: 70px;
+	opacity: 1;
+	transition: ${props => props.theme.transition};
+	&:hover {
+		opacity: 0.8;
+	}
+	@media (max-width: 767px) {
+		width: 60px;
 	}
 `;
 
@@ -53,7 +44,11 @@ const Header = () => {
 			<div className="bar">
 				<Logo>
 					<Link href="/">
-						<a>NB</a>
+						<a>
+							<div className="logoHolder">
+								<LogoHeader src="../static/nb-logo.svg" alt="Niall Barber" />
+							</div>
+						</a>
 					</Link>
 				</Logo>
 				<Nav />

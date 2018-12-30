@@ -23,7 +23,7 @@ var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Header.js";
 
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 1rem;\n\tleft: 3rem;\n\tpadding: 1rem 2rem;\n\tz-index: 999;\n\t@media (max-width: 767px) {\n\t\tpadding: 1rem 2rem 1rem 0;\n\t}\n\ta {\n\t\tfont-size: 2.3rem;\n\t\ttext-transform: uppercase;\n\t\tborder-radius: 3px;\n\t\tpadding: 0.7rem;\n\t\tcolor: #1e272d;\n\t\tanimation: ", " 10s infinite;\n\t\tbox-shadow: ", ";\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\twidth: 70px;\n\topacity: 1;\n\ttransition: ", ";\n\t&:hover {\n\t\topacity: 0.8;\n\t}\n\t@media (max-width: 767px) {\n\t\twidth: 60px;\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -33,7 +33,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n    0% {\n\t\tbackground-color: #6cc;\n\t}\n    50% {\n\t\tbackground-color: #EDEDED;\n\t}\n    100% {\n\t\tbackground-color: #6cc;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 1rem;\n\tleft: 3rem;\n\tpadding: 0 2rem;\n\tz-index: 999;\n\t@media (max-width: 767px) {\n\t\tpadding: 1rem 2rem 1rem 0;\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -62,48 +62,63 @@ next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeError = function
   nprogress__WEBPACK_IMPORTED_MODULE_3___default.a.done();
 };
 
-var colourChange = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["keyframes"])(_templateObject());
-var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2(), colourChange, function (props) {
-  return props.theme.bs;
+var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+var LogoHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject2(), function (props) {
+  return props.theme.transition;
 });
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 43
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 47
     },
     __self: this
-  }, "NB"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logoHolder",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 48
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogoHeader, {
+    src: "../static/nb-logo.svg",
+    alt: "Niall Barber",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
     },
     __self: this
   })));
@@ -293,7 +308,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 2.5rem;\n\tright: 3rem;\n\tz-index: 999;\n\t@media (max-width: 509px) {\n\t\tright: 2rem;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 2.8rem;\n\tright: 3rem;\n\tz-index: 999;\n\t@media (max-width: 509px) {\n\t\tright: 2rem;\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -447,7 +462,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\t@import url('https://fonts.googleapis.com/css?family=Questrial');\n\thtml {\n\t\tbox-sizing: border-box;\n\t\tfont-size: 10px;\n\t}\n\t*, *:before, *:after {\n\t\tbox-sizing: inherit;\n\t}\n\tbody {\n\t\tposition: relative;\n\t\tmargin: 0;\n\t\tpadding: 0 0 5rem 0;\n\t\tfont-size: 1.7rem;\n\t\tline-height: 2;\n\t\t-webkit-font-smoothing: antialiased;\n\t\tfont-family: 'Questrial', sans-serif;\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\t@media (max-width: 509px) {\n\t\t\tpadding: 0;\n\t\t}\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tbackground: url('../static/background.svg');\n\t\t\tbackground-size: cover;\n\t\t\theight: 100%;\n\t\t\twidth: 100%;\n\t\t\topacity: 0.15;\n\t\t\tz-index: -1;\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\ttransform: translate(-50%, -50%);\n\t\t}\n\t}\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: ", ";\n\t}\n\t.bar {\n\t\t@media (max-width: 509px) {\n\t\t\twidth: 100vw;\n\t\t\theight: 8.6rem;\n\t\t\tposition: fixed;\n\t\t\ttop: 0;\n\t\t\tbackground: ", ";\n\t\t\tz-index: 999;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n\t.grid {\n\t\tdisplay: flex;\n\t\tmargin-top: 6rem;\n\t\tflex-wrap: wrap;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\t@import url('https://fonts.googleapis.com/css?family=Questrial');\n\thtml {\n\t\tbox-sizing: border-box;\n\t\tfont-size: 10px;\n\t}\n\t*, *:before, *:after {\n\t\tbox-sizing: inherit;\n\t}\n\tbody {\n\t\tposition: relative;\n\t\tmargin: 0;\n\t\tpadding: 0 0 5rem 0;\n\t\tfont-size: 1.7rem;\n\t\tline-height: 2;\n\t\t-webkit-font-smoothing: antialiased;\n\t\tfont-family: 'Questrial', sans-serif;\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\t@media (max-width: 509px) {\n\t\t\tpadding: 0;\n\t\t}\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tbackground: url('../static/background.svg');\n\t\t\tbackground-size: cover;\n\t\t\theight: 100%;\n\t\t\twidth: 100%;\n\t\t\topacity: 0.15;\n\t\t\tz-index: -1;\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\ttransform: translate(-50%, -50%);\n\t\t}\n\t}\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: ", ";\n\t}\n\t.bar {\n\t\t@media (max-width: 509px) {\n\t\t\twidth: 100vw;\n\t\t\theight: 8.6rem;\n\t\t\tposition: fixed;\n\t\t\ttop: 0;\n\t\t\tbackground: ", ";\n\t\t\tz-index: 999;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n\t.grid {\n\t\tdisplay: flex;\n\t\tmargin-top: 6rem;\n\t\tflex-wrap: wrap;\n\t}\n\t.box {\n\t\twidth: 100px;\n\t\theight: 100px;\n\t\tbackground: ", ";\n\t\ttransform-origin: 50% 50%;\n\t}\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -489,6 +504,7 @@ var theme = {
   green: '#6cc',
   orange: '#f89b0e',
   pink: '#f95584',
+  darkPink: '#ff1c68',
   maxWidth: '1100px',
   bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
   transition: '.25s cubic-bezier(.895, .03, .685, .22)'
@@ -499,7 +515,7 @@ var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject2(), function (props) {
   return props.theme.maxWidth;
 });
-Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["injectGlobal"])(_templateObject3(), theme.black, theme.offWhite, theme.offWhite, theme.black, theme.bs);
+Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["injectGlobal"])(_templateObject3(), theme.black, theme.offWhite, theme.offWhite, theme.black, theme.bs, theme.darkPink);
 
 var Page =
 /*#__PURE__*/
@@ -519,37 +535,37 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 101
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 102
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 103
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 104
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 105
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Social__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 106
         },
         __self: this
       })));

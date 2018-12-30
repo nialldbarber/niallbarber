@@ -14720,7 +14720,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tcolor: ", ";\n\ttransition: ", ";\n\t&:hover {\n\t\topacity: .6;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tcolor: ", ";\n\ttransition: ", ";\n\t&:hover {\n\t\topacity: 0.6;\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -14817,13 +14817,13 @@ function (_Component) {
           lineNumber: 49
         },
         __self: this
-      }, "Check out some of my projects! Some are professional work, but most are projects new technologies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "Check out some of my projects! Some are professional work, but most are projects in which I delve into new technologies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 53
         },
         __self: this
-      }, "I also run a blog/tutorial in which I try to unravel difficult coding concepts for beginners. You can check that out", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ExternalLink, {
+      }, "I also run a tutorial site which involves me trying to unravel difficult coding concepts for beginners. You can check that out", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ExternalLink, {
         href: "https://ummonemoretimeplease.netlify.com/",
         target: "_blank",
         __source: {

@@ -5,10 +5,10 @@ import Project from '../components/Project';
 import PageHeader from '../components/styles/PageHeader';
 
 const ExternalLink = styled.a`
-	color: ${(props) => props.theme.pink};
-	transition: ${(props) => props.theme.transition};
+	color: ${props => props.theme.pink};
+	transition: ${props => props.theme.transition};
 	&:hover {
-		opacity: .6;
+		opacity: 0.6;
 	}
 `;
 
@@ -47,12 +47,12 @@ export default class Projects extends Component {
 				<PageHeader className="projects">Projects</PageHeader>
 				<ContentInfo>
 					<p>
-						Check out some of my projects! Some are professional work, but most are projects new
-						technologies
+						Check out some of my projects! Some are professional work, but most are projects in which I
+						delve into new technologies
 					</p>
 					<p>
-						I also run a blog/tutorial in which I try to unravel difficult coding concepts for beginners.
-						You can check that out{' '}
+						I also run a tutorial site which involves me trying to unravel difficult coding concepts for
+						beginners. You can check that out{' '}
 						<ExternalLink href="https://ummonemoretimeplease.netlify.com/" target="_blank">
 							here
 						</ExternalLink>

@@ -6,7 +6,7 @@ import ColouredLink from './styles/ColouredLink';
 
 const NavBar = styled.div`
 	position: fixed;
-	top: 2.5rem;
+	top: 2.8rem;
 	right: 3rem;
 	z-index: 999;
 	@media (max-width: 509px) {

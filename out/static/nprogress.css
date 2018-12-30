@@ -21,7 +21,7 @@
 	width: 100px;
 	height: 100%;
 	box-shadow: 0 0 10px #6cc, 0 0 5px #6cc;
-	opacity: 1.0;
+	opacity: 1;
 	-webkit-transform: rotate(3deg) translate(0px, -4px);
 	-ms-transform: rotate(3deg) translate(0px, -4px);
 	transform: rotate(3deg) translate(0px, -4px);
@@ -32,14 +32,14 @@
 	display: block;
 	position: fixed;
 	z-index: 1031;
-	top: 3.2rem;
+	top: 3.6rem;
 	right: 15px;
 }
 
 @media (max-width: 509px) {
 	#nprogress .spinner {
 		right: 6px;
-		top: 3.3rem;
+		top: 3.6rem;
 	}
 }
 

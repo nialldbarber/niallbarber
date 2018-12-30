@@ -10,15 +10,16 @@ const theme = {
 	green: '#6cc',
 	orange: '#f89b0e',
 	pink: '#f95584',
+	darkPink: '#ff1c68',
 	maxWidth: '1100px',
 	bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
 	transition: '.25s cubic-bezier(.895, .03, .685, .22)'
 };
 
-const StyledPage = styled.div`color: ${(props) => props.theme.offWhite};`;
+const StyledPage = styled.div`color: ${props => props.theme.offWhite};`;
 
 const Inner = styled.div`
-	max-width: ${(props) => props.theme.maxWidth};
+	max-width: ${props => props.theme.maxWidth};
 	margin: 6rem auto 0;
 	padding: 4rem 3rem;
 	min-height: calc(100vh - 13rem);
@@ -85,6 +86,12 @@ injectGlobal`
 		display: flex;
 		margin-top: 6rem;
 		flex-wrap: wrap;
+	}
+	.box {
+		width: 100px;
+		height: 100px;
+		background: ${theme.darkPink};
+		transform-origin: 50% 50%;
 	}
 `;
 
