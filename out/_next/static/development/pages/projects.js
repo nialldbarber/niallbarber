@@ -169,7 +169,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tjustify-content: flex-start;\n\talign-items: center;\n\t&:hover {\n\t\timg {\n\t\t\topacity: .6;\n\t\t}\n\t\tp {\n\t\t\topacity: .6;\n\t\t}\n\t}\n\timg {\n\t\talign-self: center;\n\t\tmax-width: 30px;\n\t\twidth: 100%;\n\t\theight: auto;\n\t\topacity: 1;\n\t\ttransition: ", ";\n\t}\n\tp {\n\t\tfont-size: 2.8rem;\n\t\tpadding-left: 2rem;\n\t\tcolor: ", ";\n\t\tline-height: 1.3;\n\t\topacity: 1;\n\t\ttransition: ", ";\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tjustify-content: flex-start;\n\talign-items: center;\n\t&:hover {\n\t\timg {\n\t\t\topacity: .6;\n\t\t}\n\t\tp {\n\t\t\topacity: .6;\n\t\t}\n\t}\n\timg {\n\t\talign-self: center;\n\t\tmax-width: 30px;\n\t\twidth: 100%;\n\t\theight: auto;\n\t\topacity: 1;\n\t\ttransition: ", ";\n\t\t@media (max-width: 509px) {\n\t\t\twidth: 25px;\n\t\t}\n\t}\n\tp {\n\t\tfont-size: 2.8rem;\n\t\tpadding-left: 2rem;\n\t\tcolor: ", ";\n\t\tline-height: 1.3;\n\t\topacity: 1;\n\t\ttransition: ", ";\n\t\t@media (max-width: 509px) {\n\t\t\tfont-size: 2rem;\n\t\t\tpadding-right: 1.5rem;\n\t\t}\n\t}\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -189,7 +189,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tpadding: 2rem 0;\n\tmargin-top: 7rem;\n\t@media (min-width: 992px) {\n\t\tmin-height: 100vh;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tpadding: 4.5rem 0 2rem;\n\tmargin-top: 7rem;\n\t@media (min-width: 992px) {\n\t\tmin-height: 100vh;\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -235,33 +235,33 @@ function (_Component) {
         id: this.props.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 94
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectGrid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 95
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 96
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 97
         },
         __self: this
       }, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "desc",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 98
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -269,14 +269,14 @@ function (_Component) {
         escapeHtml: false,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 99
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project-img",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 102
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -284,7 +284,7 @@ function (_Component) {
         alt: this.props.title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 103
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SiteLink, {
@@ -292,7 +292,7 @@ function (_Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 106
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -300,13 +300,13 @@ function (_Component) {
         alt: "Link",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 107
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 108
         },
         __self: this
       }, this.props.title)));
@@ -359,7 +359,7 @@ var ContentInfo = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div(
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tdisplay: inline;\n\tfont-size: 8rem;\n\t@media (max-width: 509px) {\n\t\tfont-size: 4.9rem;\n\t}\n\t@media (min-width: 768px) {\n\t\tfont-size: 11rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tfont-size: 17rem;\n\t}\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t@media (max-width: 767px) {\n\t\t\tbottom: 0;\n\t\t\theight: 3px;\n\t\t}\n\t}\n\t&.index {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tdisplay: inline;\n\tfont-size: 8rem;\n\t@media (max-width: 509px) {\n\t\t/* font-size: 4.9rem; */\n\t\tfont-size: 16vw;\n\t}\n\t@media (min-width: 768px) {\n\t\tfont-size: 11rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tfont-size: 17rem;\n\t}\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t@media (max-width: 767px) {\n\t\t\tbottom: 0;\n\t\t\theight: 3px;\n\t\t}\n\t}\n\t&.index {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;

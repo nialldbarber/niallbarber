@@ -11,6 +11,7 @@ const NavBar = styled.div`
 	z-index: 999;
 	@media (max-width: 509px) {
 		right: 2rem;
+		top: 3.1rem;
 	}
 `;
 

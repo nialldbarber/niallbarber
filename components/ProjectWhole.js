@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 
 const ProjectSection = styled.div`
-	padding: 2rem 0;
+	padding: 4.5rem 0 2rem;
 	margin-top: 7rem;
 	@media (min-width: 992px) {
 		min-height: 100vh;
@@ -70,6 +70,9 @@ const SiteLink = styled.a`
 		height: auto;
 		opacity: 1;
 		transition: ${props => props.theme.transition};
+		@media (max-width: 509px) {
+			width: 25px;
+		}
 	}
 	p {
 		font-size: 2.8rem;
@@ -78,6 +81,10 @@ const SiteLink = styled.a`
 		line-height: 1.3;
 		opacity: 1;
 		transition: ${props => props.theme.transition};
+		@media (max-width: 509px) {
+			font-size: 2rem;
+			padding-right: 1.5rem;
+		}
 	}
 `;
 

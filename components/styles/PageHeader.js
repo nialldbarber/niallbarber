@@ -5,7 +5,8 @@ const PageHeader = styled.h1`
 	display: inline;
 	font-size: 8rem;
 	@media (max-width: 509px) {
-		font-size: 4.9rem;
+		/* font-size: 4.9rem; */
+		font-size: 16vw;
 	}
 	@media (min-width: 768px) {
 		font-size: 11rem;
@@ -28,22 +29,22 @@ const PageHeader = styled.h1`
 	}
 	&.index {
 		&:before {
-			background: ${(props) => props.theme.green};
+			background: ${props => props.theme.green};
 		}
 	}
 	&.about {
 		&:before {
-			background: ${(props) => props.theme.orange};
+			background: ${props => props.theme.orange};
 		}
 	}
 	&.contact {
 		&:before {
-			background: ${(props) => props.theme.green};
+			background: ${props => props.theme.green};
 		}
 	}
 	&.projects {
 		&:before {
-			background: ${(props) => props.theme.pink};
+			background: ${props => props.theme.pink};
 		}
 	}
 `;
