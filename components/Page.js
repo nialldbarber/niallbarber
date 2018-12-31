@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Meta from './Meta';
 import Social from './Social';
+import Copyright from './Copyright';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 const theme = {
@@ -22,7 +23,7 @@ const Inner = styled.div`
 	max-width: ${props => props.theme.maxWidth};
 	margin: 6rem auto 0;
 	padding: 4rem 3rem;
-	min-height: calc(100vh - 13rem);
+	min-height: calc(100vh - 16rem);
 	@media (max-width: 509px) {
 		padding: 4rem 2rem;
 	}
@@ -122,6 +123,7 @@ export default class Page extends Component {
 					<Header />
 					<Inner>{this.props.children}</Inner>
 					<Social />
+					<Copyright />
 				</StyledPage>
 			</ThemeProvider>
 		);
