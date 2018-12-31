@@ -23,6 +23,9 @@ const Inner = styled.div`
 	margin: 6rem auto 0;
 	padding: 4rem 3rem;
 	min-height: calc(100vh - 13rem);
+	@media (max-width: 509px) {
+		padding: 4rem 2rem;
+	}
 	@media (min-width: 768px) {
 		padding: 7rem 4rem;
 	}
@@ -70,6 +73,20 @@ injectGlobal`
 	a {
 		text-decoration: none;
 		color: ${theme.offWhite};
+	}
+	.page-transition-enter {
+		opacity: 0;
+	}
+	.page-transition-enter-active {
+		opacity: 1;
+		transition: opacity 0.2s ease-out;
+	}
+	.page-transition-exit {
+		opacity: 1;
+	}
+	.page-transition-exit-active {
+		opacity: 0;
+		transition: opacity 0.2s ease-in-out;
 	}
 	.bar {
 		@media (max-width: 509px) {
