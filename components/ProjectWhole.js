@@ -28,6 +28,9 @@ const ProjectGrid = styled.div`
 			display: inline;
 			line-height: 1.3;
 			border-bottom: 2px solid ${props => props.theme.pink};
+			@media (max-width: 509px) {
+				font-size: 4rem;
+			}
 		}
 		.desc {
 			p {
@@ -52,16 +55,29 @@ const SiteLink = styled.a`
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	&:hover {
+		img {
+			opacity: .6;
+		}
+		p {
+			opacity: .6;
+		}
+	}
 	img {
 		align-self: center;
 		max-width: 30px;
 		width: 100%;
 		height: auto;
+		opacity: 1;
+		transition: ${props => props.theme.transition};
 	}
 	p {
 		font-size: 2.8rem;
 		padding-left: 2rem;
 		color: ${props => props.theme.pink};
+		line-height: 1.3;
+		opacity: 1;
+		transition: ${props => props.theme.transition};
 	}
 `;
 
@@ -80,7 +96,7 @@ export default class Project extends Component {
 						<img src={this.props.image} alt={this.props.title} />
 					</div>
 				</ProjectGrid>
-				<SiteLink href={this.props.link}>
+				<SiteLink href={this.props.link} target="_blank">
 					<img src="../static/link.svg" alt="Link" />
 					<p>{this.props.title}</p>
 				</SiteLink>

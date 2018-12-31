@@ -63,7 +63,7 @@ injectGlobal`
 			background: url('../static/background.svg');
 			background-size: cover;
 			height: 100%;
-			width: 110%;
+			width: 100%;
 			opacity: 0.2;
 			z-index: -1;
 			top: 50%;

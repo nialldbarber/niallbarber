@@ -169,7 +169,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tjustify-content: flex-start;\n\talign-items: center;\n\timg {\n\t\talign-self: center;\n\t\tmax-width: 30px;\n\t\twidth: 100%;\n\t\theight: auto;\n\t}\n\tp {\n\t\tfont-size: 2.8rem;\n\t\tpadding-left: 2rem;\n\t\tcolor: ", ";\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tjustify-content: flex-start;\n\talign-items: center;\n\t&:hover {\n\t\timg {\n\t\t\topacity: .6;\n\t\t}\n\t\tp {\n\t\t\topacity: .6;\n\t\t}\n\t}\n\timg {\n\t\talign-self: center;\n\t\tmax-width: 30px;\n\t\twidth: 100%;\n\t\theight: auto;\n\t\topacity: 1;\n\t\ttransition: ", ";\n\t}\n\tp {\n\t\tfont-size: 2.8rem;\n\t\tpadding-left: 2rem;\n\t\tcolor: ", ";\n\t\tline-height: 1.3;\n\t\topacity: 1;\n\t\ttransition: ", ";\n\t}\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -179,7 +179,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-wrap: nowrap;\n\t.project-meta {\n\t\twidth: 65%;\n\t\tpadding: 0 3rem 1rem 1rem;\n\t\t@media (max-width: 509px) {\n\t\t\tpadding: 0;\n\t\t}\n\t\t@media (max-width: 767px) {\n\t\t\twidth: 100%;\n\t\t}\n\t\th3 {\n\t\t\tfont-size: 5rem;\n\t\t\tposition: relative;\n\t\t\tdisplay: inline;\n\t\t\tline-height: 1.3;\n\t\t\tborder-bottom: 2px solid ", ";\n\t\t}\n\t\t.desc {\n\t\t\tp {\n\t\t\t\tfont-size: 2rem;\n\t\t\t}\n\t\t}\n\t}\n\t.project-img {\n\t\twidth: 35%;\n\t\t@media (max-width: 767px) {\n\t\t\tdisplay: none;\n\t\t}\n\t\timg {\n\t\t\twidth: 100%;\n\t\t\theight: auto;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-wrap: nowrap;\n\t.project-meta {\n\t\twidth: 65%;\n\t\tpadding: 0 3rem 1rem 1rem;\n\t\t@media (max-width: 509px) {\n\t\t\tpadding: 0;\n\t\t}\n\t\t@media (max-width: 767px) {\n\t\t\twidth: 100%;\n\t\t}\n\t\th3 {\n\t\t\tfont-size: 5rem;\n\t\t\tposition: relative;\n\t\t\tdisplay: inline;\n\t\t\tline-height: 1.3;\n\t\t\tborder-bottom: 2px solid ", ";\n\t\t\t@media (max-width: 509px) {\n\t\t\t\tfont-size: 4rem;\n\t\t\t}\n\t\t}\n\t\t.desc {\n\t\t\tp {\n\t\t\t\tfont-size: 2rem;\n\t\t\t}\n\t\t}\n\t}\n\t.project-img {\n\t\twidth: 35%;\n\t\t@media (max-width: 767px) {\n\t\t\tdisplay: none;\n\t\t}\n\t\timg {\n\t\t\twidth: 100%;\n\t\t\theight: auto;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -210,7 +210,11 @@ var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(
   return props.theme.bs;
 });
 var SiteLink = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a(_templateObject3(), function (props) {
+  return props.theme.transition;
+}, function (props) {
   return props.theme.pink;
+}, function (props) {
+  return props.theme.transition;
 });
 
 var Project =
@@ -231,33 +235,33 @@ function (_Component) {
         id: this.props.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 87
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectGrid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 88
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 89
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 90
         },
         __self: this
       }, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "desc",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -265,14 +269,14 @@ function (_Component) {
         escapeHtml: false,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 92
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project-img",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 95
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -280,14 +284,15 @@ function (_Component) {
         alt: this.props.title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 96
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SiteLink, {
         href: this.props.link,
+        target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 99
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -295,13 +300,13 @@ function (_Component) {
         alt: "Link",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 100
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 101
         },
         __self: this
       }, this.props.title)));
@@ -24955,7 +24960,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/
@@ -24980,5 +24985,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=projects.js.map
