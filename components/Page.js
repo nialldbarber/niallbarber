@@ -53,6 +53,7 @@ injectGlobal`
 		font-family: 'Questrial', sans-serif;
 		background: ${theme.black};
 		color: ${theme.offWhite};
+		overflow-x: hidden;
 		@media (max-width: 509px) {
 			padding: 0;
 		}
@@ -62,8 +63,8 @@ injectGlobal`
 			background: url('../static/background.svg');
 			background-size: cover;
 			height: 100%;
-			width: 100%;
-			opacity: 0.15;
+			width: 110%;
+			opacity: 0.2;
 			z-index: -1;
 			top: 50%;
 			left: 50%;
@@ -91,7 +92,7 @@ injectGlobal`
 	.bar {
 		@media (max-width: 509px) {
 			width: 100vw;
-			height: 8.6rem;
+			height: 9.6rem;
 			position: fixed;
 			top: 0;
 			background: ${theme.black};

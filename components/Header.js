@@ -24,6 +24,9 @@ const Logo = styled.div`
 	@media (max-width: 767px) {
 		padding: 1rem 2rem 1rem 0;
 	}
+	@media (max-width: 509px) {
+		margin-left: -1rem;
+	}
 `;
 
 const LogoHeader = styled.img`
