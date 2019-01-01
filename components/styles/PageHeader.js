@@ -5,8 +5,7 @@ const PageHeader = styled.h1`
 	display: inline;
 	font-size: 8rem;
 	@media (max-width: 509px) {
-		/* font-size: 4.9rem; */
-		font-size: 16vw;
+		font-size: 15vw;
 	}
 	@media (min-width: 768px) {
 		font-size: 11rem;

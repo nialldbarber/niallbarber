@@ -1,7 +1,7 @@
 import App, { Container } from 'next/app';
 import { PageTransition } from 'next-page-transitions';
-import withApolloClient from '../lib/with-apollo-client'
-import { ApolloProvider } from 'react-apollo'
+import withApolloClient from '../lib/with-apollo-client';
+import { ApolloProvider } from 'react-apollo';
 
 import Page from '../components/Page';
 
