@@ -84,7 +84,6 @@ export default class Projects extends Component {
 						</ExternalLink>
 					</p>
 				</ContentInfo>
-
 				<ProjectGrid>
 					<AnchorLink className="project-grid-item" href={'#' + this.state.data.projects[0].project1.link}>
 						<Project

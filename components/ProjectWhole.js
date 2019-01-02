@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 
-const ProjectSection = styled.div`
+const ProjectSection = styled.section`
 	padding: 4.5rem 0 2rem;
 	margin-top: 7rem;
 	@media (min-width: 992px) {
