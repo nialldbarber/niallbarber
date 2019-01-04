@@ -25395,7 +25395,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/
@@ -25420,5 +25420,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=projects.js.map
