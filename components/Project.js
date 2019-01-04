@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Link from 'next/link';
 
 const ProjectCard = styled.div`
 	img {
@@ -34,14 +33,10 @@ export default class Project extends Component {
 	render() {
 		return (
 			<ProjectCard>
-				<Link href={this.props.link}>
-					<a target="_blank">
-						<h3>{this.props.title}</h3>
-						<img src={this.props.image} alt={this.props.title} />
-						<img className="typeOf" src={this.props.typeOf} />
-						<img className="typeOf typeOf2" src={this.props.typeOf2} />
-					</a>
-				</Link>
+				<h3>{this.props.title}</h3>
+				<img src={this.props.image} alt={this.props.title} />
+				<img className="typeOf" src={this.props.typeOf} />
+				<img className="typeOf typeOf2" src={this.props.typeOf2} />
 			</ProjectCard>
 		);
 	}

@@ -42,14 +42,41 @@ export default class Projects extends Component {
 				return api.query('');
 			})
 			.catch(err => console.log(err));
-
 		return { projects: data.results };
 	}
 
 	render() {
-		const array = this.props.projects[0].data,
-			blog = this.props.projects[1].data,
-			moo = this.props.projects[2].data;
+		const blog = this.props.projects[1].data,
+			projectList = this.props.projects;
+
+		const anchoredProjects = projectList.map(key => {
+			return (
+				<AnchorLink
+					className="project-grid-item"
+					href={`#${key.data.project_link[0].text}`}
+					key={key.data.project_image.url}
+				>
+					<Project
+						title={key.data.project_title[0].text}
+						image={key.data.project_image.url}
+						link={key.data.project_link[0].text}
+					/>
+				</AnchorLink>
+			);
+		});
+
+		const projectWhole = projectList.map(key => {
+			return (
+				<ProjectWhole
+					key={key.data.project_title[0].text}
+					title={key.data.project_title[0].text}
+					image={key.data.project_image.url}
+					desc={key.data.project_content[0].text}
+					link={key.data.project_link[0].text}
+				/>
+			);
+		});
+
 		return (
 			<div>
 				<PageHeader className="projects">Projects</PageHeader>
@@ -66,49 +93,8 @@ export default class Projects extends Component {
 						</ExternalLink>
 					</p>
 				</ContentInfo>
-				<ProjectGrid>
-					<AnchorLink className="project-grid-item" href={`#${moo.project_link[0].text}`}>
-						<Project
-							title={moo.project_title[0].text}
-							image={moo.project_image.url}
-							link={moo.project_link[0].text}
-						/>
-					</AnchorLink>
-					<AnchorLink className="project-grid-item" href={`#${blog.project_link[0].text}`}>
-						<Project
-							title={blog.project_title[0].text}
-							image={blog.project_image.url}
-							link={blog.project_link[0].text}
-						/>
-					</AnchorLink>
-					<AnchorLink className="project-grid-item" href={`#${array.project_link[0].text}`}>
-						<Project
-							title={array.project_title[0].text}
-							image={array.project_image.url}
-							link={array.project_link[0].text}
-						/>
-					</AnchorLink>
-				</ProjectGrid>
-				<section>
-					<ProjectWhole
-						title={moo.project_title[0].text}
-						image={moo.project_image.url}
-						desc={moo.project_content[0].text}
-						link={moo.project_link[0].text}
-					/>
-					<ProjectWhole
-						title={blog.project_title[0].text}
-						image={blog.project_image.url}
-						desc={blog.project_content[0].text}
-						link={blog.project_link[0].text}
-					/>
-					<ProjectWhole
-						title={array.project_title[0].text}
-						image={array.project_image.url}
-						desc={array.project_content[0].text}
-						link={array.project_link[0].text}
-					/>
-				</section>
+				<ProjectGrid>{anchoredProjects}</ProjectGrid>
+				<section>{projectWhole}</section>
 			</div>
 		);
 	}
