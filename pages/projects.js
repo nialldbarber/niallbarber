@@ -47,7 +47,6 @@ export default class Projects extends Component {
 	}
 
 	render() {
-		console.log(this.props.projects);
 		const array = this.props.projects[0].data,
 			blog = this.props.projects[1].data,
 			moo = this.props.projects[2].data;

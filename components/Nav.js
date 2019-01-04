@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from './Link';
-import HamburgerMenu from 'react-hamburger-menu';
 import ColouredLink from './styles/ColouredLink';
 
 const NavBar = styled.div`

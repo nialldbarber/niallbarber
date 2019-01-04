@@ -335,9 +335,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Link */ "./components/Link.js");
-/* harmony import */ var react_hamburger_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-hamburger-menu */ "./node_modules/react-hamburger-menu/dist/HamburgerMenu.js");
-/* harmony import */ var react_hamburger_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_hamburger_menu__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/ColouredLink */ "./components/styles/ColouredLink.js");
+/* harmony import */ var _styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/ColouredLink */ "./components/styles/ColouredLink.js");
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Nav.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -384,7 +382,6 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-
 var NavBar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 var HamburgerMenuContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
 
@@ -405,14 +402,14 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavBar, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -420,14 +417,14 @@ function (_Component) {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 32
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
         className: "home__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 33
         },
         __self: this
       }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -435,14 +432,14 @@ function (_Component) {
         href: "/about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 35
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
         className: "about__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 36
         },
         __self: this
       }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -450,14 +447,14 @@ function (_Component) {
         href: "/projects",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 38
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
         className: "projects__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 39
         },
         __self: this
       }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -465,14 +462,14 @@ function (_Component) {
         href: "/contact",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 41
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
         className: "contact__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 42
         },
         __self: this
       }, "Contact"))));
@@ -11012,99 +11009,6 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(/*! dll-reference dll_e8427f5b250f425a56e7 */ "dll-reference dll_e8427f5b250f425a56e7"))("./node_modules/react-dom/index.js");
-
-/***/ }),
-
-/***/ "./node_modules/react-hamburger-menu/dist/HamburgerMenu.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/react-hamburger-menu/dist/HamburgerMenu.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.default = HamburgerMenu;
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function HamburgerMenu(props) {
-  var width = (props.width || 36) + "px",
-      height = (props.height || 30) + "px",
-      halfHeight = parseInt(height.replace('px', '')) / 2 + "px",
-      isOpen = props.isOpen || false,
-      strokeWidth = props.strokeWidth || 2,
-      halfStrokeWidth = "-" + strokeWidth / 2 + "px",
-      animationDuration = props.animationDuration || '0.4';
-
-  var getTransformValue = function getTransformValue(isOpen, defaultPos, rotateVal) {
-    return "translate3d(0," + (isOpen ? halfHeight : defaultPos) + ",0) rotate(" + (isOpen ? rotateVal + "deg" : '0') + ")";
-  };
-
-  var styles = {
-    container: {
-      width: width,
-      height: height,
-      position: 'relative',
-      transform: "rotate(" + (props.rotate || 0) + "deg)"
-    },
-    lineBase: {
-      display: 'block',
-      height: strokeWidth + "px",
-      width: '100%',
-      background: props.color || '#000',
-      transitionTimingFunction: 'ease',
-      transitionDuration: animationDuration + "s",
-      borderRadius: (props.borderRadius || 0) + "px",
-      transformOrigin: 'center',
-      position: 'absolute'
-    },
-    firstLine: {
-      transform: getTransformValue(isOpen, 0, 45),
-      marginTop: halfStrokeWidth
-    },
-    secondLine: {
-      transitionTimingFunction: 'ease-out',
-      transitionDuration: animationDuration / 4 + "s",
-      opacity: isOpen ? '0' : '1',
-      top: halfHeight,
-      marginTop: halfStrokeWidth
-    },
-    thirdLine: {
-      transform: getTransformValue(isOpen, height, -45),
-      marginTop: halfStrokeWidth
-    }
-  };
-  return _react.default.createElement("div", {
-    style: styles.container,
-    onClick: props.menuClicked
-  }, _react.default.createElement("span", {
-    style: Object.assign({}, styles.lineBase, styles.firstLine)
-  }), _react.default.createElement("span", {
-    style: Object.assign({}, styles.lineBase, styles.secondLine)
-  }), _react.default.createElement("span", {
-    style: Object.assign({}, styles.lineBase, styles.thirdLine)
-  }));
-}
-
-;
-HamburgerMenu.propTypes = {
-  isOpen: _propTypes.default.bool.isRequired,
-  menuClicked: _propTypes.default.func.isRequired,
-  width: _propTypes.default.number,
-  height: _propTypes.default.number,
-  strokeWidth: _propTypes.default.number,
-  rotate: _propTypes.default.number,
-  color: _propTypes.default.string,
-  borderRadius: _propTypes.default.number,
-  animationDuration: _propTypes.default.number
-};
 
 /***/ }),
 
