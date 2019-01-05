@@ -16918,8 +16918,18 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\tposition: relative;\n\tz-index: 5;\n\t.project-grid-item {\n\t\twidth: 100%;\n\t\tposition: relative;\n\t\tmargin: 1rem;\n\t\t@media (max-width: 629px) {\n\t\t\tmargin: 1rem 0;\n\t\t}\n\t\t@media (min-width: 630px) {\n\t\t\twidth: calc(50% - 2rem);\n\t\t}\n\t\t@media (min-width: 992px) {\n\t\t\twidth: calc(33.33333% - 2rem);\n\t\t}\n\t}\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\t.project-grid-item {\n\t\twidth: 100%;\n\t\tposition: relative;\n\t\tmargin: 1rem;\n\t\t@media (max-width: 629px) {\n\t\t\tmargin: 1rem 0;\n\t\t}\n\t\t@media (min-width: 630px) {\n\t\t\twidth: calc(50% - 2rem);\n\t\t}\n\t\t@media (min-width: 992px) {\n\t\t\twidth: calc(33.33333% - 2rem);\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: absolute;\n\twidth: 200px;\n\tz-index: -1;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -16955,7 +16965,8 @@ var ExternalLink = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].a(_
 }, function (props) {
   return props.theme.transition;
 });
-var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject2());
+var Parallaxed = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].img(_templateObject2());
+var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject3());
 
 var Projects =
 /*#__PURE__*/
@@ -16980,7 +16991,7 @@ function (_Component) {
           key: key.data.project_image.url,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 56
+            lineNumber: 64
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -16989,7 +17000,7 @@ function (_Component) {
           link: key.data.project_link[0].text,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 61
+            lineNumber: 69
           },
           __self: this
         }));
@@ -17003,7 +17014,7 @@ function (_Component) {
           link: key.data.project_link[0].text,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 72
+            lineNumber: 80
           },
           __self: this
         });
@@ -17011,32 +17022,32 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_8__["default"], {
         className: "projects",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 92
         },
         __self: this
       }, "Projects"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 93
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 94
         },
         __self: this
       }, "Check out some of my projects! Some are professional work, but most are projects in which I delve into new technologies"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 98
         },
         __self: this
       }, "I also run a tutorial site which involves me trying to unravel difficult coding concepts for beginners. You can check that out", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ExternalLink, {
@@ -17044,19 +17055,19 @@ function (_Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 101
         },
         __self: this
       }, "here"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectGrid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 106
         },
         __self: this
       }, anchoredProjects), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 107
         },
         __self: this
       }, projectWhole));

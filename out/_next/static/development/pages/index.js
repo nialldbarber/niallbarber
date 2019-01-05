@@ -10731,9 +10731,9 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_typed__WEBPACK_IMPORTED_MODULE_2___default.a, {
-        strings: ['HTML / CSS', 'JavaScript', 'React', 'Vue', 'PHP', 'WordPress', 'Shopify / Liquid', 'Photoshop', 'Illustrator'],
-        typeSpeed: 40,
-        backSpeed: 50,
+        strings: ['HTML / S(CSS)', 'JavaScript', 'React / Vue', 'PHP', 'Git', 'WordPress', 'Shopify {{ Liquid }}', 'Photoshop / Illustrator'],
+        typeSpeed: 50,
+        backSpeed: 30,
         loop: true,
         __source: {
           fileName: _jsxFileName,
@@ -10770,7 +10770,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -10795,5 +10795,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map

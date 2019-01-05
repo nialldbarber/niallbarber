@@ -18,9 +18,17 @@ const ExternalLink = styled.a`
 	}
 `;
 
+const Parallaxed = styled.img`
+	position: absolute;
+	width: 200px;
+	z-index: -1;
+`;
+
 const ProjectGrid = styled.div`
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
+	z-index: 5;
 	.project-grid-item {
 		width: 100%;
 		position: relative;

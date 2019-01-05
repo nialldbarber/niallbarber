@@ -38,18 +38,17 @@ class Index extends React.Component {
 				<TypedWrapper>
 					<Typed
 						strings={[
-							'HTML / CSS',
+							'HTML / S(CSS)',
 							'JavaScript',
-							'React',
-							'Vue',
+							'React / Vue',
 							'PHP',
+							'Git',
 							'WordPress',
-							'Shopify / Liquid',
-							'Photoshop',
-							'Illustrator'
+							'Shopify {{ Liquid }}',
+							'Photoshop / Illustrator'
 						]}
-						typeSpeed={40}
-						backSpeed={50}
+						typeSpeed={50}
+						backSpeed={30}
 						loop
 					/>
 				</TypedWrapper>
