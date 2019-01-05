@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Typed from 'react-typed';
+import { title, desc } from '../config';
 import PageHeader from '../components/styles/PageHeader';
 import SubHeader from '../components/styles/Subheader';
 
@@ -31,9 +32,9 @@ class Index extends React.Component {
 	render() {
 		return (
 			<HomepageSplash>
-				<PageHeader className="index">Niall Barber</PageHeader>
-				<SubHeader>Front End Developer</SubHeader>
-				<Logo src="../static/nb-logo.svg" alt="Niall Barber" />
+				<PageHeader className="index">{title}</PageHeader>
+				<SubHeader>{desc}</SubHeader>
+				<Logo src="../static/nb-logo.svg" alt={title} />
 				<TypedWrapper>
 					<Typed
 						strings={[

@@ -367,22 +367,6 @@ var PageHeader = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h1(_t
 
 /***/ }),
 
-/***/ "./config.js":
-/*!*******************!*\
-  !*** ./config.js ***!
-  \*******************/
-/*! exports provided: apiEndpoint, apiToken */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "apiEndpoint", function() { return apiEndpoint; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "apiToken", function() { return apiToken; });
-var apiEndpoint = 'https://nialldbarber.cdn.prismic.io/api/v2';
-var apiToken = 'MC5YQzk2cHhBQUFDTUFONUlh.Cu-_ve-_vTnvv70477-9Qlvvv71VQO-_ve-_vUTvv73vv70qCO-_ve-_ve-_vSXvv71sGO-_ve-_vVZuWlA';
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/regenerator/index.js":
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
@@ -16902,14 +16886,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var prismic_javascript__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prismic-javascript */ "./node_modules/prismic-javascript/dist/prismic-javascript.min.js");
 /* harmony import */ var prismic_javascript__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prismic_javascript__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./config.js");
-/* harmony import */ var react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-anchor-link-smooth-scroll */ "./node_modules/react-anchor-link-smooth-scroll/lib/anchor-link.js");
-/* harmony import */ var react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _components_styles_Content__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/styles/Content */ "./components/styles/Content.js");
-/* harmony import */ var _components_Project__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Project */ "./components/Project.js");
-/* harmony import */ var _components_ProjectWhole__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/ProjectWhole */ "./components/ProjectWhole.js");
-/* harmony import */ var _components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/styles/PageHeader */ "./components/styles/PageHeader.js");
+/* harmony import */ var react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-anchor-link-smooth-scroll */ "./node_modules/react-anchor-link-smooth-scroll/lib/anchor-link.js");
+/* harmony import */ var react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _components_styles_Content__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/styles/Content */ "./components/styles/Content.js");
+/* harmony import */ var _components_Project__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Project */ "./components/Project.js");
+/* harmony import */ var _components_ProjectWhole__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/ProjectWhole */ "./components/ProjectWhole.js");
+/* harmony import */ var _components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/styles/PageHeader */ "./components/styles/PageHeader.js");
 
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/pages/projects.js";
 
@@ -16965,13 +16948,14 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-
-var ExternalLink = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].a(_templateObject(), function (props) {
+var apiEndpoint = "".concat("https://nialldbarber.cdn.prismic.io/api/v2");
+var apiToken = "".concat("MC5YQzk2cHhBQUFDTUFONUlh.Cu-_ve-_vTnvv70477-9Qlvvv71VQO-_ve-_vUTvv73vv70qCO-_ve-_ve-_vSXvv71sGO-_ve-_vVZuWlA");
+var ExternalLink = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].a(_templateObject(), function (props) {
   return props.theme.pink;
 }, function (props) {
   return props.theme.transition;
 });
-var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject2());
+var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject2());
 
 var Projects =
 /*#__PURE__*/
@@ -16990,28 +16974,28 @@ function (_Component) {
       var blog = this.props.projects[1].data,
           projectList = this.props.projects;
       var anchoredProjects = projectList.map(function (key) {
-        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_3___default.a, {
           className: "project-grid-item",
           href: "#".concat(key.data.project_link[0].text),
           key: key.data.project_image.url,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 56
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_6__["default"], {
           title: key.data.project_title[0].text,
           image: key.data.project_image.url,
           link: key.data.project_link[0].text,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 59
+            lineNumber: 61
           },
           __self: this
         }));
       });
       var projectWhole = projectList.map(function (key) {
-        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_ProjectWhole__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_ProjectWhole__WEBPACK_IMPORTED_MODULE_7__["default"], {
           key: key.data.project_title[0].text,
           title: key.data.project_title[0].text,
           image: key.data.project_image.url,
@@ -17019,7 +17003,7 @@ function (_Component) {
           link: key.data.project_link[0].text,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 70
+            lineNumber: 72
           },
           __self: this
         });
@@ -17027,32 +17011,32 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        className: "projects",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 82
-        },
-        __self: this
-      }, "Projects"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 83
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        className: "projects",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 84
         },
         __self: this
+      }, "Projects"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        },
+        __self: this
       }, "Check out some of my projects! Some are professional work, but most are projects in which I delve into new technologies"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 90
         },
         __self: this
       }, "I also run a tutorial site which involves me trying to unravel difficult coding concepts for beginners. You can check that out", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ExternalLink, {
@@ -17060,19 +17044,19 @@ function (_Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 93
         },
         __self: this
       }, "here"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectGrid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 98
         },
         __self: this
       }, anchoredProjects), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 99
         },
         __self: this
       }, projectWhole));
@@ -17090,8 +17074,8 @@ function (_Component) {
               case 0:
                 req = _ref.req, query = _ref.query;
                 _context.next = 3;
-                return prismic_javascript__WEBPACK_IMPORTED_MODULE_2___default.a.getApi(_config__WEBPACK_IMPORTED_MODULE_3__["apiEndpoint"], {
-                  accessToken: _config__WEBPACK_IMPORTED_MODULE_3__["apiToken"]
+                return prismic_javascript__WEBPACK_IMPORTED_MODULE_2___default.a.getApi(apiEndpoint, {
+                  accessToken: apiToken
                 }).then(function (api) {
                   return api.query('');
                 }).catch(function (err) {
@@ -17146,7 +17130,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/
@@ -17171,5 +17155,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=projects.js.map

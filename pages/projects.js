@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Prismic from 'prismic-javascript';
-import { apiEndpoint, apiToken } from '../config';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
 import ContentInfo from '../components/styles/Content';
 import Project from '../components/Project';
 import ProjectWhole from '../components/ProjectWhole';
 import PageHeader from '../components/styles/PageHeader';
+
+const apiEndpoint = `${process.env.API_ENDPOINT}`;
+const apiToken = `${process.env.API_TOKEN}`;
 
 const ExternalLink = styled.a`
 	color: ${props => props.theme.pink};

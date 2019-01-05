@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
+import { title } from '../config';
 
 const FooterWrap = styled.div`
 	margin: -2.5rem auto 0;
@@ -17,7 +18,7 @@ const FooterWrap = styled.div`
 const Footer = () => {
 	return (
 		<FooterWrap>
-			<p>© {new Date().getFullYear()} Niall Barber</p>
+			<p>{`© ${new Date().getFullYear()} ${title}`}</p>
 		</FooterWrap>
 	);
 };

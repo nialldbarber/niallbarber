@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { title, desc } from '../config';
 
 const Meta = () => (
 	<Head>
@@ -8,7 +9,7 @@ const Meta = () => (
 		<meta name="keywords" content="Niall Barber,Niall D Barber,HTML,CSS,JavaScript,Web Developer,React,js" />
 		<link rel="shortcut icon" href="/static/icon.png" />
 		<link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
-		<title>Niall Barber | Front End Developer</title>
+		<title>{`${title} | ${desc}`}</title>
 	</Head>
 );
 
