@@ -525,7 +525,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\t@import url('https://fonts.googleapis.com/css?family=Questrial');\n\thtml {\n\t\tbox-sizing: border-box;\n\t\tfont-size: 10px;\n\t}\n\t*, *:before, *:after {\n\t\tbox-sizing: inherit;\n\t}\n\tbody {\n\t\tposition: relative;\n\t\tmargin: 0;\n\t\tpadding: 0 0 5rem 0;\n\t\tfont-size: 1.7rem;\n\t\tline-height: 2;\n\t\t-webkit-font-smoothing: antialiased;\n\t\tfont-family: 'Questrial', sans-serif;\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\toverflow-x: hidden;\n\t\t@media (max-width: 509px) {\n\t\t\tpadding: 0;\n\t\t}\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tbackground: url('../static/background.svg');\n\t\t\tbackground-size: cover;\n\t\t\theight: 100%;\n\t\t\twidth: 100%;\n\t\t\topacity: 0.2;\n\t\t\tz-index: -1;\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\ttransform: translate(-50%, -50%);\n\t\t}\n\t}\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: ", ";\n\t}\n\t.page-transition-enter {\n\t\topacity: 0;\n\t}\n\t.page-transition-enter-active {\n\t\topacity: 1;\n\t\ttransition: opacity 0.2s ease-out;\n\t}\n\t.page-transition-exit {\n\t\topacity: 1;\n\t}\n\t.page-transition-exit-active {\n\t\topacity: 0;\n\t\ttransition: opacity 0.2s ease-in-out;\n\t}\n\t.bar {\n\t\t@media (max-width: 509px) {\n\t\t\twidth: 100vw;\n\t\t\theight: 9.6rem;\n\t\t\tposition: fixed;\n\t\t\ttop: 0;\n\t\t\tbackground: ", ";\n\t\t\tz-index: 999;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n\t.grid {\n\t\tdisplay: flex;\n\t\tmargin-top: 6rem;\n\t\tflex-wrap: wrap;\n\t}\n\t.box {\n\t\twidth: 100px;\n\t\theight: 100px;\n\t\tbackground: ", ";\n\t\ttransform-origin: 50% 50%;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\t@import url('https://fonts.googleapis.com/css?family=Questrial');\n\thtml {\n\t\tbox-sizing: border-box;\n\t\tfont-size: 10px;\n\t}\n\t*, *:before, *:after {\n\t\tbox-sizing: inherit;\n\t}\n\tbody {\n\t\tposition: relative;\n\t\tmargin: 0;\n\t\tpadding: 0 0 5rem 0;\n\t\tfont-size: 1.7rem;\n\t\tline-height: 2;\n\t\t-webkit-font-smoothing: antialiased;\n\t\tfont-family: 'Questrial', sans-serif;\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\toverflow-x: hidden;\n\t\t@media (max-width: 509px) {\n\t\t\tpadding: 0;\n\t\t}\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tbackground: url('../static/background.svg');\n\t\t\tbackground-size: cover;\n\t\t\theight: 100%;\n\t\t\twidth: 100%;\n\t\t\topacity: 0.2;\n\t\t\tz-index: -1;\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\ttransform: translate(-50%, -50%);\n\t\t}\n\t}\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: ", ";\n\t}\n\t.page-transition-enter {\n\t\topacity: 0;\n\t}\n\t.page-transition-enter-active {\n\t\topacity: 1;\n\t\ttransition: opacity 0.2s ease-out;\n\t}\n\t.page-transition-exit {\n\t\topacity: 1;\n\t}\n\t.page-transition-exit-active {\n\t\topacity: 0;\n\t\ttransition: opacity 0.2s ease-in-out;\n\t}\n\t.bar {\n\t\t@media (max-width: 509px) {\n\t\t\twidth: 100vw;\n\t\t\theight: 9.6rem;\n\t\t\tposition: fixed;\n\t\t\ttop: 0;\n\t\t\tbackground: ", ";\n\t\t\tz-index: 999;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n\t.grid {\n\t\tdisplay: flex;\n\t\tmargin-top: 6rem;\n\t\tflex-wrap: wrap;\n\t}\n\t.box {\n\t\twidth: 100px;\n\t\theight: 100px;\n\t\tbackground: ", ";\n\t\ttransform-origin: 50% 50%;\n\t}\n\n\n.about-page {\n    span {\n\t\tposition: relative;\n\t\ttransition: ", ";\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tleft: 0;\n\t\t\tbottom: -.1rem;\n\t\t\tright: 0;\n\t\t\theight: 1px;\n\t\t\tz-index: -1;\n\t\t}\n\t\t&.reactSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.vueSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.wordpressSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.shopifySpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n    }\n}\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -579,7 +579,7 @@ var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject2(), function (props) {
   return props.theme.maxWidth;
 });
-Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["injectGlobal"])(_templateObject3(), theme.black, theme.offWhite, theme.offWhite, theme.black, theme.bs, theme.darkPink);
+Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["injectGlobal"])(_templateObject3(), theme.black, theme.offWhite, theme.offWhite, theme.black, theme.bs, theme.darkPink, theme.transition, theme.green, theme.green, theme.orange, theme.orange, theme.pink, theme.pink, theme.green, theme.green);
 
 var Page =
 /*#__PURE__*/
@@ -599,43 +599,43 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120
+          lineNumber: 169
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 170
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 171
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123
+          lineNumber: 172
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 173
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Social__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 174
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Copyright__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 175
         },
         __self: this
       })));
@@ -837,15 +837,17 @@ var ColouredLink = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].a(_
 /*!*******************!*\
   !*** ./config.js ***!
   \*******************/
-/*! exports provided: title, desc */
+/*! exports provided: title, desc, email */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "title", function() { return title; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "desc", function() { return desc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "email", function() { return email; });
 var title = 'Niall Barber';
 var desc = 'Front End Developer';
+var email = 'nialldbarber@gmail.com';
 
 /***/ }),
 

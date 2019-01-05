@@ -112,6 +112,55 @@ injectGlobal`
 		background: ${theme.darkPink};
 		transform-origin: 50% 50%;
 	}
+
+
+.about-page {
+    span {
+		position: relative;
+		transition: ${theme.transition};
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -.1rem;
+			right: 0;
+			height: 1px;
+			z-index: -1;
+		}
+		&.reactSpan {
+			&:before {
+				background: ${theme.green};
+			}
+			&:hover {
+				color: ${theme.green};
+			}
+		}
+		&.vueSpan {
+			&:before {
+				background: ${theme.orange};
+			}
+			&:hover {
+				color: ${theme.orange};
+			}
+		}
+		&.wordpressSpan {
+			&:before {
+				background: ${theme.pink};
+			}
+			&:hover {
+				color: ${theme.pink};
+			}
+		}
+		&.shopifySpan {
+			&:before {
+				background: ${theme.green};
+			}
+			&:hover {
+				color: ${theme.green};
+			}
+		}
+    }
+}
 `;
 
 export default class Page extends Component {

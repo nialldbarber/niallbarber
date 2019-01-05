@@ -1,25 +1,38 @@
+import React, { Component } from 'react';
+import Prismic from 'prismic-javascript';
 import styled from 'styled-components';
 import ContentInfo from '../components/styles/Content';
 import PageHeader from '../components/styles/PageHeader';
 import PlatformSpan from '../components/styles/PlatformSpan';
 
-const About = () => {
-	return (
-		<div>
-			<PageHeader className="about">About</PageHeader>
-			<ContentInfo>
-				<p>
-					Hi, I'm a front end developer. I make slick, fast websites using frameworks like{' '}
-					<PlatformSpan className="reactSpan">React</PlatformSpan>,{' '}
-					<PlatformSpan className="vueSpan">Vue</PlatformSpan> and also CMSs like{' '}
-					<PlatformSpan className="wordpressSpan">WordPress</PlatformSpan>, {' '}
-					<PlatformSpan className="shopifySpan">Shopify</PlatformSpan> and even dabble in{' '}
-					<PlatformSpan className="wordpressSpan">GraphQL</PlatformSpan> CMSs 🚀
-				</p>
-				<p>Take your pick and let's make something cool together!</p>
-			</ContentInfo>
-		</div>
-	);
-};
+const apiEndpoint = `${process.env.API_ENDPOINT}`;
+const apiToken = `${process.env.API_TOKEN}`;
 
-export default About;
+export default class About extends Component {
+	static async getInitialProps({ req, query }) {
+		const data = await Prismic.getApi(apiEndpoint, { accessToken: apiToken })
+			.then(api => {
+				return api.query(Prismic.Predicates.at('document.type', 'page'));
+			})
+			.catch(err => console.log(err));
+		return {
+			projects: data.results
+		};
+	}
+
+	state = {
+		title: this.props.projects[0].data.page_title[0].text,
+		content: this.props.projects[0].data.page_content[0].text
+	};
+
+	render() {
+		return (
+			<div className="about-page">
+				<PageHeader className="about">{this.state.title}</PageHeader>
+				<ContentInfo>
+					<p dangerouslySetInnerHTML={{ __html: this.state.content }} />
+				</ContentInfo>
+			</div>
+		);
+	}
+}

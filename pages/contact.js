@@ -1,6 +1,12 @@
+import React, { Component } from 'react';
+import Prismic from 'prismic-javascript';
 import styled from 'styled-components';
+import { email } from '../config';
 import ContentInfo from '../components/styles/Content';
 import PageHeader from '../components/styles/PageHeader';
+
+const apiEndpoint = `${process.env.API_ENDPOINT}`;
+const apiToken = `${process.env.API_TOKEN}`;
 
 const ContactMe = styled.div`
 	margin-top: 8rem;
@@ -12,7 +18,7 @@ const ContactMe = styled.div`
 		z-index: 1;
 		overflow: hidden;
 		cursor: pointer;
-		color: ${(props) => props.theme.black};
+		color: ${props => props.theme.black};
 		@media (max-width: 767px) {
 			font-size: 2rem;
 		}
@@ -24,26 +30,39 @@ const ContactMe = styled.div`
 			width: 100%;
 			height: 100%;
 			z-index: -1;
-			background: ${(props) => props.theme.green};
+			background: ${props => props.theme.green};
 		}
 	}
 `;
 
-const Contact = () => {
-	return (
-		<div>
-			<PageHeader className="contact">Contact</PageHeader>
-			<ContentInfo>
-				<p>
-					If you need a bespoke website built, or even want to make/collaborate on a project then send me a
-					message!
-				</p>
-			</ContentInfo>
-			<ContactMe className="contact-me">
-				<p>nialldbarber@gmail.com</p>
-			</ContactMe>
-		</div>
-	);
-};
+export default class Contact extends Component {
+	static async getInitialProps({ req, query }) {
+		const data = await Prismic.getApi(apiEndpoint, { accessToken: apiToken })
+			.then(api => {
+				return api.query(Prismic.Predicates.at('document.type', 'page'));
+			})
+			.catch(err => console.log(err));
+		return {
+			projects: data.results
+		};
+	}
 
-export default Contact;
+	state = {
+		title: this.props.projects[1].data.page_title[0].text,
+		content: this.props.projects[1].data.page_content[0].text
+	};
+
+	render() {
+		return (
+			<div>
+				<PageHeader className="contact">{this.state.title}</PageHeader>
+				<ContentInfo>
+					<p dangerouslySetInnerHTML={{ __html: this.state.content }} />
+				</ContentInfo>
+				<ContactMe className="contact-me">
+					<p>{email}</p>
+				</ContactMe>
+			</div>
+		);
+	}
+}

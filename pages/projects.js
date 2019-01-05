@@ -49,10 +49,12 @@ export default class Projects extends Component {
 	static async getInitialProps({ req, query }) {
 		const data = await Prismic.getApi(apiEndpoint, { accessToken: apiToken })
 			.then(api => {
-				return api.query('');
+				return api.query(Prismic.Predicates.at('document.type', 'project'));
 			})
 			.catch(err => console.log(err));
-		return { projects: data.results };
+		return {
+			projects: data.results
+		};
 	}
 
 	render() {
