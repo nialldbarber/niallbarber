@@ -10,8 +10,11 @@ const PageHeader = styled.h1`
 	@media (min-width: 768px) {
 		font-size: 11rem;
 	}
-	@media (min-width: 992px) {
+	@media (min-width: 992px) and (max-width: 1199px) {
 		font-size: 17rem;
+	}
+	@media (min-width: 1200px) {
+		font-size: 18rem;
 	}
 	&:before {
 		content: '';

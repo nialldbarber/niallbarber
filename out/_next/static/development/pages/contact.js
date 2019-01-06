@@ -11,7 +11,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tmax-width: 540px;\n\tmargin-left: auto;\n\tpadding-bottom: 3rem;\n\tp {\n\t\tfont-size: 2rem;\n\t\t&:first-child {\n\t\t\tmargin-top: 0;\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tmax-width: 640px;\n\tmargin-left: auto;\n\tpadding-bottom: 3rem;\n\tp {\n\t\tfont-size: 2.4rem;\n\t\t@media (max-width: 509px) {\n\t\t\tfont-size: 2rem;\n\t\t}\n\t\t&:first-child {\n\t\t\tmargin-top: 0;\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -39,7 +39,7 @@ var ContentInfo = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div(
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tdisplay: inline;\n\tfont-size: 8rem;\n\t@media (max-width: 509px) {\n\t\tfont-size: 15vw;\n\t}\n\t@media (min-width: 768px) {\n\t\tfont-size: 11rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tfont-size: 17rem;\n\t}\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t@media (max-width: 767px) {\n\t\t\tbottom: 0;\n\t\t\theight: 3px;\n\t\t}\n\t}\n\t&.index {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tdisplay: inline;\n\tfont-size: 8rem;\n\t@media (max-width: 509px) {\n\t\tfont-size: 15vw;\n\t}\n\t@media (min-width: 768px) {\n\t\tfont-size: 11rem;\n\t}\n\t@media (min-width: 992px) and (max-width: 1199px) {\n\t\tfont-size: 17rem;\n\t}\n\t@media (min-width: 1200px) {\n\t\tfont-size: 18rem;\n\t}\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t@media (max-width: 767px) {\n\t\t\tbottom: 0;\n\t\t\theight: 3px;\n\t\t}\n\t}\n\t&.index {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -7003,7 +7003,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/
@@ -7028,5 +7028,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=contact.js.map

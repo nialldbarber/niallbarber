@@ -33,6 +33,9 @@ const Inner = styled.div`
 	@media (min-width: 992px) {
 		padding: 2rem 4rem;
 	}
+	@media (min-width: 1200px) {
+		max-width: 1200px;
+	}
 `;
 
 injectGlobal`

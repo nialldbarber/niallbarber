@@ -535,7 +535,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tmax-width: ", ";\n\tmargin: 6rem auto 0;\n\tpadding: 4rem 3rem;\n\tmin-height: calc(100vh - 16rem);\n\t@media (max-width: 509px) {\n\t\tpadding: 4rem 2rem;\n\t}\n\t@media (min-width: 768px) {\n\t\tpadding: 7rem 4rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tpadding: 2rem 4rem;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmax-width: ", ";\n\tmargin: 6rem auto 0;\n\tpadding: 4rem 3rem;\n\tmin-height: calc(100vh - 16rem);\n\t@media (max-width: 509px) {\n\t\tpadding: 4rem 2rem;\n\t}\n\t@media (min-width: 768px) {\n\t\tpadding: 7rem 4rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tpadding: 2rem 4rem;\n\t}\n\t@media (min-width: 1200px) {\n\t\tmax-width: 1200px;\n\t}\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -599,43 +599,43 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169
+          lineNumber: 172
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 173
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 174
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 172
+          lineNumber: 175
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 176
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Social__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 177
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Copyright__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 178
         },
         __self: this
       })));
