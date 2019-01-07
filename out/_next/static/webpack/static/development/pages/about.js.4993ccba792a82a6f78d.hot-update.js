@@ -1,4 +1,4 @@
-webpackHotUpdate("static/development/pages/projects.js",{
+webpackHotUpdate("static/development/pages/about.js",{
 
 /***/ "./components/styles/Content.js":
 /*!**************************************!*\
@@ -11,7 +11,7 @@ webpackHotUpdate("static/development/pages/projects.js",{
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tmax-width: 540px;\n\tmargin-left: auto;\n\tpadding-bottom: 3rem;\n\tp {\n\t\tfont-size: 2.5rem;\n\t\t&:first-child {\n\t\t\tmargin-top: 0;\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tmax-width: 640px;\n\tmargin-left: auto;\n\tpadding-bottom: 3rem;\n\tp {\n\t\tfont-size: 2.4rem;\n\t\t@media (max-width: 509px) {\n\t\t\tfont-size: 2rem;\n\t\t}\n\t\t&:first-child {\n\t\t\tmargin-top: -1rem;\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -29,4 +29,4 @@ var ContentInfo = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div(
 /***/ })
 
 })
-//# sourceMappingURL=projects.js.527f64f10d9af2642f20.hot-update.js.map
+//# sourceMappingURL=about.js.4993ccba792a82a6f78d.hot-update.js.map
