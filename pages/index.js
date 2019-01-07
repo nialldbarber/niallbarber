@@ -28,33 +28,31 @@ const TypedWrapper = styled.div`
 	}
 `;
 
-class Index extends React.Component {
-	render() {
-		return (
-			<HomepageSplash>
-				<PageHeader className="index">{title}</PageHeader>
-				<SubHeader>{desc}</SubHeader>
-				<Logo src="../static/nb-logo.svg" alt={title} />
-				<TypedWrapper>
-					<Typed
-						strings={[
-							'HTML / S(CSS)',
-							'JavaScript',
-							'React / Vue',
-							'PHP',
-							'Git',
-							'WordPress',
-							'Shopify {{ Liquid }}',
-							'Photoshop / Illustrator'
-						]}
-						typeSpeed={50}
-						backSpeed={30}
-						loop
-					/>
-				</TypedWrapper>
-			</HomepageSplash>
-		);
-	}
-}
+const Index = () => {
+	return (
+		<HomepageSplash>
+			<PageHeader className="index">{title}</PageHeader>
+			<SubHeader>{desc}</SubHeader>
+			<Logo src="../static/nb-logo.svg" alt={title} />
+			<TypedWrapper>
+				<Typed
+					strings={[
+						'HTML / S(CSS)',
+						'JavaScript',
+						'React / Vue',
+						'PHP',
+						'Git',
+						'WordPress',
+						'Shopify {{ Liquid }}',
+						'Photoshop / Illustrator'
+					]}
+					typeSpeed={50}
+					backSpeed={30}
+					loop
+				/>
+			</TypedWrapper>
+		</HomepageSplash>
+	);
+};
 
 export default Index;
