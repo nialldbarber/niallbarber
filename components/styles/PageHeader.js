@@ -7,13 +7,17 @@ const PageHeader = styled.h1`
 	font-size: 8rem;
 	${media.lessThan('phablet')`
 		font-size: 15vw;
-	`} ${media.greaterThan('tablet')`
+	`};
+	${media.greaterThan('tablet')`
 		font-size: 11rem;
-	`} ${media.between('desktop', 'large')`
+	`};
+	${media.between('desktop', 'large')`
 		font-size: 17rem;
-	`} ${media.greaterThan('large')`
+	`};
+	${media.greaterThan('large')`
 		font-size: 18rem;
-	`} &:before {
+	`};
+	&:before {
 		content: '';
 		position: absolute;
 		left: 0;

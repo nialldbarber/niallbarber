@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { email } from '../config';
 import ContentInfo from '../components/styles/Content';
 import PageHeader from '../components/styles/PageHeader';
+import { media } from '../components/utils/Breakpoints';
 
 const apiEndpoint = `${process.env.API_ENDPOINT}`;
 const apiToken = `${process.env.API_TOKEN}`;
@@ -19,9 +20,9 @@ const ContactMe = styled.div`
 		overflow: hidden;
 		cursor: pointer;
 		color: ${props => props.theme.black};
-		@media (max-width: 767px) {
+		${media.lessThan('tablet')`
 			font-size: 2rem;
-		}
+		`};
 		&:before {
 			content: '';
 			position: absolute;

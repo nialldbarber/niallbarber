@@ -1,17 +1,18 @@
 import Link from 'next/link';
 import styled from 'styled-components';
+import { media } from './utils/Breakpoints';
 
 const IconContainer = styled.div`
 	margin: 0 auto;
 	text-align: center;
 	bottom: 4rem;
 	right: 2rem;
-	@media (min-width: 510px) {
+	${media.greaterThan('phablet')`
 		position: fixed;
-	}
-	@media (min-width: 768px) {
+	`};
+	${media.greaterThan('tablet')`
 		right: 4rem;
-	}
+	`};
 `;
 
 const Icon = styled.img`

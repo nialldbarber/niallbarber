@@ -10,7 +10,8 @@ const ContentInfo = styled.div`
 		font-size: 2rem;
 		${media.greaterThan('phablet')`
 			font-size: 2.4rem;
-		`} &:first-child {
+		`};
+		&:first-child {
 			${media.greaterThan('phablet')`
 				margin-top: -1rem;
 			`};

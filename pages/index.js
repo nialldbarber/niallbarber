@@ -3,6 +3,7 @@ import Typed from 'react-typed';
 import { title, desc } from '../config';
 import PageHeader from '../components/styles/PageHeader';
 import SubHeader from '../components/styles/Subheader';
+import { media } from '../components/utils/Breakpoints';
 
 const HomepageSplash = styled.div`text-align: center;`;
 
@@ -22,9 +23,9 @@ const TypedWrapper = styled.div`
 		color: ${props => props.theme.black};
 		padding: 1rem 0.5rem;
 		box-shadow: ${props => props.theme.bs};
-		@media (max-width: 767px) {
+		${media.lessThan('tablet')`
 			font-size: 2rem;
-		}
+		`};
 	}
 `;
 

@@ -10,10 +10,12 @@ const SubHeader = styled.h2`
 	${media.greaterThan('tablet')`
 		font-size: 4rem;
 		margin-top: -1rem;
-	`} ${media.greaterThan('desktop')`
+	`};
+	${media.greaterThan('desktop')`
 		font-size: 4rem;
 		margin-top: -5rem;
-	`} &:before {
+	`};
+	&:before {
 		content: '';
 		position: absolute;
 		left: 0;

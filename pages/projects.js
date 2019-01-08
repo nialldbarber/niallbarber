@@ -6,6 +6,7 @@ import ContentInfo from '../components/styles/Content';
 import Project from '../components/Project';
 import ProjectWhole from '../components/ProjectWhole';
 import PageHeader from '../components/styles/PageHeader';
+import { media } from '../components/utils/Breakpoints';
 
 const apiEndpoint = `${process.env.API_ENDPOINT}`;
 const apiToken = `${process.env.API_TOKEN}`;
@@ -33,15 +34,15 @@ const ProjectGrid = styled.div`
 		width: 100%;
 		position: relative;
 		margin: 1rem;
-		@media (max-width: 629px) {
+		${media.lessThan('almostTablet')`
 			margin: 1rem 0;
-		}
-		@media (min-width: 630px) {
+		`};
+		${media.greaterThan('almostTablet')`
 			width: calc(50% - 2rem);
-		}
-		@media (min-width: 992px) {
+		`};
+		${media.greaterThan('desktop')`
 			width: calc(33.33333% - 2rem);
-		}
+		`};
 	}
 `;
 

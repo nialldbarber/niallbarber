@@ -62,7 +62,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tdisplay: inline;\n\tfont-size: 8rem;\n\t", " ", " ", " ", " &:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t", ";\n\t}\n\t&.index {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tdisplay: inline;\n\tfont-size: 8rem;\n\t", ";\n\t", ";\n\t", ";\n\t", ";\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t", ";\n\t}\n\t&.index {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -130,7 +130,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tfont-size: 2.5rem;\n\tline-height: 0;\n\tmargin: 0;\n\tpadding-bottom: 5rem;\n\t", " ", " &:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t", ";\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tfont-size: 2.5rem;\n\tline-height: 0;\n\tmargin: 0;\n\tpadding-bottom: 5rem;\n\t", ";\n\t", ";\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t", ";\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -163,6 +163,7 @@ __webpack_require__.r(__webpack_exports__);
 var media = Object(styled_media_query__WEBPACK_IMPORTED_MODULE_0__["generateMedia"])({
   mobile: '320px',
   phablet: '510px',
+  almostTablet: '629px',
   tablet: '768px',
   desktop: '992px',
   large: '1199px'
@@ -10939,11 +10940,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./config.js");
 /* harmony import */ var _components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/styles/PageHeader */ "./components/styles/PageHeader.js");
 /* harmony import */ var _components_styles_Subheader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/styles/Subheader */ "./components/styles/Subheader.js");
+/* harmony import */ var _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/utils/Breakpoints */ "./components/utils/Breakpoints.js");
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/pages/index.js";
 
 
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n\t\t\tfont-size: 2rem;\n\t\t"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\ttext-align: center;\n\tspan {\n\t\tfont-size: 3rem;\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\tpadding: 1rem 0.5rem;\n\t\tbox-shadow: ", ";\n\t\t@media (max-width: 767px) {\n\t\t\tfont-size: 2rem;\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\ttext-align: center;\n\tspan {\n\t\tfont-size: 3rem;\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\tpadding: 1rem 0.5rem;\n\t\tbox-shadow: ", ";\n\t\t", ";\n\t}\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -10979,6 +10991,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var HomepageSplash = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img(_templateObject2());
 var TypedWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), function (props) {
@@ -10987,26 +11000,26 @@ var TypedWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div
   return props.theme.black;
 }, function (props) {
   return props.theme.bs;
-});
+}, _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].lessThan('tablet')(_templateObject4()));
 
 var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HomepageSplash, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "index",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   }, _config__WEBPACK_IMPORTED_MODULE_3__["title"]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_Subheader__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
   }, _config__WEBPACK_IMPORTED_MODULE_3__["desc"]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
@@ -11014,13 +11027,13 @@ var Index = function Index() {
     alt: _config__WEBPACK_IMPORTED_MODULE_3__["title"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TypedWrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_typed__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -11030,7 +11043,7 @@ var Index = function Index() {
     loop: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   })));
@@ -11059,7 +11072,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -11084,5 +11097,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map

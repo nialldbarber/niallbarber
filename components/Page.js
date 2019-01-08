@@ -25,18 +25,18 @@ const Inner = styled.div`
 	margin: 6rem auto 0;
 	padding: 4rem 3rem;
 	min-height: calc(100vh - 16rem);
-	@media (max-width: 509px) {
+	${media.lessThan('phablet')`
 		padding: 4rem 2rem;
-	}
-	@media (min-width: 768px) {
+	`};
+	${media.greaterThan('tablet')`
 		padding: 7rem 4rem;
-	}
-	@media (min-width: 992px) {
+	`};
+	${media.greaterThan('desktop')`
 		padding: 2rem 4rem;
-	}
-	@media (min-width: 1200px) {
+	`};
+	${media.greaterThan('large')`
 		max-width: 1200px;
-	}
+	`};
 `;
 
 injectGlobal`
@@ -59,9 +59,9 @@ injectGlobal`
 		background: ${theme.black};
 		color: ${theme.offWhite};
 		overflow-x: hidden;
-		@media (max-width: 509px) {
+		${media.lessThan('phablet')`
 			padding: 0;
-		}
+		`};
 		&:before {
 			content: '';
 			position: absolute;
@@ -95,7 +95,7 @@ injectGlobal`
 		transition: opacity 0.2s ease-in-out;
 	}
 	.bar {
-		@media (max-width: 509px) {
+		${media.lessThan('phablet')`
 			width: 100vw;
 			height: 9.6rem;
 			position: fixed;
@@ -103,7 +103,7 @@ injectGlobal`
 			background: ${theme.black};
 			z-index: 999;
 			box-shadow: ${theme.bs};
-		}
+		`};
 	}
 	.grid {
 		display: flex;
@@ -116,8 +116,6 @@ injectGlobal`
 		background: ${theme.darkPink};
 		transform-origin: 50% 50%;
 	}
-
-
 .about-page {
     span {
 		position: relative;

@@ -603,8 +603,68 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\n\t\t\twidth: 100vw;\n\t\t\theight: 9.6rem;\n\t\t\tposition: fixed;\n\t\t\ttop: 0;\n\t\t\tbackground: ", ";\n\t\t\tz-index: 999;\n\t\t\tbox-shadow: ", ";\n\t\t"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral(["\n\t\t\tpadding: 0;\n\t\t"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n\t@import url('https://fonts.googleapis.com/css?family=Questrial');\n\thtml {\n\t\tbox-sizing: border-box;\n\t\tfont-size: 10px;\n\t}\n\t*, *:before, *:after {\n\t\tbox-sizing: inherit;\n\t}\n\tbody {\n\t\tposition: relative;\n\t\tmargin: 0;\n\t\tpadding: 0 0 5rem 0;\n\t\tfont-size: 1.7rem;\n\t\tline-height: 2;\n\t\t-webkit-font-smoothing: antialiased;\n\t\tfont-family: 'Questrial', sans-serif;\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\toverflow-x: hidden;\n\t\t", ";\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tbackground: url('../static/background.svg');\n\t\t\tbackground-size: cover;\n\t\t\theight: 100%;\n\t\t\twidth: 100%;\n\t\t\topacity: 0.2;\n\t\t\tz-index: -1;\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\ttransform: translate(-50%, -50%);\n\t\t}\n\t}\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: ", ";\n\t}\n\t.page-transition-enter {\n\t\topacity: 0;\n\t}\n\t.page-transition-enter-active {\n\t\topacity: 1;\n\t\ttransition: opacity 0.2s ease-out;\n\t}\n\t.page-transition-exit {\n\t\topacity: 1;\n\t}\n\t.page-transition-exit-active {\n\t\topacity: 0;\n\t\ttransition: opacity 0.2s ease-in-out;\n\t}\n\t.bar {\n\t\t", ";\n\t}\n\t.grid {\n\t\tdisplay: flex;\n\t\tmargin-top: 6rem;\n\t\tflex-wrap: wrap;\n\t}\n\t.box {\n\t\twidth: 100px;\n\t\theight: 100px;\n\t\tbackground: ", ";\n\t\ttransform-origin: 50% 50%;\n\t}\n.about-page {\n    span {\n\t\tposition: relative;\n\t\ttransition: ", ";\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tleft: 0;\n\t\t\tbottom: -.1rem;\n\t\t\tright: 0;\n\t\t\theight: 1px;\n\t\t\tz-index: -1;\n\t\t}\n\t\t&.reactSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.vueSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.wordpressSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.shopifySpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n    }\n}\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n\t\tmax-width: 1200px;\n\t"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n\t\tpadding: 2rem 4rem;\n\t"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n\t\tpadding: 7rem 4rem;\n\t"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\t@import url('https://fonts.googleapis.com/css?family=Questrial');\n\thtml {\n\t\tbox-sizing: border-box;\n\t\tfont-size: 10px;\n\t}\n\t*, *:before, *:after {\n\t\tbox-sizing: inherit;\n\t}\n\tbody {\n\t\tposition: relative;\n\t\tmargin: 0;\n\t\tpadding: 0 0 5rem 0;\n\t\tfont-size: 1.7rem;\n\t\tline-height: 2;\n\t\t-webkit-font-smoothing: antialiased;\n\t\tfont-family: 'Questrial', sans-serif;\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\toverflow-x: hidden;\n\t\t@media (max-width: 509px) {\n\t\t\tpadding: 0;\n\t\t}\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tbackground: url('../static/background.svg');\n\t\t\tbackground-size: cover;\n\t\t\theight: 100%;\n\t\t\twidth: 100%;\n\t\t\topacity: 0.2;\n\t\t\tz-index: -1;\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\ttransform: translate(-50%, -50%);\n\t\t}\n\t}\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: ", ";\n\t}\n\t.page-transition-enter {\n\t\topacity: 0;\n\t}\n\t.page-transition-enter-active {\n\t\topacity: 1;\n\t\ttransition: opacity 0.2s ease-out;\n\t}\n\t.page-transition-exit {\n\t\topacity: 1;\n\t}\n\t.page-transition-exit-active {\n\t\topacity: 0;\n\t\ttransition: opacity 0.2s ease-in-out;\n\t}\n\t.bar {\n\t\t@media (max-width: 509px) {\n\t\t\twidth: 100vw;\n\t\t\theight: 9.6rem;\n\t\t\tposition: fixed;\n\t\t\ttop: 0;\n\t\t\tbackground: ", ";\n\t\t\tz-index: 999;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n\t.grid {\n\t\tdisplay: flex;\n\t\tmargin-top: 6rem;\n\t\tflex-wrap: wrap;\n\t}\n\t.box {\n\t\twidth: 100px;\n\t\theight: 100px;\n\t\tbackground: ", ";\n\t\ttransform-origin: 50% 50%;\n\t}\n\n\n.about-page {\n    span {\n\t\tposition: relative;\n\t\ttransition: ", ";\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tleft: 0;\n\t\t\tbottom: -.1rem;\n\t\t\tright: 0;\n\t\t\theight: 1px;\n\t\t\tz-index: -1;\n\t\t}\n\t\t&.reactSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.vueSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.wordpressSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.shopifySpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n    }\n}\n"]);
+  var data = _taggedTemplateLiteral(["\n\t\tpadding: 4rem 2rem;\n\t"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -614,7 +674,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tmax-width: ", ";\n\tmargin: 6rem auto 0;\n\tpadding: 4rem 3rem;\n\tmin-height: calc(100vh - 16rem);\n\t@media (max-width: 509px) {\n\t\tpadding: 4rem 2rem;\n\t}\n\t@media (min-width: 768px) {\n\t\tpadding: 7rem 4rem;\n\t}\n\t@media (min-width: 992px) {\n\t\tpadding: 2rem 4rem;\n\t}\n\t@media (min-width: 1200px) {\n\t\tmax-width: 1200px;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmax-width: ", ";\n\tmargin: 6rem auto 0;\n\tpadding: 4rem 3rem;\n\tmin-height: calc(100vh - 16rem);\n\t", ";\n\t", ";\n\t", ";\n\t", ";\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -658,8 +718,8 @@ var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_
 });
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject2(), function (props) {
   return props.theme.maxWidth;
-});
-Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["injectGlobal"])(_templateObject3(), theme.black, theme.offWhite, theme.offWhite, theme.black, theme.bs, theme.darkPink, theme.transition, theme.green, theme.green, theme.orange, theme.orange, theme.pink, theme.pink, theme.green, theme.green);
+}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].lessThan('phablet')(_templateObject3()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].greaterThan('tablet')(_templateObject4()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].greaterThan('desktop')(_templateObject5()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].greaterThan('large')(_templateObject6()));
+Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["injectGlobal"])(_templateObject7(), theme.black, theme.offWhite, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].lessThan('phablet')(_templateObject8()), theme.offWhite, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].lessThan('phablet')(_templateObject9(), theme.black, theme.bs), theme.darkPink, theme.transition, theme.green, theme.green, theme.orange, theme.orange, theme.pink, theme.pink, theme.green, theme.green);
 
 var Page =
 /*#__PURE__*/
@@ -679,43 +739,43 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 171
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 172
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 173
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
+          lineNumber: 174
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 175
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Social__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 178
+          lineNumber: 176
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Copyright__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 179
+          lineNumber: 177
         },
         __self: this
       })));
@@ -743,11 +803,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/Breakpoints */ "./components/utils/Breakpoints.js");
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Social.js";
 
 
-function _templateObject2() {
+function _templateObject4() {
   var data = _taggedTemplateLiteral(["\n\twidth: 25px;\n\theight: 100%;\n\tmargin: 1rem;\n\ttransition: ", ";\n\tcursor: pointer;\n\t&:hover {\n\t\topacity: .6;\n\t}\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n\t\tright: 4rem;\n\t"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n\t\tposition: fixed;\n\t"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -757,7 +838,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tmargin: 0 auto;\n\ttext-align: center;\n\tbottom: 4rem;\n\tright: 2rem;\n\t@media (min-width: 510px) {\n\t\tposition: fixed;\n\t}\n\t@media (min-width: 768px) {\n\t\tright: 4rem;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: 0 auto;\n\ttext-align: center;\n\tbottom: 4rem;\n\tright: 2rem;\n\t", ";\n\t", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -770,8 +851,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
-var Icon = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject2(), function (props) {
+
+var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan('phablet')(_templateObject2()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan('tablet')(_templateObject3()));
+var Icon = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject4(), function (props) {
   return props.theme.transition;
 });
 
@@ -779,21 +861,21 @@ var Social = function Social() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "https://github.com/nialldbarber",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
@@ -801,21 +883,21 @@ var Social = function Social() {
     alt: "Github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "https://www.instagram.com/nialldbarber/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
@@ -823,21 +905,21 @@ var Social = function Social() {
     alt: "Instagram",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "https://www.linkedin.com/in/niall-barber/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
@@ -845,7 +927,7 @@ var Social = function Social() {
     alt: "LinkedIn",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }))));
@@ -930,6 +1012,7 @@ __webpack_require__.r(__webpack_exports__);
 var media = Object(styled_media_query__WEBPACK_IMPORTED_MODULE_0__["generateMedia"])({
   mobile: '320px',
   phablet: '510px',
+  almostTablet: '629px',
   tablet: '768px',
   desktop: '992px',
   large: '1199px'

@@ -129,8 +129,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/Breakpoints */ "./components/utils/Breakpoints.js");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/ProjectWhole.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -151,8 +152,78 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _templateObject10() {
+  var data = _taggedTemplateLiteral(["\n\t\t\tfont-size: 2rem;\n\t\t\tpadding-right: 1.5rem;\n\t\t"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\n\t\t\twidth: 25px;\n\t\t"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tjustify-content: flex-start;\n\talign-items: center;\n\t&:hover {\n\t\timg {\n\t\t\topacity: .6;\n\t\t}\n\t\tp {\n\t\t\topacity: .6;\n\t\t}\n\t}\n\timg {\n\t\talign-self: center;\n\t\tmax-width: 30px;\n\t\twidth: 100%;\n\t\theight: auto;\n\t\topacity: 1;\n\t\ttransition: ", ";\n\t\t", ";\n\t}\n\tp {\n\t\tfont-size: 2.8rem;\n\t\tpadding-left: 2rem;\n\t\tcolor: ", ";\n\t\tline-height: 1.3;\n\t\topacity: 1;\n\t\ttransition: ", ";\n\t\t", ";\n\t}\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n\t\t\tdisplay: none;\n\t\t"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n\t\t\t\tfont-size: 4rem;\n\t\t\t"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n\t\t\twidth: 100%;\n\t\t"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n\t\t\tpadding: 0;\n\t\t"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tjustify-content: flex-start;\n\talign-items: center;\n\t&:hover {\n\t\timg {\n\t\t\topacity: .6;\n\t\t}\n\t\tp {\n\t\t\topacity: .6;\n\t\t}\n\t}\n\timg {\n\t\talign-self: center;\n\t\tmax-width: 30px;\n\t\twidth: 100%;\n\t\theight: auto;\n\t\topacity: 1;\n\t\ttransition: ", ";\n\t\t@media (max-width: 509px) {\n\t\t\twidth: 25px;\n\t\t}\n\t}\n\tp {\n\t\tfont-size: 2.8rem;\n\t\tpadding-left: 2rem;\n\t\tcolor: ", ";\n\t\tline-height: 1.3;\n\t\topacity: 1;\n\t\ttransition: ", ";\n\t\t@media (max-width: 509px) {\n\t\t\tfont-size: 2rem;\n\t\t\tpadding-right: 1.5rem;\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-wrap: nowrap;\n\t.project-meta {\n\t\twidth: 65%;\n\t\tpadding: 0 3rem 1rem 1rem;\n\t\t", ";\n\t\t", ";\n\t\th3 {\n\t\t\tfont-size: 5rem;\n\t\t\tposition: relative;\n\t\t\tdisplay: inline;\n\t\t\tline-height: 1.3;\n\t\t\tborder-bottom: 2px solid ", ";\n\t\t\t", ";\n\t\t}\n\t\t.desc {\n\t\t\tp {\n\t\t\t\tfont-size: 2rem;\n\t\t\t}\n\t\t}\n\t}\n\t.project-img {\n\t\twidth: 35%;\n\t\t", ";\n\t\timg {\n\t\t\twidth: 100%;\n\t\t\theight: auto;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -162,7 +233,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-wrap: nowrap;\n\t.project-meta {\n\t\twidth: 65%;\n\t\tpadding: 0 3rem 1rem 1rem;\n\t\t@media (max-width: 509px) {\n\t\t\tpadding: 0;\n\t\t}\n\t\t@media (max-width: 767px) {\n\t\t\twidth: 100%;\n\t\t}\n\t\th3 {\n\t\t\tfont-size: 5rem;\n\t\t\tposition: relative;\n\t\t\tdisplay: inline;\n\t\t\tline-height: 1.3;\n\t\t\tborder-bottom: 2px solid ", ";\n\t\t\t@media (max-width: 509px) {\n\t\t\t\tfont-size: 4rem;\n\t\t\t}\n\t\t}\n\t\t.desc {\n\t\t\tp {\n\t\t\t\tfont-size: 2rem;\n\t\t\t}\n\t\t}\n\t}\n\t.project-img {\n\t\twidth: 35%;\n\t\t@media (max-width: 767px) {\n\t\t\tdisplay: none;\n\t\t}\n\t\timg {\n\t\t\twidth: 100%;\n\t\t\theight: auto;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\t\tmin-height: 100vh;\n\t"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -172,7 +243,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tpadding: 4.5rem 0 2rem;\n\tmargin-top: 7rem;\n\t@media (min-width: 992px) {\n\t\tmin-height: 100vh;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tpadding: 4.5rem 0 2rem;\n\tmargin-top: 7rem;\n\t", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -186,19 +257,20 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var ProjectSection = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].section(_templateObject());
-var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2(), function (props) {
+
+var ProjectSection = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].section(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].greaterThan('desktop')(_templateObject2()));
+var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('phablet')(_templateObject4()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('tablet')(_templateObject5()), function (props) {
   return props.theme.pink;
-}, function (props) {
+}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('phablet')(_templateObject6()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('tablet')(_templateObject7()), function (props) {
   return props.theme.bs;
 });
-var SiteLink = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a(_templateObject3(), function (props) {
+var SiteLink = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a(_templateObject8(), function (props) {
   return props.theme.transition;
-}, function (props) {
+}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('phablet')(_templateObject9()), function (props) {
   return props.theme.pink;
 }, function (props) {
   return props.theme.transition;
-});
+}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('phablet')(_templateObject10()));
 
 var Project =
 /*#__PURE__*/
@@ -218,48 +290,48 @@ function (_Component) {
         id: this.props.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 95
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectGrid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 96
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 97
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 98
         },
         __self: this
       }, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "desc",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 99
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_3___default.a, {
         source: this.props.desc,
         escapeHtml: false,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 100
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project-img",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 103
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -267,7 +339,7 @@ function (_Component) {
         alt: this.props.title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 104
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SiteLink, {
@@ -275,7 +347,7 @@ function (_Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 107
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -283,13 +355,13 @@ function (_Component) {
         alt: "Link",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 108
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 109
         },
         __self: this
       }, this.props.title)));
@@ -335,7 +407,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tmax-width: 640px;\n\tmargin-left: auto;\n\tpadding-bottom: 3rem;\n\tp {\n\t\tfont-size: 2rem;\n\t\t", " &:first-child {\n\t\t\t", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tmax-width: 640px;\n\tmargin-left: auto;\n\tpadding-bottom: 3rem;\n\tp {\n\t\tfont-size: 2rem;\n\t\t", ";\n\t\t&:first-child {\n\t\t\t", ";\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -415,7 +487,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tdisplay: inline;\n\tfont-size: 8rem;\n\t", " ", " ", " ", " &:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t", ";\n\t}\n\t&.index {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tdisplay: inline;\n\tfont-size: 8rem;\n\t", ";\n\t", ";\n\t", ";\n\t", ";\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\tleft: 0;\n\t\tbottom: 1rem;\n\t\tright: 0;\n\t\theight: 5px;\n\t\tz-index: -1;\n\t\t", ";\n\t}\n\t&.index {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.about {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.contact {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n\t&.projects {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -456,6 +528,7 @@ __webpack_require__.r(__webpack_exports__);
 var media = Object(styled_media_query__WEBPACK_IMPORTED_MODULE_0__["generateMedia"])({
   mobile: '320px',
   phablet: '510px',
+  almostTablet: '629px',
   tablet: '768px',
   desktop: '992px',
   large: '1199px'
@@ -17205,6 +17278,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Project__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Project */ "./components/Project.js");
 /* harmony import */ var _components_ProjectWhole__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/ProjectWhole */ "./components/ProjectWhole.js");
 /* harmony import */ var _components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/styles/PageHeader */ "./components/styles/PageHeader.js");
+/* harmony import */ var _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/utils/Breakpoints */ "./components/utils/Breakpoints.js");
 
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/pages/projects.js";
 
@@ -17230,8 +17304,38 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n\t\t\twidth: calc(33.33333% - 2rem);\n\t\t"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n\t\t\twidth: calc(50% - 2rem);\n\t\t"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n\t\t\tmargin: 1rem 0;\n\t\t"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\tposition: relative;\n\tz-index: 5;\n\t.project-grid-item {\n\t\twidth: 100%;\n\t\tposition: relative;\n\t\tmargin: 1rem;\n\t\t@media (max-width: 629px) {\n\t\t\tmargin: 1rem 0;\n\t\t}\n\t\t@media (min-width: 630px) {\n\t\t\twidth: calc(50% - 2rem);\n\t\t}\n\t\t@media (min-width: 992px) {\n\t\t\twidth: calc(33.33333% - 2rem);\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-wrap: wrap;\n\tposition: relative;\n\tz-index: 5;\n\t.project-grid-item {\n\t\twidth: 100%;\n\t\tposition: relative;\n\t\tmargin: 1rem;\n\t\t", ";\n\t\t", ";\n\t\t", ";\n\t}\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -17270,6 +17374,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var apiEndpoint = "".concat("https://nialldbarber.cdn.prismic.io/api/v2");
 var apiToken = "".concat("MC5YQzk2cHhBQUFDTUFONUlh.Cu-_ve-_vTnvv70477-9Qlvvv71VQO-_ve-_vUTvv73vv70qCO-_ve-_ve-_vSXvv71sGO-_ve-_vVZuWlA");
 var ExternalLink = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].a(_templateObject(), function (props) {
@@ -17278,7 +17383,7 @@ var ExternalLink = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].a(_
   return props.theme.transition;
 });
 var Parallaxed = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].img(_templateObject2());
-var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject3());
+var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject3(), _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_9__["media"].lessThan('almostTablet')(_templateObject4()), _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_9__["media"].greaterThan('almostTablet')(_templateObject5()), _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_9__["media"].greaterThan('desktop')(_templateObject6()));
 
 var Projects =
 /*#__PURE__*/
@@ -17303,7 +17408,7 @@ function (_Component) {
           key: key.data.project_image.url,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 67
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -17312,7 +17417,7 @@ function (_Component) {
           link: key.data.project_link[0].text,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 71
+            lineNumber: 72
           },
           __self: this
         }));
@@ -17326,7 +17431,7 @@ function (_Component) {
           link: key.data.project_link[0].text,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 82
+            lineNumber: 83
           },
           __self: this
         });
@@ -17334,32 +17439,32 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 94
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_8__["default"], {
         className: "projects",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 95
         },
         __self: this
       }, "Projects"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 96
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 97
         },
         __self: this
       }, "Check out some of my projects! Some are professional work, but most are projects in which I delve into new technologies"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 101
         },
         __self: this
       }, "I also run a tutorial site which involves me trying to unravel difficult coding concepts for beginners. You can check that out", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ExternalLink, {
@@ -17367,19 +17472,19 @@ function (_Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 104
         },
         __self: this
       }, "here"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProjectGrid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 109
         },
         __self: this
       }, anchoredProjects), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 110
         },
         __self: this
       }, projectWhole));
@@ -17453,7 +17558,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/
@@ -17478,5 +17583,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[5,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=projects.js.map
