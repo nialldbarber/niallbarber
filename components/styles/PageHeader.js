@@ -1,22 +1,19 @@
 import styled from 'styled-components';
+import { media } from '../utils/Breakpoints';
 
 const PageHeader = styled.h1`
 	position: relative;
 	display: inline;
 	font-size: 8rem;
-	@media (max-width: 509px) {
+	${media.lessThan('phablet')`
 		font-size: 15vw;
-	}
-	@media (min-width: 768px) {
+	`} ${media.greaterThan('tablet')`
 		font-size: 11rem;
-	}
-	@media (min-width: 992px) and (max-width: 1199px) {
+	`} ${media.between('desktop', 'large')`
 		font-size: 17rem;
-	}
-	@media (min-width: 1200px) {
+	`} ${media.greaterThan('large')`
 		font-size: 18rem;
-	}
-	&:before {
+	`} &:before {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -24,10 +21,10 @@ const PageHeader = styled.h1`
 		right: 0;
 		height: 5px;
 		z-index: -1;
-		@media (max-width: 767px) {
+		${media.lessThan('tablet')`
 			bottom: 0;
 			height: 3px;
-		}
+		`};
 	}
 	&.index {
 		&:before {

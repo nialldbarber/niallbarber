@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+import { media } from './utils/Breakpoints';
+import { title } from '../config';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import Nav from './Nav';
@@ -10,7 +12,6 @@ Router.onRouteChangeStart = () => {
 Router.onRouteChangeComplete = () => {
 	NProgress.done();
 };
-
 Router.onRouteChangeError = () => {
 	NProgress.done();
 };
@@ -21,12 +22,11 @@ const Logo = styled.div`
 	left: 3rem;
 	padding: 0 2rem;
 	z-index: 999;
-	@media (max-width: 767px) {
+	${media.lessThan('tablet')`
 		padding: 1rem 2rem 1rem 0;
-	}
-	@media (max-width: 509px) {
+	`} ${media.lessThan('phablet')`
 		margin-left: -1rem;
-	}
+	`};
 `;
 
 const LogoHeader = styled.img`
@@ -36,9 +36,9 @@ const LogoHeader = styled.img`
 	&:hover {
 		opacity: 0.8;
 	}
-	@media (max-width: 767px) {
+	${media.lessThan('tablet')`
 		width: 60px;
-	}
+	`};
 `;
 
 const Header = () => {
@@ -49,7 +49,7 @@ const Header = () => {
 					<Link href="/">
 						<a>
 							<div className="logoHolder">
-								<LogoHeader src="../static/nb-logo.svg" alt="Niall Barber" />
+								<LogoHeader src="../static/nb-logo.svg" alt={title} />
 							</div>
 						</a>
 					</Link>

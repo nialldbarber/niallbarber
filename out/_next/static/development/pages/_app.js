@@ -14,12 +14,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/Breakpoints */ "./components/utils/Breakpoints.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config */ "./config.js");
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Copyright.js";
 
 
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n\t\tright: 5rem;\n\t"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n\t\tposition: fixed;\n\t"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tmargin: -2.5rem auto 0;\n\ttext-align: center;\n\tbottom: 0;\n\tright: 2rem;\n\t@media (min-width: 510px) {\n\t\tposition: fixed;\n\t}\n\t@media (min-width: 768px) {\n\t\tright: 5rem;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: -2.5rem auto 0;\n\ttext-align: center;\n\tbottom: 0;\n\tright: 2rem;\n\t", " ", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -33,7 +54,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var FooterWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
+
+var FooterWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan('phablet')(_templateObject2()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan('tablet')(_templateObject3()));
 
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterWrap, {
@@ -48,7 +70,7 @@ var Footer = function Footer() {
       lineNumber: 21
     },
     __self: this
-  }, "\xA9 ".concat(new Date().getFullYear(), " ").concat(_config__WEBPACK_IMPORTED_MODULE_3__["title"])));
+  }, "\xA9 ".concat(new Date().getFullYear(), " ").concat(_config__WEBPACK_IMPORTED_MODULE_4__["title"])));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -69,16 +91,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! nprogress */ "./node_modules/nprogress/nprogress.js");
-/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
+/* harmony import */ var _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/Breakpoints */ "./components/utils/Breakpoints.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! nprogress */ "./node_modules/nprogress/nprogress.js");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Header.js";
 
 
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n\t\twidth: 60px;\n\t"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n\twidth: 70px;\n\topacity: 1;\n\ttransition: ", ";\n\t&:hover {\n\t\topacity: 0.8;\n\t}\n\t", ";\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n\t\tmargin-left: -1rem;\n\t"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\twidth: 70px;\n\topacity: 1;\n\ttransition: ", ";\n\t&:hover {\n\t\topacity: 0.8;\n\t}\n\t@media (max-width: 767px) {\n\t\twidth: 60px;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\t\tpadding: 1rem 2rem 1rem 0;\n\t"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -88,7 +142,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 1rem;\n\tleft: 3rem;\n\tpadding: 0 2rem;\n\tz-index: 999;\n\t@media (max-width: 767px) {\n\t\tpadding: 1rem 2rem 1rem 0;\n\t}\n\t@media (max-width: 509px) {\n\t\tmargin-left: -1rem;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 1rem;\n\tleft: 3rem;\n\tpadding: 0 2rem;\n\tz-index: 999;\n\t", " ", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -105,22 +159,24 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeStart = function () {
-  nprogress__WEBPACK_IMPORTED_MODULE_3___default.a.start();
+
+
+next_router__WEBPACK_IMPORTED_MODULE_6___default.a.onRouteChangeStart = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.start();
 };
 
-next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeComplete = function () {
-  nprogress__WEBPACK_IMPORTED_MODULE_3___default.a.done();
+next_router__WEBPACK_IMPORTED_MODULE_6___default.a.onRouteChangeComplete = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.done();
 };
 
-next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeError = function () {
-  nprogress__WEBPACK_IMPORTED_MODULE_3___default.a.done();
+next_router__WEBPACK_IMPORTED_MODULE_6___default.a.onRouteChangeError = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.done();
 };
 
-var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
-var LogoHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject2(), function (props) {
+var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].lessThan('tablet')(_templateObject2()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].lessThan('phablet')(_templateObject3()));
+var LogoHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject4(), function (props) {
   return props.theme.transition;
-});
+}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].lessThan('tablet')(_templateObject5()));
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -164,13 +220,13 @@ var Header = function Header() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogoHeader, {
     src: "../static/nb-logo.svg",
-    alt: "Niall Barber",
+    alt: _config__WEBPACK_IMPORTED_MODULE_4__["title"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
     },
     __self: this
-  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
@@ -338,8 +394,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Link */ "./components/Link.js");
-/* harmony import */ var _styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/ColouredLink */ "./components/styles/ColouredLink.js");
+/* harmony import */ var _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/Breakpoints */ "./components/utils/Breakpoints.js");
+/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Link */ "./components/Link.js");
+/* harmony import */ var _styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/ColouredLink */ "./components/styles/ColouredLink.js");
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Nav.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -360,8 +417,28 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n\t\tright: 0;\n\t"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n\tcursor: pointer;\n\tposition: absolute;\n\ttop: 0.7rem;\n\tright: 3rem;\n\t", ";\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\tcursor: pointer;\n\tposition: absolute;\n\ttop: 0.7rem;\n\tright: 3rem;\n\t@media (max-width: 767px) {\n\t\tright: 0;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\t\tright: 2rem;\n\t\ttop: 3.1rem;\n\t"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -371,7 +448,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 2.8rem;\n\tright: 3rem;\n\tz-index: 999;\n\t@media (max-width: 509px) {\n\t\tright: 2rem;\n\t\ttop: 3.1rem;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 2.8rem;\n\tright: 3rem;\n\tz-index: 999;\n\t", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -386,8 +463,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var NavBar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
-var HamburgerMenuContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject2());
+
+var NavBar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('phablet')(_templateObject2()));
+var HamburgerMenuContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('tablet')(_templateObject4()));
 
 var Nav =
 /*#__PURE__*/
@@ -406,74 +484,74 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavBar, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        activeClassName: "active",
-        href: "/",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 32
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        className: "home__nav",
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        activeClassName: "active",
+        href: "/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 33
         },
         __self: this
-      }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        activeClassName: "active",
-        href: "/about",
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        className: "home__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 34
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        className: "about__nav",
+      }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        activeClassName: "active",
+        href: "/about",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 36
         },
         __self: this
-      }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        activeClassName: "active",
-        href: "/projects",
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        className: "about__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 37
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        className: "projects__nav",
+      }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        activeClassName: "active",
+        href: "/projects",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 39
         },
         __self: this
-      }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        className: "projects__nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, "Projects")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_3__["default"], {
         activeClassName: "active",
         href: "/contact",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 42
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
         className: "contact__nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 43
         },
         __self: this
       }, "Contact"))));
@@ -504,6 +582,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Social__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Social */ "./components/Social.js");
 /* harmony import */ var _Copyright__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Copyright */ "./components/Copyright.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utils/Breakpoints */ "./components/utils/Breakpoints.js");
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Page.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -562,6 +641,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var theme = {
   black: '#1e272d',
   offWhite: '#EDEDED',
@@ -599,43 +679,43 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 172
+          lineNumber: 173
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 174
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 175
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 176
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
+          lineNumber: 177
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Social__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 178
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Copyright__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 178
+          lineNumber: 179
         },
         __self: this
       })));
@@ -785,6 +865,7 @@ var Social = function Social() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/Breakpoints */ "./components/utils/Breakpoints.js");
 function _templateObject() {
   var data = _taggedTemplateLiteral(["\n\tposition: relative;\n\tpadding: 1rem 2rem;\n\tmargin: 0 1rem;\n\ttext-decoration: none;\n\tz-index: 1;\n\toverflow: hidden;\n\tcursor: pointer;\n\ttransition: ", ";\n\t@media (max-width: 320px) {\n\t\tpadding: 1rem 0;\n\t\tfont-size: 1.5rem;\n\t}\n\t@media (min-width: 321px) and (max-width: 509px) {\n\t\tpadding: 1rem 0;\n\t\tfont-size: 1.8rem;\n\t}\n\t&:before {\n\t\tcontent: '';\n\t\tposition: absolute;\n\t\ttop: 0;\n\t\tleft: 0;\n\t\twidth: 0;\n\t\theight: 100%;\n\t\tz-index: -1;\n\t\ttransition: ", ";\n\t\ttransform: translateX(-101%);\n\t}\n\t&:hover {\n\t\t&:before {\n\t\t\t@media (min-width: 768px) {\n\t\t\t\tleft: 100%;\n\t\t\t\twidth: 100%;\n\t\t\t}\n\t\t}\n\t\t&.home__nav,\n\t\t&.about__nav,\n\t\t&.projects__nav,\n\t\t&.contact__nav {\n\t\t\t@media (min-width: 768px) {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t}\n\t&.home__nav {\n\t\t@media (max-width: 767px) {\n\t\t\tdisplay: none;\n\t\t}\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&.active {\n\t\t\t@media (min-width: 768px) {\n\t\t\t\tbackground: ", ";\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t}\n\t&.about__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&.active {\n\t\t\t@media (min-width: 768px) {\n\t\t\t\tbackground: ", ";\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t}\n\t&.projects__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&.active {\n\t\t\t@media (min-width: 768px) {\n\t\t\t\tbackground: ", ";\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t}\n\t&.contact__nav {\n\t\t&:before {\n\t\t\tbackground: ", ";\n\t\t}\n\t\t&.active {\n\t\t\t@media (min-width: 768px) {\n\t\t\t\tbackground: ", ";\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t}\n"]);
 
@@ -796,6 +877,7 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 var ColouredLink = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].a(_templateObject(), function (props) {
@@ -830,6 +912,28 @@ var ColouredLink = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].a(_
   return props.theme.black;
 });
 /* harmony default export */ __webpack_exports__["default"] = (ColouredLink);
+
+/***/ }),
+
+/***/ "./components/utils/Breakpoints.js":
+/*!*****************************************!*\
+  !*** ./components/utils/Breakpoints.js ***!
+  \*****************************************/
+/*! exports provided: media */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "media", function() { return media; });
+/* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-media-query */ "./node_modules/styled-media-query/dist/styled-media-query.es.js");
+
+var media = Object(styled_media_query__WEBPACK_IMPORTED_MODULE_0__["generateMedia"])({
+  mobile: '320px',
+  phablet: '510px',
+  tablet: '768px',
+  desktop: '992px',
+  large: '1199px'
+});
 
 /***/ }),
 
@@ -15662,6 +15766,222 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
+
+/***/ }),
+
+/***/ "./node_modules/styled-media-query/dist/styled-media-query.es.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/styled-media-query/dist/styled-media-query.es.js ***!
+  \***********************************************************************/
+/*! exports provided: default, pxToEm, pxToRem, defaultBreakpoints, generateMedia */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pxToEm", function() { return pxToEm; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pxToRem", function() { return pxToRem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultBreakpoints", function() { return defaultBreakpoints; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generateMedia", function() { return generateMedia; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+/**
+ * Converts breakpoint units in px to rem or em
+ * @param {Object} breakpoints - an object containing breakpoint names as keys and the width as value
+ * @param {number} ratio [16] - size of 1 rem in px. What is your main font-size in px?
+ * @param {'rem' | 'em'} unit
+ */
+function pxToEmOrRem(breakpoints) {
+  var ratio = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 16;
+  var unit = arguments.length > 2 ? arguments[2] : undefined;
+  var newBreakpoints = {};
+
+  for (var key in breakpoints) {
+    var point = breakpoints[key];
+
+    if (String(point).includes('px')) {
+      newBreakpoints[key] = +(parseInt(point) / ratio) + unit;
+      continue;
+    }
+
+    newBreakpoints[key] = point;
+  }
+
+  return newBreakpoints;
+}
+/**
+ * Converts breakpoint units in px to em 
+ * @param {Object} breakpoints - an object containing breakpoint names as keys and the width as value
+ * @param {number} ratio [16] - size of 1em in px. What is your main font-size in px?
+ */
+
+
+function pxToEm(breakpoints) {
+  var ratio = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 16;
+  return pxToEmOrRem(breakpoints, ratio, 'em');
+}
+/**
+ * Converts breakpoint units in px to rem 
+ * @param {Object} breakpoints - an object containing breakpoint names as keys and the width as value
+ * @param {number} ratio [16] - size of 1rem in px. What is your main font-size in px?
+ */
+
+function pxToRem(breakpoints) {
+  var ratio = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 16;
+  return pxToEmOrRem(breakpoints, ratio, 'rem');
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n          @media (min-width: ", ") {\n            ", "\n          }\n        "]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n          @media (max-width: ", ") {\n            ", "\n          }\n        "]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    @media (min-width: ", ") and\n      (max-width: ", ") {\n      ", "\n    }\n  "]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    @media (min-width: ", ") {\n      ", "\n    }\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    @media (max-width: ", ") {\n      ", "\n    }\n  "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+/**
+ * Default media breakpoints
+ * @type {Object}
+ */
+
+var defaultBreakpoints = {
+  huge: '1440px',
+  large: '1170px',
+  medium: '768px',
+  small: '450px'
+};
+
+function getSizeFromBreakpoint(breakpointValue) {
+  var breakpoints = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  if (breakpoints[breakpointValue]) {
+    return breakpoints[breakpointValue];
+  } else if (parseInt(breakpointValue)) {
+    return breakpointValue;
+  } else {
+    console.error('styled-media-query: No valid breakpoint or size specified for media.');
+    return '0';
+  }
+}
+/**
+ * Media query generator
+ * @param {Object} breakpoints - Map labels to breakpoint sizes
+ * @return {Object} - Media generators for each breakpoint
+ */
+
+
+function generateMedia() {
+  var breakpoints = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : defaultBreakpoints;
+
+  var lessThan = function lessThan(breakpoint) {
+    return function () {
+      return Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(_templateObject(), getSizeFromBreakpoint(breakpoint, breakpoints), styled_components__WEBPACK_IMPORTED_MODULE_0__["css"].apply(void 0, arguments));
+    };
+  };
+
+  var greaterThan = function greaterThan(breakpoint) {
+    return function () {
+      return Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(_templateObject2(), getSizeFromBreakpoint(breakpoint, breakpoints), styled_components__WEBPACK_IMPORTED_MODULE_0__["css"].apply(void 0, arguments));
+    };
+  };
+
+  var between = function between(firstBreakpoint, secondBreakpoint) {
+    return function () {
+      return Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(_templateObject3(), getSizeFromBreakpoint(firstBreakpoint, breakpoints), getSizeFromBreakpoint(secondBreakpoint, breakpoints), styled_components__WEBPACK_IMPORTED_MODULE_0__["css"].apply(void 0, arguments));
+    };
+  };
+
+  var oldStyle = Object.keys(breakpoints).reduce(function (acc, label) {
+    var size = breakpoints[label];
+
+    acc.to[label] = function () {
+      console.warn("styled-media-query: Use media.lessThan('".concat(label, "') instead of old media.to.").concat(label, " (Probably we'll deprecate it)"));
+      return Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(_templateObject4(), size, styled_components__WEBPACK_IMPORTED_MODULE_0__["css"].apply(void 0, arguments));
+    };
+
+    acc.from[label] = function () {
+      console.warn("styled-media-query: Use media.greaterThan('".concat(label, "') instead of old media.from.").concat(label, " (Probably we'll deprecate it)"));
+      return Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(_templateObject5(), size, styled_components__WEBPACK_IMPORTED_MODULE_0__["css"].apply(void 0, arguments));
+    };
+
+    return acc;
+  }, {
+    to: {},
+    from: {}
+  });
+  return Object.assign({
+    lessThan: lessThan,
+    greaterThan: greaterThan,
+    between: between
+  }, oldStyle);
+}
+/**
+ * Media object with default breakpoints
+ * @return {object} - Media generators for each size
+ */
+
+var index = generateMedia();
+/**
+ * Usage: styled.div` ${media.from.medium`background: #000;`} `;
+ * With this code, background for small and medium sizes will be `default` and for more than medium, will be `#000`
+ */
+
+/* harmony default export */ __webpack_exports__["default"] = (index);
+
+
 
 /***/ }),
 

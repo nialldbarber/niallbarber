@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from '../utils/Breakpoints';
 
 const ContentInfo = styled.div`
 	position: relative;
@@ -6,12 +7,13 @@ const ContentInfo = styled.div`
 	margin-left: auto;
 	padding-bottom: 3rem;
 	p {
-		font-size: 2.4rem;
-		@media (max-width: 509px) {
-			font-size: 2rem;
-		}
-		&:first-child {
-			margin-top: -1rem;
+		font-size: 2rem;
+		${media.greaterThan('phablet')`
+			font-size: 2.4rem;
+		`} &:first-child {
+			${media.greaterThan('phablet')`
+				margin-top: -1rem;
+			`};
 		}
 	}
 `;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from '../utils/Breakpoints';
 
 const SubHeader = styled.h2`
 	position: relative;
@@ -6,15 +7,13 @@ const SubHeader = styled.h2`
 	line-height: 0;
 	margin: 0;
 	padding-bottom: 5rem;
-	@media (min-width: 768px) {
+	${media.greaterThan('tablet')`
 		font-size: 4rem;
 		margin-top: -1rem;
-	}
-	@media (min-width: 992px) {
+	`} ${media.greaterThan('desktop')`
 		font-size: 4rem;
 		margin-top: -5rem;
-	}
-	&:before {
+	`} &:before {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -22,10 +21,10 @@ const SubHeader = styled.h2`
 		right: 0;
 		height: 5px;
 		z-index: -1;
-		@media (max-width: 767px) {
+		${media.greaterThan('desktop')`
 			bottom: 0;
 			height: 3px;
-		}
+		`};
 	}
 `;
 

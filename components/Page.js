@@ -4,6 +4,7 @@ import Meta from './Meta';
 import Social from './Social';
 import Copyright from './Copyright';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
+import { media } from './utils/Breakpoints';
 
 const theme = {
 	black: '#1e272d',

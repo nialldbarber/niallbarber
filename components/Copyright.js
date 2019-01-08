@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
+import { media } from './utils/Breakpoints';
 import { title } from '../config';
 
 const FooterWrap = styled.div`
@@ -7,12 +8,11 @@ const FooterWrap = styled.div`
 	text-align: center;
 	bottom: 0;
 	right: 2rem;
-	@media (min-width: 510px) {
+	${media.greaterThan('phablet')`
 		position: fixed;
-	}
-	@media (min-width: 768px) {
+	`} ${media.greaterThan('tablet')`
 		right: 5rem;
-	}
+	`};
 `;
 
 const Footer = () => {

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from '../utils/Breakpoints';
 
 const ColouredLink = styled.a`
 	position: relative;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { media } from './utils/Breakpoints';
 import Link from './Link';
 import ColouredLink from './styles/ColouredLink';
 
@@ -8,10 +9,10 @@ const NavBar = styled.div`
 	top: 2.8rem;
 	right: 3rem;
 	z-index: 999;
-	@media (max-width: 509px) {
+	${media.lessThan('phablet')`
 		right: 2rem;
 		top: 3.1rem;
-	}
+	`};
 `;
 
 const HamburgerMenuContainer = styled.div`
@@ -19,9 +20,9 @@ const HamburgerMenuContainer = styled.div`
 	position: absolute;
 	top: 0.7rem;
 	right: 3rem;
-	@media (max-width: 767px) {
+	${media.lessThan('tablet')`
 		right: 0;
-	}
+	`};
 `;
 
 export default class Nav extends Component {
