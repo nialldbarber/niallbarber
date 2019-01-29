@@ -11037,7 +11037,7 @@ var Index = function Index() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_typed__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    strings: ['HTML / S(CSS)', 'JavaScript', 'React / Vue', 'PHP', 'Git', 'WordPress', 'Shopify {{ Liquid }}', 'Photoshop / Illustrator'],
+    strings: ['HTML / S(CSS)', 'JavaScript', 'React / Vue', 'PHP', 'Git', 'WordPress', 'Headless CMSs', 'Shopify {{ Liquid }}', 'Photoshop / Illustrator'],
     typeSpeed: 50,
     backSpeed: 30,
     loop: true,
@@ -11072,7 +11072,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -11097,5 +11097,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map

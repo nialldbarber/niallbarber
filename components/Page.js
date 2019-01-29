@@ -18,10 +18,10 @@ const theme = {
 	transition: '.25s cubic-bezier(.895, .03, .685, .22)'
 };
 
-const StyledPage = styled.div`color: ${props => props.theme.offWhite};`;
+const StyledPage = styled.div`color: ${(props) => props.theme.offWhite};`;
 
 const Inner = styled.div`
-	max-width: ${props => props.theme.maxWidth};
+	max-width: ${(props) => props.theme.maxWidth};
 	margin: 6rem auto 0;
 	padding: 4rem 3rem;
 	min-height: calc(100vh - 16rem);

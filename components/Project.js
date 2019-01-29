@@ -5,11 +5,11 @@ const ProjectCard = styled.div`
 	img {
 		width: 100%;
 		height: auto;
-		box-shadow: ${props => props.theme.bs};
+		box-shadow: ${(props) => props.theme.bs};
 	}
 	h3 {
 		margin-bottom: 0;
-		transition: ${props => props.theme.transition};
+		transition: ${(props) => props.theme.transition};
 	}
 	.typeOf {
 		position: absolute;
@@ -24,7 +24,7 @@ const ProjectCard = styled.div`
 	}
 	&:hover {
 		h3 {
-			color: ${props => props.theme.pink};
+			color: ${(props) => props.theme.pink};
 		}
 	}
 `;

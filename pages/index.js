@@ -19,10 +19,10 @@ const TypedWrapper = styled.div`
 	text-align: center;
 	span {
 		font-size: 3rem;
-		background: ${props => props.theme.green};
-		color: ${props => props.theme.black};
+		background: ${(props) => props.theme.green};
+		color: ${(props) => props.theme.black};
 		padding: 1rem 0.5rem;
-		box-shadow: ${props => props.theme.bs};
+		box-shadow: ${(props) => props.theme.bs};
 		${media.lessThan('tablet')`
 			font-size: 2rem;
 		`};
@@ -44,6 +44,7 @@ const Index = () => {
 						'PHP',
 						'Git',
 						'WordPress',
+						'Headless CMSs',
 						'Shopify {{ Liquid }}',
 						'Photoshop / Illustrator'
 					]}
