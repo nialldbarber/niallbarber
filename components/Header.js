@@ -24,7 +24,8 @@ const Logo = styled.div`
 	z-index: 999;
 	${media.lessThan('tablet')`
 		padding: 1rem 2rem 1rem 0;
-	`} ${media.lessThan('phablet')`
+	`};
+	${media.lessThan('phablet')`
 		margin-left: -1rem;
 	`};
 `;
@@ -32,7 +33,7 @@ const Logo = styled.div`
 const LogoHeader = styled.img`
 	width: 70px;
 	opacity: 1;
-	transition: ${props => props.theme.transition};
+	transition: ${(props) => props.theme.transition};
 	&:hover {
 		opacity: 0.8;
 	}

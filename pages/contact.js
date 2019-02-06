@@ -19,7 +19,7 @@ const ContactMe = styled.div`
 		z-index: 1;
 		overflow: hidden;
 		cursor: pointer;
-		color: ${props => props.theme.black};
+		color: ${(props) => props.theme.black};
 		${media.lessThan('tablet')`
 			font-size: 2rem;
 		`};
@@ -31,7 +31,7 @@ const ContactMe = styled.div`
 			width: 100%;
 			height: 100%;
 			z-index: -1;
-			background: ${props => props.theme.green};
+			background: ${(props) => props.theme.green};
 		}
 	}
 `;
@@ -39,10 +39,10 @@ const ContactMe = styled.div`
 export default class Contact extends Component {
 	static async getInitialProps({ req, query }) {
 		const data = await Prismic.getApi(apiEndpoint, { accessToken: apiToken })
-			.then(api => {
+			.then((api) => {
 				return api.query(Prismic.Predicates.at('document.type', 'page'));
 			})
-			.catch(err => console.log(err));
+			.catch((err) => console.log(err));
 		return {
 			projects: data.results
 		};

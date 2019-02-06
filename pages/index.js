@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Typed from 'react-typed';
+import { Spring } from 'react-spring';
 import { title, desc } from '../config';
 import PageHeader from '../components/styles/PageHeader';
 import SubHeader from '../components/styles/Subheader';
@@ -32,7 +33,13 @@ const TypedWrapper = styled.div`
 const Index = () => {
 	return (
 		<HomepageSplash>
-			<PageHeader className="index">{title}</PageHeader>
+			<Spring from={{ opacity: 0, marginLeft: -70 }} to={{ opacity: 1, marginLeft: 0 }}>
+				{(props) => (
+					<PageHeader className="index" style={props}>
+						{title}
+					</PageHeader>
+				)}
+			</Spring>
 			<SubHeader>{desc}</SubHeader>
 			<Logo src="../static/nb-logo.svg" alt={title} />
 			<TypedWrapper>

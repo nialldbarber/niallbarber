@@ -11,10 +11,10 @@ const apiToken = `${process.env.API_TOKEN}`;
 export default class About extends Component {
 	static async getInitialProps({ req, query }) {
 		const data = await Prismic.getApi(apiEndpoint, { accessToken: apiToken })
-			.then(api => {
+			.then((api) => {
 				return api.query(Prismic.Predicates.at('document.type', 'page'));
 			})
-			.catch(err => console.log(err));
+			.catch((err) => console.log(err));
 		return {
 			projects: data.results
 		};

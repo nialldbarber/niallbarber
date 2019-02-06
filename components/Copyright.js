@@ -10,7 +10,8 @@ const FooterWrap = styled.div`
 	right: 2rem;
 	${media.greaterThan('phablet')`
 		position: fixed;
-	`} ${media.greaterThan('tablet')`
+	`};
+	${media.greaterThan('tablet')`
 		right: 5rem;
 	`};
 `;

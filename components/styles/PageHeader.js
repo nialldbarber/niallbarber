@@ -32,22 +32,22 @@ const PageHeader = styled.h1`
 	}
 	&.index {
 		&:before {
-			background: ${props => props.theme.green};
+			background: ${(props) => props.theme.green};
 		}
 	}
 	&.about {
 		&:before {
-			background: ${props => props.theme.orange};
+			background: ${(props) => props.theme.orange};
 		}
 	}
 	&.contact {
 		&:before {
-			background: ${props => props.theme.green};
+			background: ${(props) => props.theme.green};
 		}
 	}
 	&.projects {
 		&:before {
-			background: ${props => props.theme.pink};
+			background: ${(props) => props.theme.pink};
 		}
 	}
 `;

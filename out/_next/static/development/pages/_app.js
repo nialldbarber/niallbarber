@@ -40,7 +40,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tmargin: -2.5rem auto 0;\n\ttext-align: center;\n\tbottom: 0;\n\tright: 2rem;\n\t", " ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n\tmargin: -2.5rem auto 0;\n\ttext-align: center;\n\tbottom: 0;\n\tright: 2rem;\n\t", ";\n\t", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -61,13 +61,13 @@ var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterWrap, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }, "\xA9 ".concat(new Date().getFullYear(), " ").concat(_config__WEBPACK_IMPORTED_MODULE_4__["title"])));
@@ -142,7 +142,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 1rem;\n\tleft: 3rem;\n\tpadding: 0 2rem;\n\tz-index: 999;\n\t", " ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n\tposition: fixed;\n\ttop: 1rem;\n\tleft: 3rem;\n\tpadding: 0 2rem;\n\tz-index: 999;\n\t", ";\n\t", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -182,40 +182,40 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "logoHolder",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogoHeader, {
@@ -223,13 +223,13 @@ var Header = function Header() {
     alt: _config__WEBPACK_IMPORTED_MODULE_4__["title"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 58
     },
     __self: this
   })));
@@ -583,6 +583,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Copyright__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Copyright */ "./components/Copyright.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utils/Breakpoints */ "./components/utils/Breakpoints.js");
+/* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/apollo-utilities/lib/index.js");
 var _jsxFileName = "/Users/niallbarber/htdocs/niallbarber/components/Page.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -624,7 +625,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n\t@import url('https://fonts.googleapis.com/css?family=Questrial');\n\thtml {\n\t\tbox-sizing: border-box;\n\t\tfont-size: 10px;\n\t}\n\t*, *:before, *:after {\n\t\tbox-sizing: inherit;\n\t}\n\tbody {\n\t\tposition: relative;\n\t\tmargin: 0;\n\t\tpadding: 0 0 5rem 0;\n\t\tfont-size: 1.7rem;\n\t\tline-height: 2;\n\t\t-webkit-font-smoothing: antialiased;\n\t\tfont-family: 'Questrial', sans-serif;\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\toverflow-x: hidden;\n\t\t", ";\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tbackground: url('../static/background.svg');\n\t\t\tbackground-size: cover;\n\t\t\theight: 100%;\n\t\t\twidth: 100%;\n\t\t\topacity: 0.2;\n\t\t\tz-index: -1;\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\ttransform: translate(-50%, -50%);\n\t\t}\n\t}\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: ", ";\n\t}\n\t.page-transition-enter {\n\t\topacity: 0;\n\t}\n\t.page-transition-enter-active {\n\t\topacity: 1;\n\t\ttransition: opacity 0.2s ease-out;\n\t}\n\t.page-transition-exit {\n\t\topacity: 1;\n\t}\n\t.page-transition-exit-active {\n\t\topacity: 0;\n\t\ttransition: opacity 0.2s ease-in-out;\n\t}\n\t.bar {\n\t\t", ";\n\t}\n\t.grid {\n\t\tdisplay: flex;\n\t\tmargin-top: 6rem;\n\t\tflex-wrap: wrap;\n\t}\n\t.box {\n\t\twidth: 100px;\n\t\theight: 100px;\n\t\tbackground: ", ";\n\t\ttransform-origin: 50% 50%;\n\t}\n.about-page {\n    span {\n\t\tposition: relative;\n\t\ttransition: ", ";\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tleft: 0;\n\t\t\tbottom: -.1rem;\n\t\t\tright: 0;\n\t\t\theight: 1px;\n\t\t\tz-index: -1;\n\t\t}\n\t\t&.reactSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.vueSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.wordpressSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.shopifySpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n    }\n}\n"]);
+  var data = _taggedTemplateLiteral(["\n\t@import url('https://fonts.googleapis.com/css?family=Questrial');\n\thtml {\n\t\tbox-sizing: border-box;\n\t\tfont-size: 10px;\n\t}\n\t*, *:before, *:after {\n\t\tbox-sizing: inherit;\n\t}\n\tbody {\n\t\tposition: relative;\n\t\tmargin: 0;\n\t\tpadding: 0 0 5rem 0;\n\t\tfont-size: 1.7rem;\n\t\tline-height: 2;\n\t\t-webkit-font-smoothing: antialiased;\n\t\tfont-family: 'Questrial', sans-serif;\n\t\tfont-family: ", ";\n\t\tbackground: ", ";\n\t\tcolor: ", ";\n\t\toverflow-x: hidden;\n\t\t", ";\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tbackground: url('../static/background.svg');\n\t\t\tbackground-size: cover;\n\t\t\theight: 100%;\n\t\t\twidth: 100%;\n\t\t\topacity: 0.2;\n\t\t\tz-index: -1;\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\ttransform: translate(-50%, -50%);\n\t\t}\n\t}\n\ta {\n\t\ttext-decoration: none;\n\t\tcolor: ", ";\n\t}\n\t.page-transition-enter {\n\t\topacity: 0;\n\t}\n\t.page-transition-enter-active {\n\t\topacity: 1;\n\t\ttransition: opacity 0.2s ease-out;\n\t}\n\t.page-transition-exit {\n\t\topacity: 1;\n\t}\n\t.page-transition-exit-active {\n\t\topacity: 0;\n\t\ttransition: opacity 0.2s ease-in-out;\n\t}\n\t.bar {\n\t\t", ";\n\t}\n\t.grid {\n\t\tdisplay: flex;\n\t\tmargin-top: 6rem;\n\t\tflex-wrap: wrap;\n\t}\n\t.box {\n\t\twidth: 100px;\n\t\theight: 100px;\n\t\tbackground: ", ";\n\t\ttransform-origin: 50% 50%;\n\t}\n.about-page {\n\tspan {\n\t\tposition: relative;\n\t\ttransition: ", ";\n\t\t&:before {\n\t\t\tcontent: '';\n\t\t\tposition: absolute;\n\t\t\tleft: 0;\n\t\t\tbottom: -.1rem;\n\t\t\tright: 0;\n\t\t\theight: 1px;\n\t\t\tz-index: -1;\n\t\t}\n\t\t&.reactSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.vueSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.wordpressSpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t\t&.shopifySpan {\n\t\t\t&:before {\n\t\t\t\tbackground: ", ";\n\t\t\t}\n\t\t\t&:hover {\n\t\t\t\tcolor: ", ";\n\t\t\t}\n\t\t}\n\t}\n}\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -702,24 +703,26 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var theme = {
-  black: '#1e272d',
-  offWhite: '#EDEDED',
-  green: '#6cc',
-  orange: '#f89b0e',
-  pink: '#f95584',
-  darkPink: '#ff1c68',
-  maxWidth: '1100px',
-  bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
-  transition: '.25s cubic-bezier(.895, .03, .685, .22)'
+  fontFamily: "'Questrial', sans-serif",
+  black: "#1e272d",
+  offWhite: "#EDEDED",
+  green: "#6cc",
+  orange: "#f89b0e",
+  pink: "#f95584",
+  darkPink: "#ff1c68",
+  maxWidth: "1100px",
+  bs: "0 12px 24px 0 rgba(0, 0, 0, 0.09)",
+  transition: ".25s cubic-bezier(.895, .03, .685, .22)"
 };
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject(), function (props) {
   return props.theme.offWhite;
 });
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject2(), function (props) {
   return props.theme.maxWidth;
-}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].lessThan('phablet')(_templateObject3()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].greaterThan('tablet')(_templateObject4()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].greaterThan('desktop')(_templateObject5()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].greaterThan('large')(_templateObject6()));
-Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["injectGlobal"])(_templateObject7(), theme.black, theme.offWhite, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].lessThan('phablet')(_templateObject8()), theme.offWhite, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].lessThan('phablet')(_templateObject9(), theme.black, theme.bs), theme.darkPink, theme.transition, theme.green, theme.green, theme.orange, theme.orange, theme.pink, theme.pink, theme.green, theme.green);
+}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].lessThan("phablet")(_templateObject3()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].greaterThan("tablet")(_templateObject4()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].greaterThan("desktop")(_templateObject5()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].greaterThan("large")(_templateObject6()));
+Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["injectGlobal"])(_templateObject7(), theme.fontFamily, theme.black, theme.offWhite, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].lessThan("phablet")(_templateObject8()), theme.offWhite, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_6__["media"].lessThan("phablet")(_templateObject9(), theme.black, theme.bs), theme.darkPink, theme.transition, theme.green, theme.green, theme.orange, theme.orange, theme.pink, theme.pink, theme.green, theme.green);
 
 var Page =
 /*#__PURE__*/
@@ -739,43 +742,43 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 174
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 172
+          lineNumber: 175
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 176
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 177
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 178
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Social__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
+          lineNumber: 179
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Copyright__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 180
         },
         __self: this
       })));
@@ -1870,6 +1873,1173 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime-module.js");
 
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/directives.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/directives.js ***!
+  \*********************************************************/
+/*! exports provided: getDirectiveInfoFromField, shouldInclude, flattenSelections, getDirectiveNames, hasDirectives */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDirectiveInfoFromField", function() { return getDirectiveInfoFromField; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "shouldInclude", function() { return shouldInclude; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "flattenSelections", function() { return flattenSelections; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDirectiveNames", function() { return getDirectiveNames; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hasDirectives", function() { return hasDirectives; });
+/* harmony import */ var _storeUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./storeUtils */ "./node_modules/apollo-utilities/lib/storeUtils.js");
+
+function getDirectiveInfoFromField(field, variables) {
+    if (field.directives && field.directives.length) {
+        var directiveObj_1 = {};
+        field.directives.forEach(function (directive) {
+            directiveObj_1[directive.name.value] = Object(_storeUtils__WEBPACK_IMPORTED_MODULE_0__["argumentsObjectFromField"])(directive, variables);
+        });
+        return directiveObj_1;
+    }
+    return null;
+}
+function shouldInclude(selection, variables) {
+    if (variables === void 0) { variables = {}; }
+    if (!selection.directives) {
+        return true;
+    }
+    var res = true;
+    selection.directives.forEach(function (directive) {
+        if (directive.name.value !== 'skip' && directive.name.value !== 'include') {
+            return;
+        }
+        var directiveArguments = directive.arguments || [];
+        var directiveName = directive.name.value;
+        if (directiveArguments.length !== 1) {
+            throw new Error("Incorrect number of arguments for the @" + directiveName + " directive.");
+        }
+        var ifArgument = directiveArguments[0];
+        if (!ifArgument.name || ifArgument.name.value !== 'if') {
+            throw new Error("Invalid argument for the @" + directiveName + " directive.");
+        }
+        var ifValue = directiveArguments[0].value;
+        var evaledValue = false;
+        if (!ifValue || ifValue.kind !== 'BooleanValue') {
+            if (ifValue.kind !== 'Variable') {
+                throw new Error("Argument for the @" + directiveName + " directive must be a variable or a boolean value.");
+            }
+            else {
+                evaledValue = variables[ifValue.name.value];
+                if (evaledValue === undefined) {
+                    throw new Error("Invalid variable referenced in @" + directiveName + " directive.");
+                }
+            }
+        }
+        else {
+            evaledValue = ifValue.value;
+        }
+        if (directiveName === 'skip') {
+            evaledValue = !evaledValue;
+        }
+        if (!evaledValue) {
+            res = false;
+        }
+    });
+    return res;
+}
+function flattenSelections(selection) {
+    if (!selection.selectionSet ||
+        !(selection.selectionSet.selections.length > 0))
+        return [selection];
+    return [selection].concat(selection.selectionSet.selections
+        .map(function (selectionNode) {
+        return [selectionNode].concat(flattenSelections(selectionNode));
+    })
+        .reduce(function (selections, selected) { return selections.concat(selected); }, []));
+}
+function getDirectiveNames(doc) {
+    var directiveNames = doc.definitions
+        .filter(function (definition) {
+        return definition.selectionSet && definition.selectionSet.selections;
+    })
+        .map(function (x) { return flattenSelections(x); })
+        .reduce(function (selections, selected) { return selections.concat(selected); }, [])
+        .filter(function (selection) {
+        return selection.directives && selection.directives.length > 0;
+    })
+        .map(function (selection) { return selection.directives; })
+        .reduce(function (directives, directive) { return directives.concat(directive); }, [])
+        .map(function (directive) { return directive.name.value; });
+    return directiveNames;
+}
+function hasDirectives(names, doc) {
+    return getDirectiveNames(doc).some(function (name) { return names.indexOf(name) > -1; });
+}
+//# sourceMappingURL=directives.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/fragments.js":
+/*!********************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/fragments.js ***!
+  \********************************************************/
+/*! exports provided: getFragmentQueryDocument */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getFragmentQueryDocument", function() { return getFragmentQueryDocument; });
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+function getFragmentQueryDocument(document, fragmentName) {
+    var actualFragmentName = fragmentName;
+    var fragments = [];
+    document.definitions.forEach(function (definition) {
+        if (definition.kind === 'OperationDefinition') {
+            throw new Error("Found a " + definition.operation + " operation" + (definition.name ? " named '" + definition.name.value + "'" : '') + ". " +
+                'No operations are allowed when using a fragment as a query. Only fragments are allowed.');
+        }
+        if (definition.kind === 'FragmentDefinition') {
+            fragments.push(definition);
+        }
+    });
+    if (typeof actualFragmentName === 'undefined') {
+        if (fragments.length !== 1) {
+            throw new Error("Found " + fragments.length + " fragments. `fragmentName` must be provided when there is not exactly 1 fragment.");
+        }
+        actualFragmentName = fragments[0].name.value;
+    }
+    var query = __assign({}, document, { definitions: [
+            {
+                kind: 'OperationDefinition',
+                operation: 'query',
+                selectionSet: {
+                    kind: 'SelectionSet',
+                    selections: [
+                        {
+                            kind: 'FragmentSpread',
+                            name: {
+                                kind: 'Name',
+                                value: actualFragmentName,
+                            },
+                        },
+                    ],
+                },
+            }
+        ].concat(document.definitions) });
+    return query;
+}
+//# sourceMappingURL=fragments.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/getFromAST.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/getFromAST.js ***!
+  \*********************************************************/
+/*! exports provided: getMutationDefinition, checkDocument, getOperationDefinition, getOperationDefinitionOrDie, getOperationName, getFragmentDefinitions, getQueryDefinition, getFragmentDefinition, getMainDefinition, createFragmentMap, getDefaultValues, variablesInOperation */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getMutationDefinition", function() { return getMutationDefinition; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "checkDocument", function() { return checkDocument; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOperationDefinition", function() { return getOperationDefinition; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOperationDefinitionOrDie", function() { return getOperationDefinitionOrDie; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOperationName", function() { return getOperationName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getFragmentDefinitions", function() { return getFragmentDefinitions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getQueryDefinition", function() { return getQueryDefinition; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getFragmentDefinition", function() { return getFragmentDefinition; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getMainDefinition", function() { return getMainDefinition; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createFragmentMap", function() { return createFragmentMap; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDefaultValues", function() { return getDefaultValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "variablesInOperation", function() { return variablesInOperation; });
+/* harmony import */ var _util_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util/assign */ "./node_modules/apollo-utilities/lib/util/assign.js");
+/* harmony import */ var _storeUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./storeUtils */ "./node_modules/apollo-utilities/lib/storeUtils.js");
+
+
+function getMutationDefinition(doc) {
+    checkDocument(doc);
+    var mutationDef = doc.definitions.filter(function (definition) {
+        return definition.kind === 'OperationDefinition' &&
+            definition.operation === 'mutation';
+    })[0];
+    if (!mutationDef) {
+        throw new Error('Must contain a mutation definition.');
+    }
+    return mutationDef;
+}
+function checkDocument(doc) {
+    if (doc.kind !== 'Document') {
+        throw new Error("Expecting a parsed GraphQL document. Perhaps you need to wrap the query string in a \"gql\" tag? http://docs.apollostack.com/apollo-client/core.html#gql");
+    }
+    var operations = doc.definitions
+        .filter(function (d) { return d.kind !== 'FragmentDefinition'; })
+        .map(function (definition) {
+        if (definition.kind !== 'OperationDefinition') {
+            throw new Error("Schema type definitions not allowed in queries. Found: \"" + definition.kind + "\"");
+        }
+        return definition;
+    });
+    if (operations.length > 1) {
+        throw new Error("Ambiguous GraphQL document: contains " + operations.length + " operations");
+    }
+}
+function getOperationDefinition(doc) {
+    checkDocument(doc);
+    return doc.definitions.filter(function (definition) { return definition.kind === 'OperationDefinition'; })[0];
+}
+function getOperationDefinitionOrDie(document) {
+    var def = getOperationDefinition(document);
+    if (!def) {
+        throw new Error("GraphQL document is missing an operation");
+    }
+    return def;
+}
+function getOperationName(doc) {
+    return (doc.definitions
+        .filter(function (definition) {
+        return definition.kind === 'OperationDefinition' && definition.name;
+    })
+        .map(function (x) { return x.name.value; })[0] || null);
+}
+function getFragmentDefinitions(doc) {
+    return doc.definitions.filter(function (definition) { return definition.kind === 'FragmentDefinition'; });
+}
+function getQueryDefinition(doc) {
+    var queryDef = getOperationDefinition(doc);
+    if (!queryDef || queryDef.operation !== 'query') {
+        throw new Error('Must contain a query definition.');
+    }
+    return queryDef;
+}
+function getFragmentDefinition(doc) {
+    if (doc.kind !== 'Document') {
+        throw new Error("Expecting a parsed GraphQL document. Perhaps you need to wrap the query string in a \"gql\" tag? http://docs.apollostack.com/apollo-client/core.html#gql");
+    }
+    if (doc.definitions.length > 1) {
+        throw new Error('Fragment must have exactly one definition.');
+    }
+    var fragmentDef = doc.definitions[0];
+    if (fragmentDef.kind !== 'FragmentDefinition') {
+        throw new Error('Must be a fragment definition.');
+    }
+    return fragmentDef;
+}
+function getMainDefinition(queryDoc) {
+    checkDocument(queryDoc);
+    var fragmentDefinition;
+    for (var _i = 0, _a = queryDoc.definitions; _i < _a.length; _i++) {
+        var definition = _a[_i];
+        if (definition.kind === 'OperationDefinition') {
+            var operation = definition.operation;
+            if (operation === 'query' ||
+                operation === 'mutation' ||
+                operation === 'subscription') {
+                return definition;
+            }
+        }
+        if (definition.kind === 'FragmentDefinition' && !fragmentDefinition) {
+            fragmentDefinition = definition;
+        }
+    }
+    if (fragmentDefinition) {
+        return fragmentDefinition;
+    }
+    throw new Error('Expected a parsed GraphQL query with a query, mutation, subscription, or a fragment.');
+}
+function createFragmentMap(fragments) {
+    if (fragments === void 0) { fragments = []; }
+    var symTable = {};
+    fragments.forEach(function (fragment) {
+        symTable[fragment.name.value] = fragment;
+    });
+    return symTable;
+}
+function getDefaultValues(definition) {
+    if (definition &&
+        definition.variableDefinitions &&
+        definition.variableDefinitions.length) {
+        var defaultValues = definition.variableDefinitions
+            .filter(function (_a) {
+            var defaultValue = _a.defaultValue;
+            return defaultValue;
+        })
+            .map(function (_a) {
+            var variable = _a.variable, defaultValue = _a.defaultValue;
+            var defaultValueObj = {};
+            Object(_storeUtils__WEBPACK_IMPORTED_MODULE_1__["valueToObjectRepresentation"])(defaultValueObj, variable.name, defaultValue);
+            return defaultValueObj;
+        });
+        return _util_assign__WEBPACK_IMPORTED_MODULE_0__["assign"].apply(void 0, [{}].concat(defaultValues));
+    }
+    return {};
+}
+function variablesInOperation(operation) {
+    var names = new Set();
+    if (operation.variableDefinitions) {
+        for (var _i = 0, _a = operation.variableDefinitions; _i < _a.length; _i++) {
+            var definition = _a[_i];
+            names.add(definition.variable.name.value);
+        }
+    }
+    return names;
+}
+//# sourceMappingURL=getFromAST.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/index.js ***!
+  \****************************************************/
+/*! exports provided: getDirectiveInfoFromField, shouldInclude, flattenSelections, getDirectiveNames, hasDirectives, getFragmentQueryDocument, getMutationDefinition, checkDocument, getOperationDefinition, getOperationDefinitionOrDie, getOperationName, getFragmentDefinitions, getQueryDefinition, getFragmentDefinition, getMainDefinition, createFragmentMap, getDefaultValues, variablesInOperation, removeDirectivesFromDocument, addTypenameToDocument, removeConnectionDirectiveFromDocument, getDirectivesFromDocument, isScalarValue, isNumberValue, valueToObjectRepresentation, storeKeyNameFromField, getStoreKeyName, argumentsObjectFromField, resultKeyNameFromField, isField, isInlineFragment, isIdValue, toIdValue, isJsonValue, valueFromNode, assign, cloneDeep, getEnv, isEnv, isProduction, isDevelopment, isTest, tryFunctionOrLogError, graphQLResultHasError, isEqual, maybeDeepFreeze, warnOnceInDevelopment, stripSymbols */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _directives__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./directives */ "./node_modules/apollo-utilities/lib/directives.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getDirectiveInfoFromField", function() { return _directives__WEBPACK_IMPORTED_MODULE_0__["getDirectiveInfoFromField"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "shouldInclude", function() { return _directives__WEBPACK_IMPORTED_MODULE_0__["shouldInclude"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "flattenSelections", function() { return _directives__WEBPACK_IMPORTED_MODULE_0__["flattenSelections"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getDirectiveNames", function() { return _directives__WEBPACK_IMPORTED_MODULE_0__["getDirectiveNames"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "hasDirectives", function() { return _directives__WEBPACK_IMPORTED_MODULE_0__["hasDirectives"]; });
+
+/* harmony import */ var _fragments__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fragments */ "./node_modules/apollo-utilities/lib/fragments.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getFragmentQueryDocument", function() { return _fragments__WEBPACK_IMPORTED_MODULE_1__["getFragmentQueryDocument"]; });
+
+/* harmony import */ var _getFromAST__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getFromAST */ "./node_modules/apollo-utilities/lib/getFromAST.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getMutationDefinition", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["getMutationDefinition"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "checkDocument", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["checkDocument"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getOperationDefinition", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["getOperationDefinition"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getOperationDefinitionOrDie", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["getOperationDefinitionOrDie"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getOperationName", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["getOperationName"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getFragmentDefinitions", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["getFragmentDefinitions"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getQueryDefinition", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["getQueryDefinition"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getFragmentDefinition", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["getFragmentDefinition"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getMainDefinition", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["getMainDefinition"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createFragmentMap", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["createFragmentMap"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getDefaultValues", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["getDefaultValues"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "variablesInOperation", function() { return _getFromAST__WEBPACK_IMPORTED_MODULE_2__["variablesInOperation"]; });
+
+/* harmony import */ var _transform__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./transform */ "./node_modules/apollo-utilities/lib/transform.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "removeDirectivesFromDocument", function() { return _transform__WEBPACK_IMPORTED_MODULE_3__["removeDirectivesFromDocument"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "addTypenameToDocument", function() { return _transform__WEBPACK_IMPORTED_MODULE_3__["addTypenameToDocument"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "removeConnectionDirectiveFromDocument", function() { return _transform__WEBPACK_IMPORTED_MODULE_3__["removeConnectionDirectiveFromDocument"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getDirectivesFromDocument", function() { return _transform__WEBPACK_IMPORTED_MODULE_3__["getDirectivesFromDocument"]; });
+
+/* harmony import */ var _storeUtils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./storeUtils */ "./node_modules/apollo-utilities/lib/storeUtils.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isScalarValue", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["isScalarValue"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isNumberValue", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["isNumberValue"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "valueToObjectRepresentation", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["valueToObjectRepresentation"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "storeKeyNameFromField", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["storeKeyNameFromField"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getStoreKeyName", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["getStoreKeyName"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "argumentsObjectFromField", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["argumentsObjectFromField"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "resultKeyNameFromField", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["resultKeyNameFromField"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isField", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["isField"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isInlineFragment", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["isInlineFragment"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isIdValue", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["isIdValue"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "toIdValue", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["toIdValue"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isJsonValue", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["isJsonValue"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "valueFromNode", function() { return _storeUtils__WEBPACK_IMPORTED_MODULE_4__["valueFromNode"]; });
+
+/* harmony import */ var _util_assign__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./util/assign */ "./node_modules/apollo-utilities/lib/util/assign.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "assign", function() { return _util_assign__WEBPACK_IMPORTED_MODULE_5__["assign"]; });
+
+/* harmony import */ var _util_cloneDeep__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./util/cloneDeep */ "./node_modules/apollo-utilities/lib/util/cloneDeep.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "cloneDeep", function() { return _util_cloneDeep__WEBPACK_IMPORTED_MODULE_6__["cloneDeep"]; });
+
+/* harmony import */ var _util_environment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./util/environment */ "./node_modules/apollo-utilities/lib/util/environment.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getEnv", function() { return _util_environment__WEBPACK_IMPORTED_MODULE_7__["getEnv"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isEnv", function() { return _util_environment__WEBPACK_IMPORTED_MODULE_7__["isEnv"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isProduction", function() { return _util_environment__WEBPACK_IMPORTED_MODULE_7__["isProduction"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isDevelopment", function() { return _util_environment__WEBPACK_IMPORTED_MODULE_7__["isDevelopment"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isTest", function() { return _util_environment__WEBPACK_IMPORTED_MODULE_7__["isTest"]; });
+
+/* harmony import */ var _util_errorHandling__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./util/errorHandling */ "./node_modules/apollo-utilities/lib/util/errorHandling.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "tryFunctionOrLogError", function() { return _util_errorHandling__WEBPACK_IMPORTED_MODULE_8__["tryFunctionOrLogError"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "graphQLResultHasError", function() { return _util_errorHandling__WEBPACK_IMPORTED_MODULE_8__["graphQLResultHasError"]; });
+
+/* harmony import */ var _util_isEqual__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./util/isEqual */ "./node_modules/apollo-utilities/lib/util/isEqual.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isEqual", function() { return _util_isEqual__WEBPACK_IMPORTED_MODULE_9__["isEqual"]; });
+
+/* harmony import */ var _util_maybeDeepFreeze__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./util/maybeDeepFreeze */ "./node_modules/apollo-utilities/lib/util/maybeDeepFreeze.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "maybeDeepFreeze", function() { return _util_maybeDeepFreeze__WEBPACK_IMPORTED_MODULE_10__["maybeDeepFreeze"]; });
+
+/* harmony import */ var _util_warnOnce__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./util/warnOnce */ "./node_modules/apollo-utilities/lib/util/warnOnce.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "warnOnceInDevelopment", function() { return _util_warnOnce__WEBPACK_IMPORTED_MODULE_11__["warnOnceInDevelopment"]; });
+
+/* harmony import */ var _util_stripSymbols__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./util/stripSymbols */ "./node_modules/apollo-utilities/lib/util/stripSymbols.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "stripSymbols", function() { return _util_stripSymbols__WEBPACK_IMPORTED_MODULE_12__["stripSymbols"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/storeUtils.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/storeUtils.js ***!
+  \*********************************************************/
+/*! exports provided: isScalarValue, isNumberValue, valueToObjectRepresentation, storeKeyNameFromField, getStoreKeyName, argumentsObjectFromField, resultKeyNameFromField, isField, isInlineFragment, isIdValue, toIdValue, isJsonValue, valueFromNode */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isScalarValue", function() { return isScalarValue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isNumberValue", function() { return isNumberValue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "valueToObjectRepresentation", function() { return valueToObjectRepresentation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storeKeyNameFromField", function() { return storeKeyNameFromField; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStoreKeyName", function() { return getStoreKeyName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "argumentsObjectFromField", function() { return argumentsObjectFromField; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resultKeyNameFromField", function() { return resultKeyNameFromField; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isField", function() { return isField; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isInlineFragment", function() { return isInlineFragment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isIdValue", function() { return isIdValue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toIdValue", function() { return toIdValue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isJsonValue", function() { return isJsonValue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "valueFromNode", function() { return valueFromNode; });
+/* harmony import */ var fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fast-json-stable-stringify */ "./node_modules/fast-json-stable-stringify/index.js");
+/* harmony import */ var fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_0__);
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+function isScalarValue(value) {
+    return ['StringValue', 'BooleanValue', 'EnumValue'].indexOf(value.kind) > -1;
+}
+function isNumberValue(value) {
+    return ['IntValue', 'FloatValue'].indexOf(value.kind) > -1;
+}
+function isStringValue(value) {
+    return value.kind === 'StringValue';
+}
+function isBooleanValue(value) {
+    return value.kind === 'BooleanValue';
+}
+function isIntValue(value) {
+    return value.kind === 'IntValue';
+}
+function isFloatValue(value) {
+    return value.kind === 'FloatValue';
+}
+function isVariable(value) {
+    return value.kind === 'Variable';
+}
+function isObjectValue(value) {
+    return value.kind === 'ObjectValue';
+}
+function isListValue(value) {
+    return value.kind === 'ListValue';
+}
+function isEnumValue(value) {
+    return value.kind === 'EnumValue';
+}
+function isNullValue(value) {
+    return value.kind === 'NullValue';
+}
+function valueToObjectRepresentation(argObj, name, value, variables) {
+    if (isIntValue(value) || isFloatValue(value)) {
+        argObj[name.value] = Number(value.value);
+    }
+    else if (isBooleanValue(value) || isStringValue(value)) {
+        argObj[name.value] = value.value;
+    }
+    else if (isObjectValue(value)) {
+        var nestedArgObj_1 = {};
+        value.fields.map(function (obj) {
+            return valueToObjectRepresentation(nestedArgObj_1, obj.name, obj.value, variables);
+        });
+        argObj[name.value] = nestedArgObj_1;
+    }
+    else if (isVariable(value)) {
+        var variableValue = (variables || {})[value.name.value];
+        argObj[name.value] = variableValue;
+    }
+    else if (isListValue(value)) {
+        argObj[name.value] = value.values.map(function (listValue) {
+            var nestedArgArrayObj = {};
+            valueToObjectRepresentation(nestedArgArrayObj, name, listValue, variables);
+            return nestedArgArrayObj[name.value];
+        });
+    }
+    else if (isEnumValue(value)) {
+        argObj[name.value] = value.value;
+    }
+    else if (isNullValue(value)) {
+        argObj[name.value] = null;
+    }
+    else {
+        throw new Error("The inline argument \"" + name.value + "\" of kind \"" + value.kind + "\"" +
+            'is not supported. Use variables instead of inline arguments to ' +
+            'overcome this limitation.');
+    }
+}
+function storeKeyNameFromField(field, variables) {
+    var directivesObj = null;
+    if (field.directives) {
+        directivesObj = {};
+        field.directives.forEach(function (directive) {
+            directivesObj[directive.name.value] = {};
+            if (directive.arguments) {
+                directive.arguments.forEach(function (_a) {
+                    var name = _a.name, value = _a.value;
+                    return valueToObjectRepresentation(directivesObj[directive.name.value], name, value, variables);
+                });
+            }
+        });
+    }
+    var argObj = null;
+    if (field.arguments && field.arguments.length) {
+        argObj = {};
+        field.arguments.forEach(function (_a) {
+            var name = _a.name, value = _a.value;
+            return valueToObjectRepresentation(argObj, name, value, variables);
+        });
+    }
+    return getStoreKeyName(field.name.value, argObj, directivesObj);
+}
+var KNOWN_DIRECTIVES = [
+    'connection',
+    'include',
+    'skip',
+    'client',
+    'rest',
+    'export',
+];
+function getStoreKeyName(fieldName, args, directives) {
+    if (directives &&
+        directives['connection'] &&
+        directives['connection']['key']) {
+        if (directives['connection']['filter'] &&
+            directives['connection']['filter'].length > 0) {
+            var filterKeys = directives['connection']['filter']
+                ? directives['connection']['filter']
+                : [];
+            filterKeys.sort();
+            var queryArgs_1 = args;
+            var filteredArgs_1 = {};
+            filterKeys.forEach(function (key) {
+                filteredArgs_1[key] = queryArgs_1[key];
+            });
+            return directives['connection']['key'] + "(" + JSON.stringify(filteredArgs_1) + ")";
+        }
+        else {
+            return directives['connection']['key'];
+        }
+    }
+    var completeFieldName = fieldName;
+    if (args) {
+        var stringifiedArgs = fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_0___default()(args);
+        completeFieldName += "(" + stringifiedArgs + ")";
+    }
+    if (directives) {
+        Object.keys(directives).forEach(function (key) {
+            if (KNOWN_DIRECTIVES.indexOf(key) !== -1)
+                return;
+            if (directives[key] && Object.keys(directives[key]).length) {
+                completeFieldName += "@" + key + "(" + JSON.stringify(directives[key]) + ")";
+            }
+            else {
+                completeFieldName += "@" + key;
+            }
+        });
+    }
+    return completeFieldName;
+}
+function argumentsObjectFromField(field, variables) {
+    if (field.arguments && field.arguments.length) {
+        var argObj_1 = {};
+        field.arguments.forEach(function (_a) {
+            var name = _a.name, value = _a.value;
+            return valueToObjectRepresentation(argObj_1, name, value, variables);
+        });
+        return argObj_1;
+    }
+    return null;
+}
+function resultKeyNameFromField(field) {
+    return field.alias ? field.alias.value : field.name.value;
+}
+function isField(selection) {
+    return selection.kind === 'Field';
+}
+function isInlineFragment(selection) {
+    return selection.kind === 'InlineFragment';
+}
+function isIdValue(idObject) {
+    return idObject &&
+        idObject.type === 'id' &&
+        typeof idObject.generated === 'boolean';
+}
+function toIdValue(idConfig, generated) {
+    if (generated === void 0) { generated = false; }
+    return __assign({ type: 'id', generated: generated }, (typeof idConfig === 'string'
+        ? { id: idConfig, typename: undefined }
+        : idConfig));
+}
+function isJsonValue(jsonObject) {
+    return (jsonObject != null &&
+        typeof jsonObject === 'object' &&
+        jsonObject.type === 'json');
+}
+function defaultValueFromVariable(node) {
+    throw new Error("Variable nodes are not supported by valueFromNode");
+}
+function valueFromNode(node, onVariable) {
+    if (onVariable === void 0) { onVariable = defaultValueFromVariable; }
+    switch (node.kind) {
+        case 'Variable':
+            return onVariable(node);
+        case 'NullValue':
+            return null;
+        case 'IntValue':
+            return parseInt(node.value, 10);
+        case 'FloatValue':
+            return parseFloat(node.value);
+        case 'ListValue':
+            return node.values.map(function (v) { return valueFromNode(v, onVariable); });
+        case 'ObjectValue': {
+            var value = {};
+            for (var _i = 0, _a = node.fields; _i < _a.length; _i++) {
+                var field = _a[_i];
+                value[field.name.value] = valueFromNode(field.value, onVariable);
+            }
+            return value;
+        }
+        default:
+            return node.value;
+    }
+}
+//# sourceMappingURL=storeUtils.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/transform.js":
+/*!********************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/transform.js ***!
+  \********************************************************/
+/*! exports provided: removeDirectivesFromDocument, addTypenameToDocument, removeConnectionDirectiveFromDocument, getDirectivesFromDocument */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeDirectivesFromDocument", function() { return removeDirectivesFromDocument; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addTypenameToDocument", function() { return addTypenameToDocument; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeConnectionDirectiveFromDocument", function() { return removeConnectionDirectiveFromDocument; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDirectivesFromDocument", function() { return getDirectivesFromDocument; });
+/* harmony import */ var _util_cloneDeep__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util/cloneDeep */ "./node_modules/apollo-utilities/lib/util/cloneDeep.js");
+/* harmony import */ var _getFromAST__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getFromAST */ "./node_modules/apollo-utilities/lib/getFromAST.js");
+
+
+var TYPENAME_FIELD = {
+    kind: 'Field',
+    name: {
+        kind: 'Name',
+        value: '__typename',
+    },
+};
+function isNotEmpty(op, fragments) {
+    return (op.selectionSet.selections.filter(function (selectionSet) {
+        return !(selectionSet &&
+            selectionSet.kind === 'FragmentSpread' &&
+            !isNotEmpty(fragments[selectionSet.name.value], fragments));
+    }).length > 0);
+}
+function getDirectiveMatcher(directives) {
+    return function directiveMatcher(directive) {
+        return directives.some(function (dir) {
+            if (dir.name && dir.name === directive.name.value)
+                return true;
+            if (dir.test && dir.test(directive))
+                return true;
+            return false;
+        });
+    };
+}
+function addTypenameToSelectionSet(selectionSet, isRoot) {
+    if (isRoot === void 0) { isRoot = false; }
+    if (selectionSet.selections) {
+        if (!isRoot) {
+            var alreadyHasThisField = selectionSet.selections.some(function (selection) {
+                return (selection.kind === 'Field' &&
+                    selection.name.value === '__typename');
+            });
+            if (!alreadyHasThisField) {
+                selectionSet.selections.push(TYPENAME_FIELD);
+            }
+        }
+        selectionSet.selections.forEach(function (selection) {
+            if (selection.kind === 'Field') {
+                if (selection.name.value.lastIndexOf('__', 0) !== 0 &&
+                    selection.selectionSet) {
+                    addTypenameToSelectionSet(selection.selectionSet);
+                }
+            }
+            else if (selection.kind === 'InlineFragment') {
+                if (selection.selectionSet) {
+                    addTypenameToSelectionSet(selection.selectionSet);
+                }
+            }
+        });
+    }
+}
+function removeDirectivesFromSelectionSet(directives, selectionSet) {
+    if (!selectionSet.selections)
+        return selectionSet;
+    var agressiveRemove = directives.some(function (dir) { return dir.remove; });
+    selectionSet.selections = selectionSet.selections
+        .map(function (selection) {
+        if (selection.kind !== 'Field' ||
+            !selection ||
+            !selection.directives)
+            return selection;
+        var directiveMatcher = getDirectiveMatcher(directives);
+        var remove;
+        selection.directives = selection.directives.filter(function (directive) {
+            var shouldKeep = !directiveMatcher(directive);
+            if (!remove && !shouldKeep && agressiveRemove)
+                remove = true;
+            return shouldKeep;
+        });
+        return remove ? null : selection;
+    })
+        .filter(function (x) { return !!x; });
+    selectionSet.selections.forEach(function (selection) {
+        if ((selection.kind === 'Field' || selection.kind === 'InlineFragment') &&
+            selection.selectionSet) {
+            removeDirectivesFromSelectionSet(directives, selection.selectionSet);
+        }
+    });
+    return selectionSet;
+}
+function removeDirectivesFromDocument(directives, doc) {
+    var docClone = Object(_util_cloneDeep__WEBPACK_IMPORTED_MODULE_0__["cloneDeep"])(doc);
+    docClone.definitions.forEach(function (definition) {
+        removeDirectivesFromSelectionSet(directives, definition.selectionSet);
+    });
+    var operation = Object(_getFromAST__WEBPACK_IMPORTED_MODULE_1__["getOperationDefinitionOrDie"])(docClone);
+    var fragments = Object(_getFromAST__WEBPACK_IMPORTED_MODULE_1__["createFragmentMap"])(Object(_getFromAST__WEBPACK_IMPORTED_MODULE_1__["getFragmentDefinitions"])(docClone));
+    return isNotEmpty(operation, fragments) ? docClone : null;
+}
+function addTypenameToDocument(doc) {
+    Object(_getFromAST__WEBPACK_IMPORTED_MODULE_1__["checkDocument"])(doc);
+    var docClone = Object(_util_cloneDeep__WEBPACK_IMPORTED_MODULE_0__["cloneDeep"])(doc);
+    docClone.definitions.forEach(function (definition) {
+        var isRoot = definition.kind === 'OperationDefinition';
+        addTypenameToSelectionSet(definition.selectionSet, isRoot);
+    });
+    return docClone;
+}
+var connectionRemoveConfig = {
+    test: function (directive) {
+        var willRemove = directive.name.value === 'connection';
+        if (willRemove) {
+            if (!directive.arguments ||
+                !directive.arguments.some(function (arg) { return arg.name.value === 'key'; })) {
+                console.warn('Removing an @connection directive even though it does not have a key. ' +
+                    'You may want to use the key parameter to specify a store key.');
+            }
+        }
+        return willRemove;
+    },
+};
+function removeConnectionDirectiveFromDocument(doc) {
+    Object(_getFromAST__WEBPACK_IMPORTED_MODULE_1__["checkDocument"])(doc);
+    return removeDirectivesFromDocument([connectionRemoveConfig], doc);
+}
+function hasDirectivesInSelectionSet(directives, selectionSet, nestedCheck) {
+    if (nestedCheck === void 0) { nestedCheck = true; }
+    if (!(selectionSet && selectionSet.selections)) {
+        return false;
+    }
+    var matchedSelections = selectionSet.selections.filter(function (selection) {
+        return hasDirectivesInSelection(directives, selection, nestedCheck);
+    });
+    return matchedSelections.length > 0;
+}
+function hasDirectivesInSelection(directives, selection, nestedCheck) {
+    if (nestedCheck === void 0) { nestedCheck = true; }
+    if (selection.kind !== 'Field' || !selection) {
+        return true;
+    }
+    if (!selection.directives) {
+        return false;
+    }
+    var directiveMatcher = getDirectiveMatcher(directives);
+    var matchedDirectives = selection.directives.filter(directiveMatcher);
+    return (matchedDirectives.length > 0 ||
+        (nestedCheck &&
+            hasDirectivesInSelectionSet(directives, selection.selectionSet, nestedCheck)));
+}
+function getDirectivesFromSelectionSet(directives, selectionSet) {
+    selectionSet.selections = selectionSet.selections
+        .filter(function (selection) {
+        return hasDirectivesInSelection(directives, selection, true);
+    })
+        .map(function (selection) {
+        if (hasDirectivesInSelection(directives, selection, false)) {
+            return selection;
+        }
+        if ((selection.kind === 'Field' || selection.kind === 'InlineFragment') &&
+            selection.selectionSet) {
+            selection.selectionSet = getDirectivesFromSelectionSet(directives, selection.selectionSet);
+        }
+        return selection;
+    });
+    return selectionSet;
+}
+function getDirectivesFromDocument(directives, doc, includeAllFragments) {
+    if (includeAllFragments === void 0) { includeAllFragments = false; }
+    Object(_getFromAST__WEBPACK_IMPORTED_MODULE_1__["checkDocument"])(doc);
+    var docClone = Object(_util_cloneDeep__WEBPACK_IMPORTED_MODULE_0__["cloneDeep"])(doc);
+    docClone.definitions = docClone.definitions.map(function (definition) {
+        if ((definition.kind === 'OperationDefinition' ||
+            (definition.kind === 'FragmentDefinition' && !includeAllFragments)) &&
+            definition.selectionSet) {
+            definition.selectionSet = getDirectivesFromSelectionSet(directives, definition.selectionSet);
+        }
+        return definition;
+    });
+    var operation = Object(_getFromAST__WEBPACK_IMPORTED_MODULE_1__["getOperationDefinitionOrDie"])(docClone);
+    var fragments = Object(_getFromAST__WEBPACK_IMPORTED_MODULE_1__["createFragmentMap"])(Object(_getFromAST__WEBPACK_IMPORTED_MODULE_1__["getFragmentDefinitions"])(docClone));
+    return isNotEmpty(operation, fragments) ? docClone : null;
+}
+//# sourceMappingURL=transform.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/util/assign.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/util/assign.js ***!
+  \**********************************************************/
+/*! exports provided: assign */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "assign", function() { return assign; });
+function assign(target) {
+    var sources = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        sources[_i - 1] = arguments[_i];
+    }
+    sources.forEach(function (source) {
+        if (typeof source === 'undefined' || source === null) {
+            return;
+        }
+        Object.keys(source).forEach(function (key) {
+            target[key] = source[key];
+        });
+    });
+    return target;
+}
+//# sourceMappingURL=assign.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/util/cloneDeep.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/util/cloneDeep.js ***!
+  \*************************************************************/
+/*! exports provided: cloneDeep */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cloneDeep", function() { return cloneDeep; });
+var toString = Object.prototype.toString;
+function cloneDeep(value) {
+    return cloneDeepHelper(value, new Map());
+}
+function cloneDeepHelper(val, seen) {
+    switch (toString.call(val)) {
+        case "[object Array]": {
+            if (seen.has(val))
+                return seen.get(val);
+            var copy_1 = val.slice(0);
+            seen.set(val, copy_1);
+            copy_1.forEach(function (child, i) {
+                copy_1[i] = cloneDeepHelper(child, seen);
+            });
+            return copy_1;
+        }
+        case "[object Object]": {
+            if (seen.has(val))
+                return seen.get(val);
+            var copy_2 = Object.create(Object.getPrototypeOf(val));
+            seen.set(val, copy_2);
+            Object.keys(val).forEach(function (key) {
+                copy_2[key] = cloneDeepHelper(val[key], seen);
+            });
+            return copy_2;
+        }
+        default:
+            return val;
+    }
+}
+//# sourceMappingURL=cloneDeep.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/util/environment.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/util/environment.js ***!
+  \***************************************************************/
+/*! exports provided: getEnv, isEnv, isProduction, isDevelopment, isTest */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getEnv", function() { return getEnv; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isEnv", function() { return isEnv; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isProduction", function() { return isProduction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isDevelopment", function() { return isDevelopment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isTest", function() { return isTest; });
+function getEnv() {
+    if (typeof process !== 'undefined' && "development") {
+        return "development";
+    }
+    return 'development';
+}
+function isEnv(env) {
+    return getEnv() === env;
+}
+function isProduction() {
+    return isEnv('production') === true;
+}
+function isDevelopment() {
+    return isEnv('development') === true;
+}
+function isTest() {
+    return isEnv('test') === true;
+}
+//# sourceMappingURL=environment.js.map
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/util/errorHandling.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/util/errorHandling.js ***!
+  \*****************************************************************/
+/*! exports provided: tryFunctionOrLogError, graphQLResultHasError */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tryFunctionOrLogError", function() { return tryFunctionOrLogError; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "graphQLResultHasError", function() { return graphQLResultHasError; });
+function tryFunctionOrLogError(f) {
+    try {
+        return f();
+    }
+    catch (e) {
+        if (console.error) {
+            console.error(e);
+        }
+    }
+}
+function graphQLResultHasError(result) {
+    return result.errors && result.errors.length;
+}
+//# sourceMappingURL=errorHandling.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/util/isEqual.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/util/isEqual.js ***!
+  \***********************************************************/
+/*! exports provided: isEqual */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isEqual", function() { return isEqual; });
+function isEqual(a, b) {
+    if (a === b) {
+        return true;
+    }
+    if (a instanceof Date && b instanceof Date) {
+        return a.getTime() === b.getTime();
+    }
+    if (a != null &&
+        typeof a === 'object' &&
+        b != null &&
+        typeof b === 'object') {
+        for (var key in a) {
+            if (Object.prototype.hasOwnProperty.call(a, key)) {
+                if (!Object.prototype.hasOwnProperty.call(b, key)) {
+                    return false;
+                }
+                if (!isEqual(a[key], b[key])) {
+                    return false;
+                }
+            }
+        }
+        for (var key in b) {
+            if (Object.prototype.hasOwnProperty.call(b, key) &&
+                !Object.prototype.hasOwnProperty.call(a, key)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    return false;
+}
+//# sourceMappingURL=isEqual.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/util/maybeDeepFreeze.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/util/maybeDeepFreeze.js ***!
+  \*******************************************************************/
+/*! exports provided: maybeDeepFreeze */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "maybeDeepFreeze", function() { return maybeDeepFreeze; });
+/* harmony import */ var _environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./environment */ "./node_modules/apollo-utilities/lib/util/environment.js");
+
+function deepFreeze(o) {
+    Object.freeze(o);
+    Object.getOwnPropertyNames(o).forEach(function (prop) {
+        if (o[prop] !== null &&
+            (typeof o[prop] === 'object' || typeof o[prop] === 'function') &&
+            !Object.isFrozen(o[prop])) {
+            deepFreeze(o[prop]);
+        }
+    });
+    return o;
+}
+function maybeDeepFreeze(obj) {
+    if (Object(_environment__WEBPACK_IMPORTED_MODULE_0__["isDevelopment"])() || Object(_environment__WEBPACK_IMPORTED_MODULE_0__["isTest"])()) {
+        var symbolIsPolyfilled = typeof Symbol === 'function' && typeof Symbol('') === 'string';
+        if (!symbolIsPolyfilled) {
+            return deepFreeze(obj);
+        }
+    }
+    return obj;
+}
+//# sourceMappingURL=maybeDeepFreeze.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/util/stripSymbols.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/util/stripSymbols.js ***!
+  \****************************************************************/
+/*! exports provided: stripSymbols */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stripSymbols", function() { return stripSymbols; });
+function stripSymbols(data) {
+    return JSON.parse(JSON.stringify(data));
+}
+//# sourceMappingURL=stripSymbols.js.map
+
+/***/ }),
+
+/***/ "./node_modules/apollo-utilities/lib/util/warnOnce.js":
+/*!************************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/util/warnOnce.js ***!
+  \************************************************************/
+/*! exports provided: warnOnceInDevelopment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "warnOnceInDevelopment", function() { return warnOnceInDevelopment; });
+/* harmony import */ var _environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./environment */ "./node_modules/apollo-utilities/lib/util/environment.js");
+
+var haveWarned = Object.create({});
+function warnOnceInDevelopment(msg, type) {
+    if (type === void 0) { type = 'warn'; }
+    if (Object(_environment__WEBPACK_IMPORTED_MODULE_0__["isProduction"])()) {
+        return;
+    }
+    if (!haveWarned[msg]) {
+        if (!Object(_environment__WEBPACK_IMPORTED_MODULE_0__["isTest"])()) {
+            haveWarned[msg] = true;
+        }
+        switch (type) {
+            case 'error':
+                console.error(msg);
+                break;
+            default:
+                console.warn(msg);
+        }
+    }
+}
+//# sourceMappingURL=warnOnce.js.map
 
 /***/ }),
 
@@ -5725,6 +6895,77 @@ function _interopRequireDefault(obj) {
 }
 
 module.exports = _interopRequireDefault;
+
+/***/ }),
+
+/***/ "./node_modules/fast-json-stable-stringify/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/fast-json-stable-stringify/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (data, opts) {
+    if (!opts) opts = {};
+    if (typeof opts === 'function') opts = { cmp: opts };
+    var cycles = (typeof opts.cycles === 'boolean') ? opts.cycles : false;
+
+    var cmp = opts.cmp && (function (f) {
+        return function (node) {
+            return function (a, b) {
+                var aobj = { key: a, value: node[a] };
+                var bobj = { key: b, value: node[b] };
+                return f(aobj, bobj);
+            };
+        };
+    })(opts.cmp);
+
+    var seen = [];
+    return (function stringify (node) {
+        if (node && node.toJSON && typeof node.toJSON === 'function') {
+            node = node.toJSON();
+        }
+
+        if (node === undefined) return;
+        if (typeof node == 'number') return isFinite(node) ? '' + node : 'null';
+        if (typeof node !== 'object') return JSON.stringify(node);
+
+        var i, out;
+        if (Array.isArray(node)) {
+            out = '[';
+            for (i = 0; i < node.length; i++) {
+                if (i) out += ',';
+                out += stringify(node[i]) || 'null';
+            }
+            return out + ']';
+        }
+
+        if (node === null) return 'null';
+
+        if (seen.indexOf(node) !== -1) {
+            if (cycles) return JSON.stringify('__cycle__');
+            throw new TypeError('Converting circular structure to JSON');
+        }
+
+        var seenIndex = seen.push(node) - 1;
+        var keys = Object.keys(node).sort(cmp && cmp(node));
+        out = '';
+        for (i = 0; i < keys.length; i++) {
+            var key = keys[i];
+            var value = stringify(node[key]);
+
+            if (!value) continue;
+            if (out) out += ',';
+            out += JSON.stringify(key) + ':' + value;
+        }
+        seen.splice(seenIndex, 1);
+        return '{' + out + '}';
+    })(data);
+};
+
 
 /***/ }),
 

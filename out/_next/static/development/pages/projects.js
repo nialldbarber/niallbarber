@@ -223,7 +223,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-wrap: nowrap;\n\t.project-meta {\n\t\twidth: 65%;\n\t\tpadding: 0 3rem 1rem 1rem;\n\t\t", ";\n\t\t", ";\n\t\th3 {\n\t\t\tfont-size: 5rem;\n\t\t\tposition: relative;\n\t\t\tdisplay: inline;\n\t\t\tline-height: 1.3;\n\t\t\tborder-bottom: 2px solid ", ";\n\t\t\t", ";\n\t\t}\n\t\t.desc {\n\t\t\tp {\n\t\t\t\tfont-size: 2rem;\n\t\t\t}\n\t\t}\n\t}\n\t.project-img {\n\t\twidth: 35%;\n\t\t", ";\n\t\timg {\n\t\t\twidth: 100%;\n\t\t\theight: auto;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tdisplay: flex;\n\tflex-wrap: nowrap;\n\t.project-meta {\n\t\twidth: 65%;\n\t\tpadding: 0 3rem 1rem 1rem;\n\t\t", ";\n\t\t", ";\n\t\th3 {\n\t\t\tfont-size: 5rem;\n\t\t\tposition: relative;\n\t\t\tdisplay: inline;\n\t\t\tline-height: 1.3;\n\t\t\tborder-bottom: 2px solid ", ";\n\t\t\t", ";\n\t\t}\n\t\t.desc {\n\t\t\tp {\n\t\t\t\tfont-size: 2rem;\n\t\t\t}\n\t\t}\n\t}\n\t.project-img {\n\t\twidth: 35%;\n\t\tdisplay: flex;\n\t\t", ";\n\t\timg {\n\t\t\twidth: 100%;\n\t\t\theight: auto;\n\t\t\talign-self: center;\n\t\t\tbox-shadow: ", ";\n\t\t}\n\t}\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -258,19 +258,19 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var ProjectSection = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].section(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].greaterThan('desktop')(_templateObject2()));
-var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('phablet')(_templateObject4()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('tablet')(_templateObject5()), function (props) {
+var ProjectSection = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].section(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].greaterThan("desktop")(_templateObject2()));
+var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject3(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan("phablet")(_templateObject4()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan("tablet")(_templateObject5()), function (props) {
   return props.theme.pink;
-}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('phablet')(_templateObject6()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('tablet')(_templateObject7()), function (props) {
+}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan("phablet")(_templateObject6()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan("tablet")(_templateObject7()), function (props) {
   return props.theme.bs;
 });
 var SiteLink = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a(_templateObject8(), function (props) {
   return props.theme.transition;
-}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('phablet')(_templateObject9()), function (props) {
+}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan("phablet")(_templateObject9()), function (props) {
   return props.theme.pink;
 }, function (props) {
   return props.theme.transition;
-}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan('phablet')(_templateObject10()));
+}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_2__["media"].lessThan("phablet")(_templateObject10()));
 
 var Project =
 /*#__PURE__*/
@@ -290,33 +290,33 @@ function (_Component) {
         id: this.props.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 97
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectGrid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 98
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 99
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 100
         },
         __self: this
       }, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "desc",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 101
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -324,14 +324,14 @@ function (_Component) {
         escapeHtml: false,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 102
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project-img",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 105
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -339,7 +339,7 @@ function (_Component) {
         alt: this.props.title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 106
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SiteLink, {
@@ -347,7 +347,7 @@ function (_Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 109
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -355,13 +355,13 @@ function (_Component) {
         alt: "Link",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 110
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 111
         },
         __self: this
       }, this.props.title)));

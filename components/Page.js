@@ -1,21 +1,23 @@
-import React, { Component } from 'react';
-import Header from './Header';
-import Meta from './Meta';
-import Social from './Social';
-import Copyright from './Copyright';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-import { media } from './utils/Breakpoints';
+import React, { Component } from "react";
+import Header from "./Header";
+import Meta from "./Meta";
+import Social from "./Social";
+import Copyright from "./Copyright";
+import styled, { ThemeProvider, injectGlobal } from "styled-components";
+import { media } from "./utils/Breakpoints";
+import { variablesInOperation } from "apollo-utilities";
 
 const theme = {
-	black: '#1e272d',
-	offWhite: '#EDEDED',
-	green: '#6cc',
-	orange: '#f89b0e',
-	pink: '#f95584',
-	darkPink: '#ff1c68',
-	maxWidth: '1100px',
-	bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
-	transition: '.25s cubic-bezier(.895, .03, .685, .22)'
+	fontFamily: "'Questrial', sans-serif",
+	black: "#1e272d",
+	offWhite: "#EDEDED",
+	green: "#6cc",
+	orange: "#f89b0e",
+	pink: "#f95584",
+	darkPink: "#ff1c68",
+	maxWidth: "1100px",
+	bs: "0 12px 24px 0 rgba(0, 0, 0, 0.09)",
+	transition: ".25s cubic-bezier(.895, .03, .685, .22)"
 };
 
 const StyledPage = styled.div`color: ${(props) => props.theme.offWhite};`;
@@ -25,16 +27,16 @@ const Inner = styled.div`
 	margin: 6rem auto 0;
 	padding: 4rem 3rem;
 	min-height: calc(100vh - 16rem);
-	${media.lessThan('phablet')`
+	${media.lessThan("phablet")`
 		padding: 4rem 2rem;
 	`};
-	${media.greaterThan('tablet')`
+	${media.greaterThan("tablet")`
 		padding: 7rem 4rem;
 	`};
-	${media.greaterThan('desktop')`
+	${media.greaterThan("desktop")`
 		padding: 2rem 4rem;
 	`};
-	${media.greaterThan('large')`
+	${media.greaterThan("large")`
 		max-width: 1200px;
 	`};
 `;
@@ -56,10 +58,11 @@ injectGlobal`
 		line-height: 2;
 		-webkit-font-smoothing: antialiased;
 		font-family: 'Questrial', sans-serif;
+		font-family: ${theme.fontFamily};
 		background: ${theme.black};
 		color: ${theme.offWhite};
 		overflow-x: hidden;
-		${media.lessThan('phablet')`
+		${media.lessThan("phablet")`
 			padding: 0;
 		`};
 		&:before {
@@ -95,7 +98,7 @@ injectGlobal`
 		transition: opacity 0.2s ease-in-out;
 	}
 	.bar {
-		${media.lessThan('phablet')`
+		${media.lessThan("phablet")`
 			width: 100vw;
 			height: 9.6rem;
 			position: fixed;
@@ -117,7 +120,7 @@ injectGlobal`
 		transform-origin: 50% 50%;
 	}
 .about-page {
-    span {
+	span {
 		position: relative;
 		transition: ${theme.transition};
 		&:before {
@@ -161,7 +164,7 @@ injectGlobal`
 				color: ${theme.green};
 			}
 		}
-    }
+	}
 }
 `;
 

@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import { media } from './utils/Breakpoints';
-import ReactMarkdown from 'react-markdown';
+import React, { Component } from "react";
+import styled from "styled-components";
+import { media } from "./utils/Breakpoints";
+import ReactMarkdown from "react-markdown";
 
 const ProjectSection = styled.section`
 	padding: 4.5rem 0 2rem;
 	margin-top: 7rem;
-	${media.greaterThan('desktop')`
+	${media.greaterThan("desktop")`
 		min-height: 100vh;
 	`};
 `;
@@ -17,10 +17,10 @@ const ProjectGrid = styled.div`
 	.project-meta {
 		width: 65%;
 		padding: 0 3rem 1rem 1rem;
-		${media.lessThan('phablet')`
+		${media.lessThan("phablet")`
 			padding: 0;
 		`};
-		${media.lessThan('tablet')`
+		${media.lessThan("tablet")`
 			width: 100%;
 		`};
 		h3 {
@@ -28,8 +28,8 @@ const ProjectGrid = styled.div`
 			position: relative;
 			display: inline;
 			line-height: 1.3;
-			border-bottom: 2px solid ${props => props.theme.pink};
-			${media.lessThan('phablet')`
+			border-bottom: 2px solid ${(props) => props.theme.pink};
+			${media.lessThan("phablet")`
 				font-size: 4rem;
 			`};
 		}
@@ -41,13 +41,15 @@ const ProjectGrid = styled.div`
 	}
 	.project-img {
 		width: 35%;
-		${media.lessThan('tablet')`
+		display: flex;
+		${media.lessThan("tablet")`
 			display: none;
 		`};
 		img {
 			width: 100%;
 			height: auto;
-			box-shadow: ${props => props.theme.bs};
+			align-self: center;
+			box-shadow: ${(props) => props.theme.bs};
 		}
 	}
 `;
@@ -70,19 +72,19 @@ const SiteLink = styled.a`
 		width: 100%;
 		height: auto;
 		opacity: 1;
-		transition: ${props => props.theme.transition};
-		${media.lessThan('phablet')`
+		transition: ${(props) => props.theme.transition};
+		${media.lessThan("phablet")`
 			width: 25px;
 		`};
 	}
 	p {
 		font-size: 2.8rem;
 		padding-left: 2rem;
-		color: ${props => props.theme.pink};
+		color: ${(props) => props.theme.pink};
 		line-height: 1.3;
 		opacity: 1;
-		transition: ${props => props.theme.transition};
-		${media.lessThan('phablet')`
+		transition: ${(props) => props.theme.transition};
+		${media.lessThan("phablet")`
 			font-size: 2rem;
 			padding-right: 1.5rem;
 		`};

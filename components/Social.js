@@ -19,7 +19,7 @@ const Icon = styled.img`
 	width: 25px;
 	height: 100%;
 	margin: 1rem;
-	transition: ${props => props.theme.transition};
+	transition: ${(props) => props.theme.transition};
 	cursor: pointer;
 	&:hover {
 		opacity: .6;
