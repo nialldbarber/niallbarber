@@ -93,22 +93,23 @@ const SiteLink = styled.a`
 
 export default class Project extends Component {
 	render() {
+		const { title, image, link, desc } = this.props;
 		return (
-			<ProjectSection id={this.props.link}>
+			<ProjectSection id={link}>
 				<ProjectGrid>
 					<div className="project-meta">
-						<h3>{this.props.title}</h3>
+						<h3>{title}</h3>
 						<div className="desc">
-							<ReactMarkdown source={this.props.desc} escapeHtml={false} />
+							<ReactMarkdown source={desc} escapeHtml={false} />
 						</div>
 					</div>
 					<div className="project-img">
-						<img src={this.props.image} alt={this.props.title} />
+						<img src={image} alt={title} />
 					</div>
 				</ProjectGrid>
-				<SiteLink href={this.props.link} target="_blank">
+				<SiteLink href={link} target="_blank">
 					<img src="../static/link.svg" alt="Link" />
-					<p>{this.props.title}</p>
+					<p>{title}</p>
 				</SiteLink>
 			</ProjectSection>
 		);

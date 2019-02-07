@@ -69,40 +69,45 @@ function (_Component) {
   _createClass(Project, [{
     key: "render",
     value: function render() {
+      var _this$props = this.props,
+          title = _this$props.title,
+          image = _this$props.image,
+          typeOf = _this$props.typeOf,
+          typeOf2 = _this$props.typeOf2;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectCard, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 35
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 36
         },
         __self: this
-      }, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: this.props.image,
-        alt: this.props.title,
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 37
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "typeOf",
-        src: this.props.typeOf,
+      }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: image,
+        alt: title,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 38
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "typeOf typeOf2",
-        src: this.props.typeOf2,
+        className: "typeOf",
+        src: typeOf,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 39
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "typeOf typeOf2",
+        src: typeOf2,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
         },
         __self: this
       }));
@@ -286,68 +291,73 @@ function (_Component) {
   _createClass(Project, [{
     key: "render",
     value: function render() {
+      var _this$props = this.props,
+          title = _this$props.title,
+          image = _this$props.image,
+          link = _this$props.link,
+          desc = _this$props.desc;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectSection, {
-        id: this.props.link,
+        id: link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 98
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProjectGrid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 99
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project-meta",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 100
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
-        },
-        __self: this
-      }, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "desc",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 101
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        source: this.props.desc,
-        escapeHtml: false,
+      }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "desc",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 102
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        source: desc,
+        escapeHtml: false,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 103
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project-img",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: this.props.image,
-        alt: this.props.title,
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 106
         },
         __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: image,
+        alt: title,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107
+        },
+        __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SiteLink, {
-        href: this.props.link,
+        href: link,
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 110
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -355,16 +365,16 @@ function (_Component) {
         alt: "Link",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 111
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 112
         },
         __self: this
-      }, this.props.title)));
+      }, title)));
     }
   }]);
 
@@ -17383,7 +17393,7 @@ var ExternalLink = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].a(_
   return props.theme.transition;
 });
 var Parallaxed = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].img(_templateObject2());
-var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject3(), _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_9__["media"].lessThan('almostTablet')(_templateObject4()), _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_9__["media"].greaterThan('almostTablet')(_templateObject5()), _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_9__["media"].greaterThan('desktop')(_templateObject6()));
+var ProjectGrid = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject3(), _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_9__["media"].lessThan("almostTablet")(_templateObject4()), _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_9__["media"].greaterThan("almostTablet")(_templateObject5()), _components_utils_Breakpoints__WEBPACK_IMPORTED_MODULE_9__["media"].greaterThan("desktop")(_templateObject6()));
 
 var Projects =
 /*#__PURE__*/
@@ -17399,8 +17409,8 @@ function (_Component) {
   _createClass(Projects, [{
     key: "render",
     value: function render() {
-      var blog = this.props.projects[1].data,
-          projectList = this.props.projects;
+      var blog = this.props.projects[1].data;
+      var projectList = this.props.projects;
       var anchoredProjects = projectList.map(function (key) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_3___default.a, {
           className: "project-grid-item",
@@ -17467,7 +17477,7 @@ function (_Component) {
           lineNumber: 101
         },
         __self: this
-      }, "I also run a tutorial site which involves me trying to unravel difficult coding concepts for beginners. You can check that out", ' ', react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ExternalLink, {
+      }, "I also run a tutorial site which involves me trying to unravel difficult coding concepts for beginners. You can check that out", " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ExternalLink, {
         href: blog.project_link[0].text,
         target: "_blank",
         __source: {
@@ -17505,7 +17515,7 @@ function (_Component) {
                 return prismic_javascript__WEBPACK_IMPORTED_MODULE_2___default.a.getApi(apiEndpoint, {
                   accessToken: apiToken
                 }).then(function (api) {
-                  return api.query(prismic_javascript__WEBPACK_IMPORTED_MODULE_2___default.a.Predicates.at('document.type', 'project'));
+                  return api.query(prismic_javascript__WEBPACK_IMPORTED_MODULE_2___default.a.Predicates.at("document.type", "project"));
                 }).catch(function (err) {
                   return console.log(err);
                 });
@@ -17558,7 +17568,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/
@@ -17583,5 +17593,5 @@ module.exports = dll_e8427f5b250f425a56e7;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=projects.js.map

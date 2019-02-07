@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import Prismic from 'prismic-javascript';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import styled from 'styled-components';
-import ContentInfo from '../components/styles/Content';
-import Project from '../components/Project';
-import ProjectWhole from '../components/ProjectWhole';
-import PageHeader from '../components/styles/PageHeader';
-import { media } from '../components/utils/Breakpoints';
+import React, { Component } from "react";
+import Prismic from "prismic-javascript";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import styled from "styled-components";
+import ContentInfo from "../components/styles/Content";
+import Project from "../components/Project";
+import ProjectWhole from "../components/ProjectWhole";
+import PageHeader from "../components/styles/PageHeader";
+import { media } from "../components/utils/Breakpoints";
 
 const apiEndpoint = `${process.env.API_ENDPOINT}`;
 const apiToken = `${process.env.API_TOKEN}`;
@@ -34,13 +34,13 @@ const ProjectGrid = styled.div`
 		width: 100%;
 		position: relative;
 		margin: 1rem;
-		${media.lessThan('almostTablet')`
+		${media.lessThan("almostTablet")`
 			margin: 1rem 0;
 		`};
-		${media.greaterThan('almostTablet')`
+		${media.greaterThan("almostTablet")`
 			width: calc(50% - 2rem);
 		`};
-		${media.greaterThan('desktop')`
+		${media.greaterThan("desktop")`
 			width: calc(33.33333% - 2rem);
 		`};
 	}
@@ -50,7 +50,7 @@ export default class Projects extends Component {
 	static async getInitialProps({ req, query }) {
 		const data = await Prismic.getApi(apiEndpoint, { accessToken: apiToken })
 			.then((api) => {
-				return api.query(Prismic.Predicates.at('document.type', 'project'));
+				return api.query(Prismic.Predicates.at("document.type", "project"));
 			})
 			.catch((err) => console.log(err));
 		return {
@@ -59,8 +59,8 @@ export default class Projects extends Component {
 	}
 
 	render() {
-		const blog = this.props.projects[1].data,
-			projectList = this.props.projects;
+		const blog = this.props.projects[1].data;
+		const projectList = this.props.projects;
 
 		const anchoredProjects = projectList.map((key) => {
 			return (
@@ -100,7 +100,7 @@ export default class Projects extends Component {
 					</p>
 					<p>
 						I also run a tutorial site which involves me trying to unravel difficult coding concepts for beginners. You
-						can check that out{' '}
+						can check that out{" "}
 						<ExternalLink href={blog.project_link[0].text} target="_blank">
 							here
 						</ExternalLink>
