@@ -1,16 +1,16 @@
-import Link from 'next/link';
-import styled from 'styled-components';
-import { media } from './utils/Breakpoints';
+import Link from "next/link";
+import styled from "styled-components";
+import { media } from "./utils/Breakpoints";
 
 const IconContainer = styled.div`
 	margin: 0 auto;
 	text-align: center;
 	bottom: 4rem;
 	right: 2rem;
-	${media.greaterThan('phablet')`
+	${media.greaterThan("phablet")`
 		position: fixed;
 	`};
-	${media.greaterThan('tablet')`
+	${media.greaterThan("tablet")`
 		right: 4rem;
 	`};
 `;

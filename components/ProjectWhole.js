@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import { media } from "./utils/Breakpoints";
 import ReactMarkdown from "react-markdown";
@@ -91,27 +91,24 @@ const SiteLink = styled.a`
 	}
 `;
 
-export default class Project extends Component {
-	render() {
-		const { title, image, link, desc } = this.props;
-		return (
-			<ProjectSection id={link}>
-				<ProjectGrid>
-					<div className="project-meta">
-						<h3>{title}</h3>
-						<div className="desc">
-							<ReactMarkdown source={desc} escapeHtml={false} />
-						</div>
-					</div>
-					<div className="project-img">
-						<img src={image} alt={title} />
-					</div>
-				</ProjectGrid>
-				<SiteLink href={link} target="_blank">
-					<img src="../static/link.svg" alt="Link" />
-					<p>{title}</p>
-				</SiteLink>
-			</ProjectSection>
-		);
-	}
-}
+const ProjectWhole = (props) => (
+	<ProjectSection id={props.link}>
+		<ProjectGrid>
+			<div className="project-meta">
+				<h3>{props.title}</h3>
+				<div className="desc">
+					<ReactMarkdown source={props.desc} escapeHtml={false} />
+				</div>
+			</div>
+			<div className="project-img">
+				<img src={props.image} alt={props.title} />
+			</div>
+		</ProjectGrid>
+		<SiteLink href={props.link} target="_blank">
+			<img src="../static/link.svg" alt="Link" />
+			<p>{props.title}</p>
+		</SiteLink>
+	</ProjectSection>
+);
+
+export default ProjectWhole;

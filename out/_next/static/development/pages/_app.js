@@ -55,19 +55,19 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var FooterWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan('phablet')(_templateObject2()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan('tablet')(_templateObject3()));
+var FooterWrap = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan("phablet")(_templateObject2()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan("tablet")(_templateObject3()));
 
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterWrap, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 21
     },
     __self: this
   }, "\xA9 ".concat(new Date().getFullYear(), " ").concat(_config__WEBPACK_IMPORTED_MODULE_4__["title"])));
@@ -173,49 +173,49 @@ next_router__WEBPACK_IMPORTED_MODULE_6___default.a.onRouteChangeError = function
   nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.done();
 };
 
-var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].lessThan('tablet')(_templateObject2()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].lessThan('phablet')(_templateObject3()));
+var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].lessThan("tablet")(_templateObject2()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].lessThan("phablet")(_templateObject3()));
 var LogoHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject4(), function (props) {
   return props.theme.transition;
-}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].lessThan('tablet')(_templateObject5()));
+}, _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].lessThan("tablet")(_templateObject5()));
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "logoHolder",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogoHeader, {
@@ -223,13 +223,13 @@ var Header = function Header() {
     alt: _config__WEBPACK_IMPORTED_MODULE_4__["title"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 52
     },
     __self: this
   }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 57
     },
     __self: this
   })));
@@ -855,7 +855,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan('phablet')(_templateObject2()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan('tablet')(_templateObject3()));
+var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan("phablet")(_templateObject2()), _utils_Breakpoints__WEBPACK_IMPORTED_MODULE_3__["media"].greaterThan("tablet")(_templateObject3()));
 var Icon = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img(_templateObject4(), function (props) {
   return props.theme.transition;
 });

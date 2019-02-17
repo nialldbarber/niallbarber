@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import Prismic from 'prismic-javascript';
-import styled from 'styled-components';
-import { email } from '../config';
-import ContentInfo from '../components/styles/Content';
-import PageHeader from '../components/styles/PageHeader';
-import { media } from '../components/utils/Breakpoints';
+import React, { Component } from "react";
+import Prismic from "prismic-javascript";
+import styled from "styled-components";
+import { email } from "../config";
+import ContentInfo from "../components/styles/Content";
+import PageHeader from "../components/styles/PageHeader";
+import { media } from "../components/utils/Breakpoints";
 
 const apiEndpoint = `${process.env.API_ENDPOINT}`;
 const apiToken = `${process.env.API_TOKEN}`;
@@ -20,7 +20,7 @@ const ContactMe = styled.div`
 		overflow: hidden;
 		cursor: pointer;
 		color: ${(props) => props.theme.black};
-		${media.lessThan('tablet')`
+		${media.lessThan("tablet")`
 			font-size: 2rem;
 		`};
 		&:before {
@@ -40,7 +40,7 @@ export default class Contact extends Component {
 	static async getInitialProps({ req, query }) {
 		const data = await Prismic.getApi(apiEndpoint, { accessToken: apiToken })
 			.then((api) => {
-				return api.query(Prismic.Predicates.at('document.type', 'page'));
+				return api.query(Prismic.Predicates.at("document.type", "page"));
 			})
 			.catch((err) => console.log(err));
 		return {
@@ -54,11 +54,12 @@ export default class Contact extends Component {
 	};
 
 	render() {
+		const { title, content } = this.state;
 		return (
 			<div>
-				<PageHeader className="contact">{this.state.title}</PageHeader>
+				<PageHeader className="contact">{title}</PageHeader>
 				<ContentInfo>
-					<p dangerouslySetInnerHTML={{ __html: this.state.content }} />
+					<p dangerouslySetInnerHTML={{ __html: content }} />
 				</ContentInfo>
 				<ContactMe className="contact-me">
 					<p>{email}</p>
