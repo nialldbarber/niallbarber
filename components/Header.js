@@ -1,62 +1,34 @@
-import Link from "next/link";
-import styled from "styled-components";
-import { media } from "./utils/Breakpoints";
-import { title } from "../config";
-import NProgress from "nprogress";
-import Router from "next/router";
-import Nav from "./Nav";
+import React from 'react';
+import Link from 'next/link';
+import NProgress from 'nprogress';
+import Router from 'next/router';
+import Nav from './Nav';
+import logo from '../static/nb-logo.svg';
+import { Logo, LogoHeader } from './styles/HeaderStyles';
+
+import { title } from '../config';
 
 Router.onRouteChangeStart = () => {
-	NProgress.start();
+  NProgress.start();
 };
 Router.onRouteChangeComplete = () => {
-	NProgress.done();
+  NProgress.done();
 };
 Router.onRouteChangeError = () => {
-	NProgress.done();
+  NProgress.done();
 };
 
-const Logo = styled.div`
-	position: fixed;
-	top: 1rem;
-	left: 3rem;
-	padding: 0 2rem;
-	z-index: 999;
-	${media.lessThan("tablet")`
-		padding: 1rem 2rem 1rem 0;
-	`};
-	${media.lessThan("phablet")`
-		margin-left: -1rem;
-	`};
-`;
-
-const LogoHeader = styled.img`
-	width: 70px;
-	opacity: 1;
-	transition: ${(props) => props.theme.transition};
-	&:hover {
-		opacity: 0.8;
-	}
-	${media.lessThan("tablet")`
-		width: 60px;
-	`};
-`;
-
-const Header = () => (
-	<div>
-		<div className="bar">
-			<Logo>
-				<Link href="/">
-					<a>
-						<div className="logoHolder">
-							<LogoHeader src="../static/nb-logo.svg" alt={title} />
-						</div>
-					</a>
-				</Link>
-			</Logo>
-			<Nav />
-		</div>
-	</div>
-);
-
-export default Header;
+export default function Header() {
+  return (
+    <div className="bar">
+      <Logo>
+        <Link href="/">
+          <div className="logoHolder">
+            <LogoHeader src={logo} alt={title} />
+          </div>
+        </Link>
+      </Logo>
+      <Nav />
+    </div>
+  );
+}

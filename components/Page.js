@@ -1,45 +1,13 @@
-import React, { Component } from "react";
-import Header from "./Header";
-import Meta from "./Meta";
-import Social from "./Social";
-import Copyright from "./Copyright";
-import styled, { ThemeProvider, injectGlobal } from "styled-components";
-import { media } from "./utils/Breakpoints";
-import { variablesInOperation } from "apollo-utilities";
-
-const theme = {
-	fontFamily: "'Questrial', sans-serif",
-	black: "#1e272d",
-	offWhite: "#EDEDED",
-	green: "#6cc",
-	orange: "#f89b0e",
-	pink: "#f95584",
-	darkPink: "#ff1c68",
-	maxWidth: "1100px",
-	bs: "0 12px 24px 0 rgba(0, 0, 0, 0.09)",
-	transition: ".25s cubic-bezier(.895, .03, .685, .22)"
-};
-
-const StyledPage = styled.div`color: ${(props) => props.theme.offWhite};`;
-
-const Inner = styled.div`
-	max-width: ${(props) => props.theme.maxWidth};
-	margin: 6rem auto 0;
-	padding: 4rem 3rem;
-	min-height: calc(100vh - 16rem);
-	${media.lessThan("phablet")`
-		padding: 4rem 2rem;
-	`};
-	${media.greaterThan("tablet")`
-		padding: 7rem 4rem;
-	`};
-	${media.greaterThan("desktop")`
-		padding: 2rem 4rem;
-	`};
-	${media.greaterThan("large")`
-		max-width: 1200px;
-	`};
-`;
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { ThemeProvider, injectGlobal } from 'styled-components';
+import Header from './Header';
+import Meta from './Meta';
+import Social from './Social';
+import Copyright from './Copyright';
+import NightMode from './NightMode';
+import { media } from './utils';
+import { theme, StyledPage, Inner } from './styles/BaseStyles';
 
 injectGlobal`
 	@import url('https://fonts.googleapis.com/css?family=Questrial');
@@ -58,26 +26,22 @@ injectGlobal`
 		line-height: 2;
 		-webkit-font-smoothing: antialiased;
 		font-family: 'Questrial', sans-serif;
-		font-family: ${theme.fontFamily};
+    font-kerning: normal;
+    font-feature-settings: "kern", "liga", "clig", "calt";
 		background: ${theme.black};
 		color: ${theme.offWhite};
 		overflow-x: hidden;
-		${media.lessThan("phablet")`
+    transition: .25s ease-in-out;
+		${media.lessThan('phablet')`
 			padding: 0;
 		`};
-		&:before {
-			content: '';
-			position: absolute;
-			background: url('../static/background.svg');
-			background-size: cover;
-			height: 100%;
-			width: 100%;
-			opacity: 0.2;
-			z-index: -1;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
+    &.day {
+      background: ${theme.offWhite};
+      color: ${theme.black};
+      h1, h2, h3, h4, p, a, span {
+        color: ${theme.black};
+      }
+    }
 	}
 	a {
 		text-decoration: none;
@@ -98,7 +62,7 @@ injectGlobal`
 		transition: opacity 0.2s ease-in-out;
 	}
 	.bar {
-		${media.lessThan("phablet")`
+		${media.lessThan('phablet')`
 			width: 100vw;
 			height: 9.6rem;
 			position: fixed;
@@ -168,18 +132,28 @@ injectGlobal`
 }
 `;
 
-export default class Page extends Component {
-	render() {
-		return (
-			<ThemeProvider theme={theme}>
-				<StyledPage>
-					<Meta />
-					<Header />
-					<Inner>{this.props.children}</Inner>
-					<Social />
-					<Copyright />
-				</StyledPage>
-			</ThemeProvider>
-		);
-	}
+export default function Page({ children }) {
+  const [mode, setMode] = useState(true);
+
+  const handleClick = () => {
+    setMode(!mode);
+    document.body.classList.toggle('day');
+  };
+
+  return (
+    <ThemeProvider theme={theme}>
+      <StyledPage>
+        <Meta />
+        <Header />
+        <NightMode modeType={mode} modeSelect={handleClick} />
+        <Inner>{children}</Inner>
+        <Social />
+        <Copyright />
+      </StyledPage>
+    </ThemeProvider>
+  );
 }
+
+Page.propTypes = {
+  children: PropTypes.node.isRequired,
+};

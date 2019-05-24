@@ -1,49 +1,25 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import { media } from './utils/Breakpoints';
+import React from 'react';
 import Link from './Link';
+import { pages } from './utils';
 import ColouredLink from './styles/ColouredLink';
+import { NavBar } from './styles/HeaderStyles';
 
-const NavBar = styled.div`
-	position: fixed;
-	top: 2.8rem;
-	right: 3rem;
-	z-index: 999;
-	${media.lessThan('phablet')`
-		right: 2rem;
-		top: 3.1rem;
-	`};
-`;
-
-const HamburgerMenuContainer = styled.div`
-	cursor: pointer;
-	position: absolute;
-	top: 0.7rem;
-	right: 3rem;
-	${media.lessThan('tablet')`
-		right: 0;
-	`};
-`;
-
-export default class Nav extends Component {
-	render() {
-		return (
-			<NavBar>
-				<div className="nav">
-					<Link activeClassName="active" href="/">
-						<ColouredLink className="home__nav">Home</ColouredLink>
-					</Link>
-					<Link activeClassName="active" href="/about">
-						<ColouredLink className="about__nav">About</ColouredLink>
-					</Link>
-					<Link activeClassName="active" href="/projects">
-						<ColouredLink className="projects__nav">Projects</ColouredLink>
-					</Link>
-					<Link activeClassName="active" href="/contact">
-						<ColouredLink className="contact__nav">Contact</ColouredLink>
-					</Link>
-				</div>
-			</NavBar>
-		);
-	}
+export default function Nav() {
+  return (
+    <NavBar>
+      <div className="nav">
+        {pages.map(page => (
+          <Link
+            key={page.title}
+            activeClassName="active"
+            href={page.title === 'Home' ? '/' : `/${page.title.toLowerCase()}`}
+          >
+            <ColouredLink className={`${page.title.toLowerCase()}__nav`}>
+              {page.title}
+            </ColouredLink>
+          </Link>
+        ))}
+      </div>
+    </NavBar>
+  );
 }

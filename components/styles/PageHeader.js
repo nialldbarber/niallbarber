@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../utils/Breakpoints';
+import { media } from '../utils';
 
 const PageHeader = styled.h1`
 	position: relative;
