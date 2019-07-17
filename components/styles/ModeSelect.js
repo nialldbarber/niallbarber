@@ -23,6 +23,7 @@ export const ModeSelect = styled.div`
       right: 0;
       background: #f95584;
       border-radius: 18px;
+      box-shadow: ${props => props.theme.bs};
       transition: 0.08s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;
       &:before {
         content: '';
@@ -30,6 +31,7 @@ export const ModeSelect = styled.div`
         top: 50%;
         left: 3px;
         background-color: ${props => props.theme.black};
+        box-shadow: ${props => props.theme.bs};
         width: 28px;
         height: 28px;
         border-radius: 50%;

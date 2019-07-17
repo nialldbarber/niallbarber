@@ -22,7 +22,7 @@ export const Logo = styled.div`
 `;
 
 export const LogoHeader = styled.img`
-  width: 70px;
+  width: 80px;
   opacity: 1;
   transition: ${props => props.theme.transition};
   &:hover {

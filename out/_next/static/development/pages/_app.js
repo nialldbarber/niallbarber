@@ -909,7 +909,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  width: 70px;\n  opacity: 1;\n  transition: ", ";\n  &:hover {\n    opacity: 0.8;\n  }\n  ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 80px;\n  opacity: 1;\n  transition: ", ";\n  &:hover {\n    opacity: 0.8;\n  }\n  ", ";\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -1004,7 +1004,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  position: fixed;\n  left: 2rem;\n  bottom: 2rem;\n  ", ";\n\n  .switcher {\n    position: relative;\n    display: block;\n    width: 60px;\n    height: 32px;\n    .slider {\n      position: absolute;\n      cursor: pointer;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0;\n      background: #f95584;\n      border-radius: 18px;\n      transition: 0.08s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;\n      &:before {\n        content: '';\n        position: absolute;\n        top: 50%;\n        left: 3px;\n        background-color: ", ";\n        width: 28px;\n        height: 28px;\n        border-radius: 50%;\n        transform: translateY(-50%);\n        transition: 0.125s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;\n      }\n    }\n  }\n\n  input {\n    -webkit-appearance: none;\n    &:checked {\n      & + .slider {\n        &:before {\n          background-color: ", ";\n          transform: translateX(26px) translateY(-50%);\n        }\n      }\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: fixed;\n  left: 2rem;\n  bottom: 2rem;\n  ", ";\n\n  .switcher {\n    position: relative;\n    display: block;\n    width: 60px;\n    height: 32px;\n    .slider {\n      position: absolute;\n      cursor: pointer;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0;\n      background: #f95584;\n      border-radius: 18px;\n      box-shadow: ", ";\n      transition: 0.08s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;\n      &:before {\n        content: '';\n        position: absolute;\n        top: 50%;\n        left: 3px;\n        background-color: ", ";\n        box-shadow: ", ";\n        width: 28px;\n        height: 28px;\n        border-radius: 50%;\n        transform: translateY(-50%);\n        transition: 0.125s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;\n      }\n    }\n  }\n\n  input {\n    -webkit-appearance: none;\n    &:checked {\n      & + .slider {\n        &:before {\n          background-color: ", ";\n          transform: translateX(26px) translateY(-50%);\n        }\n      }\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1018,7 +1018,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var ModeSelect = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div(_templateObject(), _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject2()), function (props) {
+  return props.theme.bs;
+}, function (props) {
   return props.theme.black;
+}, function (props) {
+  return props.theme.bs;
 }, function (props) {
   return props.theme.offWhite;
 });

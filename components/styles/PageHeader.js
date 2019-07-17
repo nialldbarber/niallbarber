@@ -24,7 +24,7 @@ const PageHeader = styled.h1`
     bottom: 1rem;
     right: 0;
     height: 5px;
-    z-index: -1;
+    z-index: 0;
     ${media.lessThan('tablet')`
 			bottom: 0;
 			height: 3px;

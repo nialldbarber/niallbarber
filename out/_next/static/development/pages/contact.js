@@ -157,7 +157,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  position: relative;\n  display: inline;\n  font-size: 8rem;\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  &:before {\n    content: '';\n    position: absolute;\n    left: 0;\n    bottom: 1rem;\n    right: 0;\n    height: 5px;\n    z-index: -1;\n    ", ";\n  }\n  &.index {\n    &:before {\n      background: ", ";\n    }\n  }\n  &.about {\n    &:before {\n      background: ", ";\n    }\n  }\n  &.contact {\n    &:before {\n      background: ", ";\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  display: inline;\n  font-size: 8rem;\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  &:before {\n    content: '';\n    position: absolute;\n    left: 0;\n    bottom: 1rem;\n    right: 0;\n    height: 5px;\n    z-index: 0;\n    ", ";\n  }\n  &.index {\n    &:before {\n      background: ", ";\n    }\n  }\n  &.about {\n    &:before {\n      background: ", ";\n    }\n  }\n  &.contact {\n    &:before {\n      background: ", ";\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
