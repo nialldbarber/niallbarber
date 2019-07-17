@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { socialLinks } from './utils';
+import { socialLinks } from '../static/utils';
 import { IconContainer, Icon } from './styles/FooterStyles';
 
 export default function Social() {

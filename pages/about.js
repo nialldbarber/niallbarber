@@ -1,35 +1,21 @@
-import React, { Component } from 'react';
-import Prismic from 'prismic-javascript';
+import React, { useState, useEffect } from 'react';
+import { pageContent } from '../static/content/about';
 import ContentInfo from '../components/styles/Content';
 import PageHeader from '../components/styles/PageHeader';
 
-const apiEndpoint = `${process.env.API_ENDPOINT}`;
-const apiToken = `${process.env.API_TOKEN}`;
+export default function About() {
+  const [about, setAbout] = useState('');
 
-export default class About extends Component {
-  static async getInitialProps({ req, query }) {
-    const data = await Prismic.getApi(apiEndpoint, { accessToken: apiToken })
-      .then(api => api.query(Prismic.Predicates.at('document.type', 'page')))
-      .catch(err => console.log(err));
-    return {
-      projects: data.results,
-    };
-  }
+  useEffect(() => {
+    setAbout(pageContent);
+  }, []);
 
-  state = {
-    title: this.props.projects[0].data.page_title[0].text,
-    content: this.props.projects[0].data.page_content[0].text,
-  };
-
-  render() {
-    const { title, content } = this.state;
-    return (
-      <div className="about-page">
-        <PageHeader className="about">{title}</PageHeader>
-        <ContentInfo>
-          <p dangerouslySetInnerHTML={{ __html: content }} />
-        </ContentInfo>
-      </div>
-    );
-  }
+  return (
+    <div className="about-page">
+      <PageHeader className="about">{about.title}</PageHeader>
+      <ContentInfo>
+        <p dangerouslySetInnerHTML={{ __html: about.content }} />
+      </ContentInfo>
+    </div>
+  );
 }

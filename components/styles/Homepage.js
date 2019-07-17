@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../utils';
+import { media } from '../../static/utils';
 
 export const HomepageSplash = styled.div`
   text-align: center;

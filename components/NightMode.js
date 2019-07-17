@@ -7,10 +7,14 @@ import moon from '../static/moon.svg';
 export default function NightMode({ modeType, modeSelect }) {
   return (
     <>
-      <ModeType src={modeType === false ? sun : moon} alt="mode type" />
-      <ModeSelect className="button-container">
-        <label htmlFor="mode-select" className="switcher">
-          <input type="checkbox" id="mode-select" onClick={modeSelect} />
+      <ModeSelect>
+        <label className="switcher" htmlFor="mode-select">
+          <input
+            type="checkbox"
+            onClick={modeSelect}
+            id="mode-select"
+            checked={modeType === 'light'}
+          />
           <span className="slider" />
         </label>
       </ModeSelect>

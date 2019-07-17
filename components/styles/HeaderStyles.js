@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../utils';
+import { media } from '../../static/utils';
 
 export const Logo = styled.div`
   position: fixed;
@@ -7,6 +7,12 @@ export const Logo = styled.div`
   left: 3rem;
   padding: 0 2rem;
   z-index: 999;
+  cursor: pointer;
+  transition: transform 0.1s cubic-bezier(0, 1.8, 1, 1.8);
+  transform: translateY(0.7em);
+  &:hover {
+    transform: translateY(1em) rotate(-2deg) scale(1.15);
+  }
   ${media.lessThan('tablet')`
 		padding: 1rem 2rem 1rem 0;
 	`};

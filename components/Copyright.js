@@ -1,4 +1,4 @@
-import { date } from './utils';
+import { date } from '../static/utils';
 import { title } from '../config';
 import { FooterWrap } from './styles/FooterStyles';
 

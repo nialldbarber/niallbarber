@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from './Link';
-import { pages } from './utils';
-import ColouredLink from './styles/ColouredLink';
+import { pages } from '../static/utils';
+import { ColouredLink } from './styles/ColouredLink';
 import { NavBar } from './styles/HeaderStyles';
 
 export default function Nav() {

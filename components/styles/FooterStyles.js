@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../utils';
+import { media } from '../../static/utils';
 
 export const FooterWrap = styled.div`
   margin: -2.5rem auto 0;
@@ -31,9 +31,11 @@ export const Icon = styled.img`
   width: 25px;
   height: 100%;
   margin: 1rem;
+  transform: translateY(0);
   transition: ${props => props.theme.transition};
   cursor: pointer;
   &:hover {
+    transform: translateY(-7px);
     opacity: 0.6;
   }
 `;

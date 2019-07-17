@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../utils';
+import { media } from '../../static/utils';
 
 export const ModeSelect = styled.div`
   position: fixed;
@@ -8,14 +8,12 @@ export const ModeSelect = styled.div`
   ${media.greaterThan('tablet')`
 		left: 4rem;
 	`};
+
   .switcher {
     position: relative;
     display: block;
-    width: 40px;
-    height: 20px;
-    background: ${props => props.theme.offWhite};
-    border-radius: 12px;
-    box-shadow: ${props => props.theme.bs};
+    width: 60px;
+    height: 32px;
     .slider {
       position: absolute;
       cursor: pointer;
@@ -23,39 +21,31 @@ export const ModeSelect = styled.div`
       left: 0;
       bottom: 0;
       right: 0;
-      background: ;
-      border-radius: 35px;
-      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-      transition: ${props => props.theme.transition};
-      &:hover {
-        &:before {
-          width: 24px;
-          height: 24px;
-          left: -2px;
-        }
-      }
+      background: #f95584;
+      border-radius: 18px;
+      transition: 0.08s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;
       &:before {
         content: '';
         position: absolute;
         top: 50%;
-        left: 0;
-        background-color: ${props => props.theme.pink};
-        width: 22px;
-        height: 22px;
+        left: 3px;
+        background-color: ${props => props.theme.black};
+        width: 28px;
+        height: 28px;
         border-radius: 50%;
-        box-shadow: ${props => props.theme.bs};
         transform: translateY(-50%);
-        transition: ${props => props.theme.transition};
+        transition: 0.125s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;
       }
     }
   }
+
   input {
     -webkit-appearance: none;
     &:checked {
       & + .slider {
         &:before {
-          background-color: ${props => props.theme.pink};
-          transform: translateX(100%) translateY(-50%);
+          background-color: ${props => props.theme.offWhite};
+          transform: translateX(26px) translateY(-50%);
         }
       }
     }

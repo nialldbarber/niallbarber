@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { media } from '../utils';
+import { media } from '../../static/utils';
 
 export const theme = {
   fontFamily: "'Questrial', sans-serif",
   black: '#1e272d',
-  offWhite: '#EDEDED',
+  offWhite: '#fff',
   green: '#6cc',
   orange: '#f89b0e',
   pink: '#f95584',
@@ -15,7 +15,39 @@ export const theme = {
 };
 
 export const StyledPage = styled.div`
+  background: ${theme.black};
   color: ${props => props.theme.offWhite};
+  transition: 0.2s ease;
+
+  &:before {
+    content: '';
+    background: ${theme.black};
+    position: absolute;
+    top: -6rem;
+    left: 0;
+    bottom: -6rem;
+    right: 0;
+    z-index: -1;
+    transition: 0.2s ease;
+  }
+
+  &.day {
+    background: ${theme.offWhite};
+    color: ${theme.black};
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a,
+    span {
+      color: ${theme.black};
+    }
+
+    &:before {
+      background: ${theme.offWhite};
+    }
+  }
 `;
 
 export const Inner = styled.div`

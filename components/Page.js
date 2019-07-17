@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider, injectGlobal } from 'styled-components';
 import Header from './Header';
@@ -6,7 +6,7 @@ import Meta from './Meta';
 import Social from './Social';
 import Copyright from './Copyright';
 import NightMode from './NightMode';
-import { media } from './utils';
+import { media } from '../static/utils';
 import { theme, StyledPage, Inner } from './styles/BaseStyles';
 
 injectGlobal`
@@ -28,20 +28,12 @@ injectGlobal`
 		font-family: 'Questrial', sans-serif;
     font-kerning: normal;
     font-feature-settings: "kern", "liga", "clig", "calt";
-		background: ${theme.black};
 		color: ${theme.offWhite};
 		overflow-x: hidden;
     transition: .25s ease-in-out;
 		${media.lessThan('phablet')`
 			padding: 0;
 		`};
-    &.day {
-      background: ${theme.offWhite};
-      color: ${theme.black};
-      h1, h2, h3, h4, p, a, span {
-        color: ${theme.black};
-      }
-    }
 	}
 	a {
 		text-decoration: none;
@@ -94,7 +86,7 @@ injectGlobal`
 			bottom: -.1rem;
 			right: 0;
 			height: 1px;
-			z-index: -1;
+			z-index: 0;
 		}
 		&.reactSpan {
 			&:before {
@@ -133,19 +125,31 @@ injectGlobal`
 `;
 
 export default function Page({ children }) {
-  const [mode, setMode] = useState(true);
+  const [modeTheme, setTheme] = useState('dark');
 
-  const handleClick = () => {
-    setMode(!mode);
-    document.body.classList.toggle('day');
+  const toggleTheme = () => {
+    if (modeTheme === 'light') {
+      window.localStorage.setItem('theme', 'dark');
+      setTheme('dark');
+    } else {
+      window.localStorage.setItem('theme', 'light');
+      setTheme('light');
+    }
   };
+
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem('theme');
+    if (localTheme) {
+      setTheme(localTheme);
+    }
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
-      <StyledPage>
+      <StyledPage className={modeTheme === 'light' ? 'day' : ''}>
         <Meta />
         <Header />
-        <NightMode modeType={mode} modeSelect={handleClick} />
+        <NightMode modeType={modeTheme} modeSelect={toggleTheme} />
         <Inner>{children}</Inner>
         <Social />
         <Copyright />
