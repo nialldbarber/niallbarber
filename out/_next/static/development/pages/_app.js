@@ -680,7 +680,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background: ", ";\n  color: ", ";\n  transition: 0.2s ease;\n\n  &:before {\n    content: '';\n    background: ", ";\n    position: absolute;\n    top: -6rem;\n    left: 0;\n    bottom: -6rem;\n    right: 0;\n    z-index: -1;\n    transition: 0.2s ease;\n  }\n\n  &.day {\n    background: ", ";\n    color: ", ";\n    h1,\n    h2,\n    h3,\n    h4,\n    p,\n    a,\n    span {\n      color: ", ";\n    }\n\n    &:before {\n      background: ", ";\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-image: linear-gradient(\n    to top right,\n    rgba(102, 204, 204, 0.25),\n    rgba(249, 85, 132, 0.25),\n    rgba(248, 155, 14, 0.25)\n  );\n  background-color: #1e272d;\n  color: ", ";\n  transition: 0.2s ease;\n\n  &:before {\n    content: '';\n    background-image: linear-gradient(\n      to top right,\n      rgba(102, 204, 204, 0.25),\n      rgba(249, 85, 132, 0.25),\n      rgba(248, 155, 14, 0.25)\n    );\n    background-color: #1e272d;\n    position: absolute;\n    top: -6rem;\n    left: 0;\n    bottom: -6rem;\n    right: 0;\n    z-index: -1;\n    transition: 0.2s ease;\n  }\n\n  &.day {\n    background: ", ";\n    background-image: transparent;\n    color: ", ";\n    h1,\n    h2,\n    h3,\n    h4,\n    p,\n    a,\n    span {\n      color: ", ";\n    }\n\n    &:before {\n      background: ", ";\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -705,9 +705,9 @@ var theme = {
   bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
   transition: '.25s cubic-bezier(.895, .03, .685, .22)'
 };
-var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div(_templateObject(), theme.black, function (props) {
+var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div(_templateObject(), function (props) {
   return props.theme.offWhite;
-}, theme.black, theme.offWhite, theme.black, theme.black, theme.offWhite);
+}, theme.offWhite, theme.black, theme.black, theme.offWhite);
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div(_templateObject2(), function (props) {
   return props.theme.maxWidth;
 }, _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].lessThan('phablet')(_templateObject3()), _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject4()), _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('desktop')(_templateObject5()), _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('large')(_templateObject6()));

@@ -15,13 +15,25 @@ export const theme = {
 };
 
 export const StyledPage = styled.div`
-  background: ${theme.black};
+  background-image: linear-gradient(
+    to top right,
+    rgba(102, 204, 204, 0.25),
+    rgba(249, 85, 132, 0.25),
+    rgba(248, 155, 14, 0.25)
+  );
+  background-color: #1e272d;
   color: ${props => props.theme.offWhite};
   transition: 0.2s ease;
 
   &:before {
     content: '';
-    background: ${theme.black};
+    background-image: linear-gradient(
+      to top right,
+      rgba(102, 204, 204, 0.25),
+      rgba(249, 85, 132, 0.25),
+      rgba(248, 155, 14, 0.25)
+    );
+    background-color: #1e272d;
     position: absolute;
     top: -6rem;
     left: 0;
@@ -33,6 +45,7 @@ export const StyledPage = styled.div`
 
   &.day {
     background: ${theme.offWhite};
+    background-image: transparent;
     color: ${theme.black};
     h1,
     h2,
