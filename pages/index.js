@@ -1,6 +1,6 @@
 import Typed from 'react-typed';
 import { Spring } from 'react-spring';
-import { title, desc } from '../config';
+import { title, desc } from '../static/utils';
 import PageHeader from '../components/styles/PageHeader';
 import SubHeader from '../components/styles/Subheader';
 import {

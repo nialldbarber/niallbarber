@@ -11,29 +11,25 @@ export const theme = {
   darkPink: '#ff1c68',
   maxWidth: '1100px',
   bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
-  transition: '.25s cubic-bezier(.895, .03, .685, .22)',
-};
-
-export const StyledPage = styled.div`
-  background-image: linear-gradient(
+  gradient: `linear-gradient(
     to top right,
     rgba(102, 204, 204, 0.25),
     rgba(249, 85, 132, 0.25),
     rgba(248, 155, 14, 0.25)
-  );
-  background-color: #1e272d;
+  )`,
+  transition: '.25s cubic-bezier(.895, .03, .685, .22)',
+};
+
+export const StyledPage = styled.div`
+  background-image: ${props => props.theme.gradient};
+  background-color: ${props => props.theme.black};
   color: ${props => props.theme.offWhite};
   transition: 0.2s ease;
 
   &:before {
     content: '';
-    background-image: linear-gradient(
-      to top right,
-      rgba(102, 204, 204, 0.25),
-      rgba(249, 85, 132, 0.25),
-      rgba(248, 155, 14, 0.25)
-    );
-    background-color: #1e272d;
+    background-image: ${props => props.theme.gradient};
+    background-color: ${props => props.theme.black};
     position: absolute;
     top: -6rem;
     left: 0;

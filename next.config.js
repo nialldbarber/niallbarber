@@ -6,6 +6,7 @@ const withImages = require('next-images');
 
 module.exports = {
   webpack: config => {
+    config.resolve.alias.components = path.join(__dirname, 'components');
     config.plugins = config.plugins || [];
 
     config.plugins = [

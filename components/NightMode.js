@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ModeSelect, ModeType } from './styles/ModeSelect';
-import sun from '../static/sun.svg';
-import moon from '../static/moon.svg';
+import { ModeSelect } from './styles/ModeSelect';
+import { LIGHT_MODE } from '../static/constants';
 
 export default function NightMode({ modeType, modeSelect }) {
   return (
@@ -13,7 +12,7 @@ export default function NightMode({ modeType, modeSelect }) {
             type="checkbox"
             onClick={modeSelect}
             id="mode-select"
-            checked={modeType === 'light'}
+            checked={modeType === LIGHT_MODE}
           />
           <span className="slider" />
         </label>
@@ -23,6 +22,6 @@ export default function NightMode({ modeType, modeSelect }) {
 }
 
 NightMode.propTypes = {
-  modeType: PropTypes.bool,
+  modeType: PropTypes.string,
   modeSelect: PropTypes.func,
 };

@@ -1,5 +1,4 @@
-import { date } from '../static/utils';
-import { title } from '../config';
+import { date, title } from '../static/utils';
 import { FooterWrap } from './styles/FooterStyles';
 
 export default function Footer() {

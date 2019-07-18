@@ -32,8 +32,8 @@ export const ModeSelect = styled.div`
         left: 3px;
         background-color: ${props => props.theme.black};
         box-shadow: ${props => props.theme.bs};
-        width: 28px;
-        height: 28px;
+        width: 26px;
+        height: 26px;
         border-radius: 50%;
         transform: translateY(-50%);
         transition: 0.125s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;

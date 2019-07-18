@@ -10,10 +10,10 @@ export const ColouredLink = styled.a`
   overflow: hidden;
   cursor: pointer;
   transition: ${props => props.theme.transition};
-  @media (max-width: 320px) {
+  ${media.lessThan('mobile')`
     padding: 1rem 0;
     font-size: 1.5rem;
-  }
+  `};
   @media (min-width: 321px) and (max-width: 509px) {
     padding: 1rem 0;
     font-size: 1.8rem;
@@ -31,32 +31,32 @@ export const ColouredLink = styled.a`
   }
   &:hover {
     &:before {
-      @media (min-width: 768px) {
+      ${media.greaterThan('tablet')`
         left: 100%;
         width: 100%;
-      }
+      `};
     }
     &.home__nav,
     &.about__nav,
     &.projects__nav,
     &.contact__nav {
-      @media (min-width: 768px) {
+      ${media.greaterThan('tablet')`
         color: ${props => props.theme.black};
-      }
+      `};
     }
   }
   &.home__nav {
-    @media (max-width: 767px) {
+    ${media.lessThan('tablet')`
       display: none;
-    }
+    `};
     &:before {
       background: ${props => props.theme.green};
     }
     &.active {
-      @media (min-width: 768px) {
+      ${media.greaterThan('tablet')`
         background: ${props => props.theme.green};
         color: ${props => props.theme.black};
-      }
+      `};
     }
   }
   &.about__nav {
@@ -64,10 +64,10 @@ export const ColouredLink = styled.a`
       background: ${props => props.theme.orange};
     }
     &.active {
-      @media (min-width: 768px) {
+      ${media.greaterThan('tablet')`
         background: ${props => props.theme.orange};
         color: ${props => props.theme.black};
-      }
+      `};
     }
   }
   &.contact__nav {
@@ -75,10 +75,10 @@ export const ColouredLink = styled.a`
       background: ${props => props.theme.pink};
     }
     &.active {
-      @media (min-width: 768px) {
+      ${media.greaterThan('tablet')`
         background: ${props => props.theme.pink};
         color: ${props => props.theme.black};
-      }
+      `};
     }
   }
 `;

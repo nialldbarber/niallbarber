@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { title, desc } from '../config';
+import { title, desc } from '../static/utils';
 
 export default function Meta() {
   return (

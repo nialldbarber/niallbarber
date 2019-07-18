@@ -1,5 +1,9 @@
 import { generateMedia } from 'styled-media-query';
 
+export const title = 'Niall Barber';
+export const desc = 'Front End Developer';
+export const email = 'nialldbarber@gmail.com';
+
 // Pages
 export const pages = [
   { title: 'Home' },

@@ -7,6 +7,7 @@ import Social from './Social';
 import Copyright from './Copyright';
 import NightMode from './NightMode';
 import { media } from '../static/utils';
+import { DARK_MODE, LIGHT_MODE, THEME } from '../static/constants';
 import { theme, StyledPage, Inner } from './styles/BaseStyles';
 
 injectGlobal`
@@ -125,20 +126,20 @@ injectGlobal`
 `;
 
 export default function Page({ children }) {
-  const [modeTheme, setTheme] = useState('dark');
+  const [modeTheme, setTheme] = useState(DARK_MODE);
 
   const toggleTheme = () => {
-    if (modeTheme === 'light') {
-      window.localStorage.setItem('theme', 'dark');
-      setTheme('dark');
+    if (modeTheme === LIGHT_MODE) {
+      window.localStorage.setItem(THEME, DARK_MODE);
+      setTheme(DARK_MODE);
     } else {
-      window.localStorage.setItem('theme', 'light');
-      setTheme('light');
+      window.localStorage.setItem(THEME, LIGHT_MODE);
+      setTheme(LIGHT_MODE);
     }
   };
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem('theme');
+    const localTheme = window.localStorage.getItem(THEME);
     if (localTheme) {
       setTheme(localTheme);
     }
@@ -146,7 +147,7 @@ export default function Page({ children }) {
 
   return (
     <ThemeProvider theme={theme}>
-      <StyledPage className={modeTheme === 'light' ? 'day' : ''}>
+      <StyledPage className={modeTheme === LIGHT_MODE ? 'day' : ''}>
         <Meta />
         <Header />
         <NightMode modeType={modeTheme} modeSelect={toggleTheme} />

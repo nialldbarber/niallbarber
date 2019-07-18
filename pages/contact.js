@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { pageContent } from '../static/content/contact';
-import { email } from '../config';
+import { email } from '../static/utils';
 import { ContentInfo } from '../components/styles/Content';
 import PageHeader from '../components/styles/PageHeader';
 import { ContactMe } from '../components/styles/ContactMe';

@@ -181,24 +181,6 @@ var PageHeader = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h1(_t
 
 /***/ }),
 
-/***/ "./config.js":
-/*!*******************!*\
-  !*** ./config.js ***!
-  \*******************/
-/*! exports provided: title, desc, email */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "title", function() { return title; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "desc", function() { return desc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "email", function() { return email; });
-var title = 'Niall Barber';
-var desc = 'Front End Developer';
-var email = 'nialldbarber@gmail.com';
-
-/***/ }),
-
 /***/ "./node_modules/fbjs/lib/hyphenate.js":
 /*!********************************************!*\
   !*** ./node_modules/fbjs/lib/hyphenate.js ***!
@@ -5876,7 +5858,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _static_content_contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../static/content/contact */ "./static/content/contact.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _static_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../static/utils */ "./static/utils/index.js");
 /* harmony import */ var _components_styles_Content__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/styles/Content */ "./components/styles/Content.js");
 /* harmony import */ var _components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/styles/PageHeader */ "./components/styles/PageHeader.js");
 /* harmony import */ var _components_styles_ContactMe__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/styles/ContactMe */ "./components/styles/ContactMe.js");
@@ -5946,7 +5928,7 @@ function Contact() {
       lineNumber: 22
     },
     __self: this
-  }, _config__WEBPACK_IMPORTED_MODULE_2__["email"])));
+  }, _static_utils__WEBPACK_IMPORTED_MODULE_2__["email"])));
 }
     (function (Component, route) {
       if(!Component) return
@@ -5991,17 +5973,23 @@ var pageContent = {
 /*!*******************************!*\
   !*** ./static/utils/index.js ***!
   \*******************************/
-/*! exports provided: pages, media, date, socialLinks */
+/*! exports provided: title, desc, email, pages, media, date, socialLinks */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "title", function() { return title; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "desc", function() { return desc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "email", function() { return email; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pages", function() { return pages; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "media", function() { return media; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "date", function() { return date; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "socialLinks", function() { return socialLinks; });
 /* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-media-query */ "./node_modules/styled-media-query/dist/styled-media-query.es.js");
- // Pages
+
+var title = 'Niall Barber';
+var desc = 'Front End Developer';
+var email = 'nialldbarber@gmail.com'; // Pages
 
 var pages = [{
   title: 'Home'

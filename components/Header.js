@@ -3,10 +3,9 @@ import Link from 'next/link';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import Nav from './Nav';
+import { title } from '../static/utils';
 import logo from '../static/nb-logo.svg';
 import { Logo, LogoHeader } from './styles/HeaderStyles';
-
-import { title } from '../config';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
