@@ -7,8 +7,3 @@ This is an ongoing project && is really just for fun and a way to learn differen
 Check out the site [here](https://nialldbarber.com/)
 
 🚀
-
-# TODOS
-
-* Make import paths absolute
-* Svg importing

@@ -5887,45 +5887,47 @@ function Contact() {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     setContact(_static_content_contact__WEBPACK_IMPORTED_MODULE_1__["pageContent"]);
   }, []);
+  var title = contact.title,
+      content = contact.content;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
-  }, contact.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_3__["ContentInfo"], {
+  }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_3__["ContentInfo"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     dangerouslySetInnerHTML: {
-      __html: contact.content
+      __html: content
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_ContactMe__WEBPACK_IMPORTED_MODULE_5__["ContactMe"], {
     className: "contact-me",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
   }, _static_utils__WEBPACK_IMPORTED_MODULE_2__["email"])));

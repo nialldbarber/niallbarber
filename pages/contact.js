@@ -12,11 +12,13 @@ export default function Contact() {
     setContact(pageContent);
   }, []);
 
+  const { title, content } = contact;
+
   return (
     <div>
-      <PageHeader className="contact">{contact.title}</PageHeader>
+      <PageHeader className="contact">{title}</PageHeader>
       <ContentInfo>
-        <p dangerouslySetInnerHTML={{ __html: contact.content }} />
+        <p dangerouslySetInnerHTML={{ __html: content }} />
       </ContentInfo>
       <ContactMe className="contact-me">
         <p>{email}</p>

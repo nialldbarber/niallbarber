@@ -1,6 +1,7 @@
 import Typed from 'react-typed';
 import { Spring } from 'react-spring';
 import { title, desc } from '../static/utils';
+import { typed } from '../static/content';
 import PageHeader from '../components/styles/PageHeader';
 import SubHeader from '../components/styles/Subheader';
 import {
@@ -8,6 +9,7 @@ import {
   Logo,
   TypedWrapper,
 } from '../components/styles/Homepage';
+import logo from '../static/nb-logo.svg';
 
 export default function Index() {
   return (
@@ -23,17 +25,10 @@ export default function Index() {
         )}
       </Spring>
       <SubHeader>{desc}</SubHeader>
-      <Logo src="../static/nb-logo.svg" alt={title} />
+      <Logo src={logo} alt={title} />
       <TypedWrapper>
         <Typed
-          strings={[
-            'HTML / S(CSS)',
-            'JavaScript',
-            'React / Redux',
-            'PHP',
-            'Git',
-            '{{ Liquid }}',
-          ]}
+          strings={typed}
           typeSpeed={30}
           backSpeed={30}
           loop

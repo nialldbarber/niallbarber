@@ -11,11 +11,13 @@ export default function About() {
     setAbout(pageContent);
   }, []);
 
+  const { title, content } = about;
+
   return (
     <AboutPage>
-      <PageHeader className="about">{about.title}</PageHeader>
+      <PageHeader className="about">{title}</PageHeader>
       <ContentInfo>
-        <p dangerouslySetInnerHTML={{ __html: about.content }} />
+        <p dangerouslySetInnerHTML={{ __html: content }} />
       </ContentInfo>
     </AboutPage>
   );

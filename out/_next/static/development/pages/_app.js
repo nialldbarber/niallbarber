@@ -751,16 +751,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ColouredLink", function() { return ColouredLink; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _static_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../static/utils */ "./static/utils/index.js");
-function _templateObject8() {
-  var data = _taggedTemplateLiteral(["\n        background: ", ";\n        color: ", ";\n      "]);
-
-  _templateObject8 = function _templateObject8() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject7() {
   var data = _taggedTemplateLiteral(["\n        background: ", ";\n        color: ", ";\n      "]);
 
@@ -782,7 +772,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n      display: none;\n    "]);
+  var data = _taggedTemplateLiteral(["\n        background: ", ";\n        color: ", ";\n      "]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -822,7 +812,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  position: relative;\n  padding: 1rem 2rem;\n  margin: 0 1rem;\n  text-decoration: none;\n  z-index: 1;\n  overflow: hidden;\n  cursor: pointer;\n  border-radius: 2px;\n  transition: ", ";\n  ", ";\n  @media (min-width: 321px) and (max-width: 509px) {\n    padding: 1rem 0;\n    font-size: 1.8rem;\n  }\n  &:before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 0;\n    height: 100%;\n    z-index: -1;\n    border-radius: 2px;\n    transition: ", ";\n    transform: translateX(-101%);\n  }\n  &:hover {\n    &:before {\n      ", ";\n    }\n    &.home__nav,\n    &.about__nav,\n    &.projects__nav,\n    &.contact__nav {\n      ", ";\n    }\n  }\n  &.home__nav {\n    ", ";\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n  &.about__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n  &.contact__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  padding: 1rem 2rem;\n  margin: 0 1rem;\n  text-decoration: none;\n  z-index: 1;\n  overflow: hidden;\n  cursor: pointer;\n  border-radius: 2px;\n  transition: ", ";\n  ", ";\n  @media (min-width: 321px) and (max-width: 509px) {\n    padding: 1rem 0;\n    font-size: 1.8rem;\n  }\n  &:before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 0;\n    height: 100%;\n    z-index: -1;\n    border-radius: 2px;\n    transition: ", ";\n    transform: translateX(-101%);\n  }\n  &:hover {\n    &:before {\n      ", ";\n    }\n    &.home__nav,\n    &.about__nav,\n    &.projects__nav,\n    &.contact__nav {\n      ", ";\n    }\n  }\n  &.home__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n  &.about__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n  &.contact__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -841,21 +831,21 @@ var ColouredLink = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].a(_
   return props.theme.transition;
 }, _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject3()), _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject4(), function (props) {
   return props.theme.black;
-}), _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].lessThan('tablet')(_templateObject5()), function (props) {
+}), function (props) {
   return props.theme.green;
-}, _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject6(), function (props) {
+}, _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject5(), function (props) {
   return props.theme.green;
 }, function (props) {
   return props.theme.black;
 }), function (props) {
   return props.theme.orange;
-}, _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject7(), function (props) {
+}, _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject6(), function (props) {
   return props.theme.orange;
 }, function (props) {
   return props.theme.black;
 }), function (props) {
   return props.theme.pink;
-}, _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject8(), function (props) {
+}, _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject7(), function (props) {
   return props.theme.pink;
 }, function (props) {
   return props.theme.black;
@@ -19954,7 +19944,7 @@ var THEME = 'THEME';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ0OHB0IiB2aWV3Qm94PSItMTIgMCA0NDggNDQ4LjA0NDU1IiB3aWR0aD0iNDQ4cHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTIyNC4wMjM0MzggNDQ4LjAzMTI1Yzg1LjcxNDg0My45MDIzNDQgMTY0LjAxMTcxOC00OC40ODgyODEgMjAwLjExNzE4Ny0xMjYuMjMwNDY5LTIyLjcyMjY1NiA5LjkxNDA2My00Ny4zMzIwMzEgMTQuNzY5NTMxLTcyLjExNzE4NyAxNC4yMzA0NjktOTcuMTU2MjUtLjEwOTM3NS0xNzUuODkwNjI2LTc4Ljg0Mzc1LTE3Ni0xNzYgLjk3MjY1Ni02NS43MTg3NSAzNy4yMzQzNzQtMTI1LjgzMjAzMSA5NC45MTAxNTYtMTU3LjM1MTU2Mi0xNS41NTQ2ODgtMS45ODA0NjktMzEuMjMwNDY5LTIuODY3MTg4LTQ2LjkxMDE1Ni0yLjY0ODQzOC0xMjMuNzE0ODQ0IDAtMjI0LjAwMDAwMDUgMTAwLjI4OTA2Mi0yMjQuMDAwMDAwNSAyMjQgMCAxMjMuNzE0ODQ0IDEwMC4yODUxNTY1IDIyNCAyMjQuMDAwMDAwNSAyMjR6bTAgMCIvPjwvc3ZnPg=="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDI1IiBoZWlnaHQ9IjQ0OCIgdmlld0JveD0iMCAwIDQyNSA0NDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yMjQuMDIyIDQ0Ny45ODdDMzA5LjcyOSA0NDguODg5IDM4OC4wMTggMzk5LjUwMyA0MjQuMTIgMzIxLjc2OUM0MDEuMzk5IDMzMS42ODIgMzc2Ljc5MiAzMzYuNTM3IDM1Mi4wMSAzMzUuOTk4QzI1NC44NjMgMzM1Ljg4OCAxNzYuMTM2IDI1Ny4xNjIgMTc2LjAyNyAxNjAuMDE1QzE3NyA5NC4zMDMxIDIxMy4yNTggMzQuMTk1OCAyNzAuOTI4IDIuNjc5NDNDMjU1LjM3NSAwLjY5OTE1NSAyMzkuNyAtMC4xODc0NzYgMjI0LjAyMiAwLjAzMTI1MjFDMTAwLjMyIDAuMDMxMjUyMSAwLjA0NDUyNTEgMTAwLjMxIDAuMDQ0NTI1MSAyMjQuMDA5QzAuMDQ0NTI1MSAzNDcuNzEyIDEwMC4zMiA0NDcuOTg3IDIyNC4wMjIgNDQ3Ljk4N1Y0NDcuOTg3WiIgZmlsbD0iIzFFMjcyRCIvPgo8L3N2Zz4K"
 
 /***/ }),
 

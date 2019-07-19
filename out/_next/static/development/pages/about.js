@@ -5889,32 +5889,34 @@ function About() {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     setAbout(_static_content_about__WEBPACK_IMPORTED_MODULE_1__["pageContent"]);
   }, []);
+  var title = about.title,
+      content = about.content;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_AboutPage__WEBPACK_IMPORTED_MODULE_4__["AboutPage"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_PageHeader__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
-  }, about.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_2__["ContentInfo"], {
+  }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_styles_Content__WEBPACK_IMPORTED_MODULE_2__["ContentInfo"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     dangerouslySetInnerHTML: {
-      __html: about.content
+      __html: content
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   })));
@@ -6015,7 +6017,7 @@ var socialLinks = [{
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
@@ -6040,5 +6042,5 @@ module.exports = dll_0f247e9cceb355cd81a4;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[4,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=about.js.map

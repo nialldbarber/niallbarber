@@ -48,9 +48,6 @@ export const ColouredLink = styled.a`
     }
   }
   &.home__nav {
-    ${media.lessThan('tablet')`
-      display: none;
-    `};
     &:before {
       background: ${props => props.theme.green};
     }
