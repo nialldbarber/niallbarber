@@ -71,9 +71,7 @@
 		"dev": "next",
 		"build": "next build",
 		"start": "next start",
-		"export": "npm run build && next export",
-		"postinstall": "npm run getcontent",
-		"getcontent": "babel-node helpers/getcontent.js install"
+		"export": "npm run build && next export"
 	},
 	"author": "Niall Barber",
 	"license": "ISC"
