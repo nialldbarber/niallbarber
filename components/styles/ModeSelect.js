@@ -9,6 +9,22 @@ export const ModeSelect = styled.div`
 		left: 4rem;
 	`};
 
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    z-index: 1;
+    pointer-events: none;
+    &#sun {
+      left: 7px;
+    }
+    &#moon {
+      right: 7px;
+    }
+  }
+
   .switcher {
     position: relative;
     display: block;
@@ -21,7 +37,7 @@ export const ModeSelect = styled.div`
       left: 0;
       bottom: 0;
       right: 0;
-      background: #f95584;
+      background: ${props => props.theme.pink};
       border-radius: 18px;
       box-shadow: ${props => props.theme.bs};
       transition: 0.08s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;
@@ -35,6 +51,7 @@ export const ModeSelect = styled.div`
         width: 26px;
         height: 26px;
         border-radius: 50%;
+        z-index: 3;
         transform: translateY(-50%);
         transition: 0.125s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s;
       }

@@ -9,6 +9,7 @@ export const ColouredLink = styled.a`
   z-index: 1;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 2px;
   transition: ${props => props.theme.transition};
   ${media.lessThan('mobile')`
     padding: 1rem 0;
@@ -26,6 +27,7 @@ export const ColouredLink = styled.a`
     width: 0;
     height: 100%;
     z-index: -1;
+    border-radius: 2px;
     transition: ${props => props.theme.transition};
     transform: translateX(-101%);
   }

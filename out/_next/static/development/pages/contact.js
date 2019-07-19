@@ -23,7 +23,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  margin-top: 8rem;\n  p {\n    font-size: 2.7rem;\n    padding: 1rem 2rem;\n    position: relative;\n    display: inline;\n    z-index: 1;\n    overflow: hidden;\n    cursor: pointer;\n    color: ", ";\n    ", ";\n    &:before {\n      content: '';\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      z-index: -1;\n      background: ", ";\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin-top: 8rem;\n  p {\n    font-size: 2.7rem;\n    padding: 1rem 2rem;\n    position: relative;\n    display: inline;\n    z-index: 1;\n    overflow: hidden;\n    cursor: pointer;\n    color: ", ";\n    ", ";\n    &:before {\n      content: '';\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      z-index: -1;\n      border-radius: 2px;\n      background: ", ";\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

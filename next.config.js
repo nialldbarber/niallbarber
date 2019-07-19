@@ -6,7 +6,6 @@ const withImages = require('next-images');
 
 module.exports = {
   webpack: config => {
-    config.resolve.alias.components = path.join(__dirname, 'components');
     config.plugins = config.plugins || [];
 
     config.plugins = [
@@ -19,6 +18,16 @@ module.exports = {
     ];
 
     return config;
+  },
+};
+
+module.exports = {
+  webpack: cfg => {
+    cfg.module.rules.push({
+      test: /\.md$/,
+      use: 'frontmatter-markdown-loader',
+    });
+    return cfg;
   },
 };
 

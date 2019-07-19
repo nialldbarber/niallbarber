@@ -29,15 +29,12 @@ export default function Index() {
           strings={[
             'HTML / S(CSS)',
             'JavaScript',
-            'React / Vue',
+            'React / Redux',
             'PHP',
             'Git',
-            'WordPress',
-            'Headless CMSs',
-            'Shopify {{ Liquid }}',
-            'Photoshop / Illustrator',
+            '{{ Liquid }}',
           ]}
-          typeSpeed={50}
+          typeSpeed={30}
           backSpeed={30}
           loop
         />

@@ -21,8 +21,6 @@ export const theme = {
 };
 
 export const StyledPage = styled.div`
-  background-image: ${props => props.theme.gradient};
-  background-color: ${props => props.theme.black};
   color: ${props => props.theme.offWhite};
   transition: 0.2s ease;
 
@@ -40,8 +38,6 @@ export const StyledPage = styled.div`
   }
 
   &.day {
-    background: ${theme.offWhite};
-    background-image: transparent;
     color: ${theme.black};
     h1,
     h2,
@@ -55,6 +51,7 @@ export const StyledPage = styled.div`
 
     &:before {
       background: ${theme.offWhite};
+      background-image: none;
     }
   }
 `;

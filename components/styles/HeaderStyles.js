@@ -14,7 +14,7 @@ export const Logo = styled.div`
     transform: translateY(1em) rotate(-2deg) scale(1.15);
   }
   ${media.lessThan('tablet')`
-		padding: 1rem 2rem 1rem 0;
+		padding: 0;
 	`};
   ${media.lessThan('phablet')`
 		margin-left: -1rem;

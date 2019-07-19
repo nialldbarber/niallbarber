@@ -60,9 +60,7 @@ injectGlobal`
 			height: 9.6rem;
 			position: fixed;
 			top: 0;
-			background: ${theme.black};
 			z-index: 999;
-			box-shadow: ${theme.bs};
 		`};
 	}
 	.grid {
@@ -76,53 +74,6 @@ injectGlobal`
 		background: ${theme.darkPink};
 		transform-origin: 50% 50%;
 	}
-.about-page {
-	span {
-		position: relative;
-		transition: ${theme.transition};
-		&:before {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: -.1rem;
-			right: 0;
-			height: 1px;
-			z-index: 0;
-		}
-		&.reactSpan {
-			&:before {
-				background: ${theme.green};
-			}
-			&:hover {
-				color: ${theme.green};
-			}
-		}
-		&.vueSpan {
-			&:before {
-				background: ${theme.orange};
-			}
-			&:hover {
-				color: ${theme.orange};
-			}
-		}
-		&.wordpressSpan {
-			&:before {
-				background: ${theme.pink};
-			}
-			&:hover {
-				color: ${theme.pink};
-			}
-		}
-		&.shopifySpan {
-			&:before {
-				background: ${theme.green};
-			}
-			&:hover {
-				color: ${theme.green};
-			}
-		}
-	}
-}
 `;
 
 export default function Page({ children }) {

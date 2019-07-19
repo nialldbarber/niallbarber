@@ -21,6 +21,7 @@ export const TypedWrapper = styled.div`
     color: ${props => props.theme.black};
     padding: 1rem 0.5rem;
     box-shadow: ${props => props.theme.bs};
+    border-radius: 2px;
     ${media.lessThan('tablet')`
 			font-size: 2rem;
 		`};
