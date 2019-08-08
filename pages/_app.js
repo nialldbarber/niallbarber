@@ -4,7 +4,7 @@ import { PageTransition } from 'next-page-transitions';
 import Page from '../components/Page';
 
 class MyApp extends App {
-  static async getInitialProps({ Component, router, ctx }) {
+  static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
 
     if (Component.getInitialProps) {
@@ -15,7 +15,7 @@ class MyApp extends App {
   }
 
   render() {
-    const { Component, pageProps, apolloClient } = this.props;
+    const { Component, pageProps } = this.props;
     return (
       <Container>
         <PageTransition timeout={200} classNames="page-transition">

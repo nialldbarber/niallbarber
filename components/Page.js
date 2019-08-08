@@ -18,7 +18,7 @@ injectGlobal`
 	}
 	*, *:before, *:after {
 		box-sizing: inherit;
-	}
+	} 
 	body {
 		position: relative;
 		margin: 0;
