@@ -8,4 +8,4 @@ Check out the site [here](https://nialldbarber.com/)
 
 🚀
 
-(/static/site.png?raw=true "Site Screenshot")
+![Site](static/site.png?raw=true "Site Screenshot")
