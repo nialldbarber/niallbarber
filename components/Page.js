@@ -8,7 +8,7 @@ import Copyright from './Copyright';
 import NightMode from './NightMode';
 import { media } from '../static/utils';
 import { DARK_MODE, LIGHT_MODE, THEME } from '../static/constants';
-import { theme, StyledPage, Inner } from './styles/BaseStyles';
+import { theme, StyledPage, Inner } from '../styles/BaseStyles';
 
 injectGlobal`
 	@import url('https://fonts.googleapis.com/css?family=Questrial');
@@ -76,7 +76,7 @@ injectGlobal`
 	}
 `;
 
-export default function Page({ children }) {
+const Page = ({ children }) => {
   const [modeTheme, setTheme] = useState(DARK_MODE);
 
   const toggleTheme = () => {
@@ -108,7 +108,9 @@ export default function Page({ children }) {
       </StyledPage>
     </ThemeProvider>
   );
-}
+};
+
+export default Page;
 
 Page.propTypes = {
   children: PropTypes.node.isRequired,

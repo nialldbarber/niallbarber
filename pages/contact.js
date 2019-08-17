@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { pageContent } from '../static/content/contact';
 import { email } from '../static/utils';
-import { ContentInfo } from '../components/styles/Content';
-import PageHeader from '../components/styles/PageHeader';
-import { ContactMe } from '../components/styles/ContactMe';
+import { ContentInfo } from '../styles/Content';
+import { PageHeader } from '../styles/PageHeader';
+import { ContactMe } from '../styles/ContactMe';
 
-export default function Contact() {
+const Contact = () => {
   const [contact, setContact] = useState('');
 
   useEffect(() => {
@@ -25,4 +25,6 @@ export default function Contact() {
       </ContactMe>
     </div>
   );
-}
+};
+
+export default Contact;

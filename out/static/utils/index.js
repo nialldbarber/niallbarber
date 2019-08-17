@@ -9,6 +9,7 @@ export const pages = [
   { title: 'Home' },
   { title: 'About' },
   { title: 'Contact' },
+  { title: 'Artwork' },
 ];
 
 // Media queries
@@ -20,9 +21,6 @@ export const media = generateMedia({
   desktop: '992px',
   large: '1199px',
 });
-
-// Get date
-export const date = new Date().getFullYear();
 
 // Social Links
 export const socialLinks = [

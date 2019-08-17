@@ -1,17 +1,17 @@
 import Link from 'next/link';
 import { socialLinks } from '../static/utils';
-import { IconContainer, Icon } from './styles/FooterStyles';
+import { IconContainer, Icon } from '../styles/FooterStyles';
 
-export default function Social() {
-  return (
-    <IconContainer>
-      {socialLinks.map(social => (
-        <Link key={social.src} href={social.link}>
-          <a target="_blank">
-            <Icon src={social.src} alt={social.alt} />
-          </a>
-        </Link>
-      ))}
-    </IconContainer>
-  );
-}
+const Social = () => (
+  <IconContainer>
+    {socialLinks.map(({ src, link, alt }) => (
+      <Link key={src} href={link}>
+        <a target="_blank">
+          <Icon src={src} alt={alt} />
+        </a>
+      </Link>
+    ))}
+  </IconContainer>
+);
+
+export default Social;

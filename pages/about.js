@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { pageContent } from '../static/content/about';
-import { ContentInfo } from '../components/styles/Content';
-import PageHeader from '../components/styles/PageHeader';
-import { AboutPage } from '../components/styles/AboutPage';
+import { ContentInfo } from '../styles/Content';
+import { PageHeader } from '../styles/PageHeader';
+import { AboutPage } from '../styles/AboutPage';
 
-export default function About() {
+const About = () => {
   const [about, setAbout] = useState('');
 
   useEffect(() => {
@@ -21,4 +21,6 @@ export default function About() {
       </ContentInfo>
     </AboutPage>
   );
-}
+};
+
+export default About;
