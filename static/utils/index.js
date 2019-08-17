@@ -9,7 +9,6 @@ export const pages = [
   { title: 'Home' },
   { title: 'About' },
   { title: 'Contact' },
-  { title: 'Artwork' },
 ];
 
 // Media queries
