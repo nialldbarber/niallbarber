@@ -11474,13 +11474,14 @@ var desc = 'Front End Developer';
 var email = 'nialldbarber@gmail.com'; // Pages
 
 var pages = [{
-  title: 'Home'
+  title: 'Home',
+  url: '/'
 }, {
-  title: 'About'
+  title: 'About',
+  url: '/about'
 }, {
-  title: 'Contact'
-}, {
-  title: 'Artwork'
+  title: 'Contact',
+  url: '/contact'
 }]; // Media queries
 
 var media = Object(styled_media_query__WEBPACK_IMPORTED_MODULE_0__["generateMedia"])({

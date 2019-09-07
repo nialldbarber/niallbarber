@@ -176,7 +176,7 @@ var ActiveLink = function ActiveLink(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, _extends({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 15
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(child, {
@@ -330,7 +330,17 @@ var Nav = function Nav() {
       },
       __self: this
     }, title));
-  })));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ColouredLink__WEBPACK_IMPORTED_MODULE_3__["ColouredLink"], {
+    className: "blog__nav",
+    href: "https://blog.nialldbarber.com",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "Blog")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
@@ -19543,13 +19553,14 @@ var desc = 'Front End Developer';
 var email = 'nialldbarber@gmail.com'; // Pages
 
 var pages = [{
-  title: 'Home'
+  title: 'Home',
+  url: '/'
 }, {
-  title: 'About'
+  title: 'About',
+  url: '/about'
 }, {
-  title: 'Contact'
-}, {
-  title: 'Artwork'
+  title: 'Contact',
+  url: '/contact'
 }]; // Media queries
 
 var media = Object(styled_media_query__WEBPACK_IMPORTED_MODULE_0__["generateMedia"])({
@@ -19764,7 +19775,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  position: relative;\n  padding: 1rem 2rem;\n  margin: 0 1rem;\n  text-decoration: none;\n  z-index: 1;\n  overflow: hidden;\n  cursor: pointer;\n  border-radius: 2px;\n  transition: ", ";\n  ", ";\n  @media (min-width: 321px) and (max-width: 509px) {\n    padding: 1rem 0;\n    font-size: 1.8rem;\n  }\n  &:before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 0;\n    height: 100%;\n    z-index: -1;\n    border-radius: 2px;\n    transition: ", ";\n    transform: translateX(-101%);\n  }\n  &:hover {\n    &:before {\n      ", ";\n    }\n    &.home__nav,\n    &.about__nav,\n    &.artwork__nav,\n    &.contact__nav {\n      ", ";\n    }\n  }\n  &.home__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n  &.about__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n  &.contact__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n  &.artwork__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  padding: 1rem 2rem;\n  margin: 0 1rem;\n  text-decoration: none;\n  z-index: 1;\n  overflow: hidden;\n  cursor: pointer;\n  border-radius: 2px;\n  transition: ", ";\n  ", ";\n  @media (min-width: 321px) and (max-width: 509px) {\n    padding: 1rem 0;\n    font-size: 1.8rem;\n  }\n  &:before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 0;\n    height: 100%;\n    z-index: -1;\n    border-radius: 2px;\n    transition: ", ";\n    transform: translateX(-101%);\n  }\n  &:hover {\n    &:before {\n      ", ";\n    }\n    &.home__nav,\n    &.about__nav,\n    &.blog__nav,\n    &.contact__nav {\n      ", ";\n    }\n  }\n  &.home__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n  &.about__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n  &.contact__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n  &.blog__nav {\n    &:before {\n      background: ", ";\n    }\n    &.active {\n      ", ";\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -19826,7 +19837,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _static_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../static/utils */ "./static/utils/index.js");
 function _templateObject7() {
-  var data = _taggedTemplateLiteral(["\n  width: 25px;\n  height: 100%;\n  margin: 1rem;\n  transform: translateY(0);\n  transition: ", ";\n  cursor: pointer;\n  &:hover {\n    transform: translateY(-7px);\n    opacity: 0.6;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 25px;\n  height: 100%;\n  margin: 1rem;\n  transform: scale(1);\n  transition: all 0.2s ease;\n  cursor: pointer;\n  &:hover {\n    transform: scale(1.1);\n    opacity: 0.6;\n  }\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -19901,9 +19912,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var FooterWrap = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div(_templateObject(), _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('phablet')(_templateObject2()), _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject3()));
 var IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div(_templateObject4(), _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('phablet')(_templateObject5()), _static_utils__WEBPACK_IMPORTED_MODULE_1__["media"].greaterThan('tablet')(_templateObject6()));
-var Icon = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].img(_templateObject7(), function (props) {
-  return props.theme.transition;
-});
+var Icon = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].img(_templateObject7());
 
 /***/ }),
 

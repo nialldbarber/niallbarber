@@ -31,11 +31,11 @@ export const Icon = styled.img`
   width: 25px;
   height: 100%;
   margin: 1rem;
-  transform: translateY(0);
-  transition: ${props => props.theme.transition};
+  transform: scale(1);
+  transition: all 0.2s ease;
   cursor: pointer;
   &:hover {
-    transform: translateY(-7px);
+    transform: scale(1.1);
     opacity: 0.6;
   }
 `;

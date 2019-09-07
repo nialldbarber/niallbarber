@@ -6,9 +6,9 @@ export const email = 'nialldbarber@gmail.com';
 
 // Pages
 export const pages = [
-  { title: 'Home' },
-  { title: 'About' },
-  { title: 'Contact' },
+  { title: 'Home', url: '/' },
+  { title: 'About', url: '/about' },
+  { title: 'Contact', url: '/contact' },
 ];
 
 // Media queries

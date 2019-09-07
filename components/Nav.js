@@ -18,6 +18,14 @@ const Nav = () => (
           </ColouredLink>
         </Link>
       ))}
+      <ColouredLink
+        className="blog__nav"
+        href="https://blog.nialldbarber.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Blog
+      </ColouredLink>
     </div>
   </NavBar>
 );

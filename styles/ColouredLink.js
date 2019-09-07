@@ -40,7 +40,7 @@ export const ColouredLink = styled.a`
     }
     &.home__nav,
     &.about__nav,
-    &.artwork__nav,
+    &.blog__nav,
     &.contact__nav {
       ${media.greaterThan('tablet')`
         color: ${props => props.theme.black};
@@ -80,7 +80,7 @@ export const ColouredLink = styled.a`
       `};
     }
   }
-  &.artwork__nav {
+  &.blog__nav {
     &:before {
       background: ${props => props.theme.green};
     }
